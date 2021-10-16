@@ -86,6 +86,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharIteam.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
     <Compile Include="CommandHelper.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Entities.Context.cs">

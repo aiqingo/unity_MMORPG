@@ -11,6 +11,7 @@ using System.Threading;
 
 using Network;
 using GameServer.Services;
+using SkillBridge.Message;
 
 namespace GameServer
 {
@@ -22,6 +23,8 @@ namespace GameServer
         {
             DBService.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
+
+           
             return true;
         }
 
