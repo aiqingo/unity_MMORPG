@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Levels/Londing.unity
     guid: f4f05fd3bd26e6547bdf61e3f4e966cc
   - enabled: 1
-    path: Assets/Levels/CharSelet.unity
+    path: Assets/Levels/CharSelect.unity
     guid: d8ec09d7d7be3a44ba6cedf4eeca588b
   m_configObjects: {}

@@ -1,50 +1,28 @@
-2021-10-18 19:08:10,506 [ 1] INFO  Unity: LoadingManager start
-2021-10-18 19:08:17,909 [ 1] INFO  Unity: UserOnLoginRequest::user :23 psw:23
-2021-10-18 19:08:17,911 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-10-18 19:08:17,914 [ 1] INFO  Unity: DoConnect
-2021-10-18 19:08:17,917 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-10-18 19:08:17,920 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-10-20 16:10:40,009 [ 1] INFO  Unity: LoadingManager start
+2021-10-20 16:10:47,156 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2021-10-20 16:10:47,158 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-10-20 16:10:47,159 [ 1] INFO  Unity: DoConnect
+2021-10-20 16:10:47,162 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-10-20 16:10:47,164 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-10-18 19:08:17,924 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-10-18 19:08:18,728 [ 1] ERROR Unity: Message handler exception:, Index (zero based) must be greater than or equal to zero and less than the size of the argument list., mscorlib,   at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000e8] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1925 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Services.UserService.OnUserLogin (System.Object sender, SkillBridge.Message.UserLoginResponse response) [0x0001a] in E:\unity_mmorpg\mmowork\Src\Client\Assets\Scripts\Services\UserService.cs:127 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserLoginResponse] (System.Object sender, SkillBridge.Message.UserLoginResponse msg) [0x00044] in D:\Projects\ExtremeWorld\project-z\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-10-18 19:08:18,733 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list., System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1925)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-Services.UserService.OnUserLogin (System.Object sender, SkillBridge.Message.UserLoginResponse response) (at Assets/Scripts/Services/UserService.cs:127)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserLoginResponse] (System.Object sender, SkillBridge.Message.UserLoginResponse msg) (at D:/Projects/ExtremeWorld/project-z/Src/Lib/Common/Network/MessageDistributer.cs:105)
+2021-10-20 16:10:47,171 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-10-20 16:10:47,334 [ 1] INFO  Unity: OnLogin:Success [None]
+2021-10-20 16:10:47,337 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-10-20 16:10:47,515 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-10-20 16:10:49,602 [ 1] INFO  Unity: DataManager > DataManager()
+2021-10-20 16:10:49,606 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UICharacterSelect.OnSelectClass (Int32 charClass) (at Assets/Scripts/UI/UICharacterSelect.cs:83)
+UnityEngine.Events.InvokableCall`1[System.Int32].Invoke (Int32 args0) (at D:/unity/Runtime/Export/UnityEvent.cs:207)
+UnityEngine.Events.CachedInvokableCall`1[System.Int32].Invoke (System.Object[] args) (at D:/unity/Runtime/Export/UnityEvent.cs:345)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:70)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
 }</args></log4net.Error>
-2021-10-18 19:10:52,245 [ 1] INFO  Unity: UserOnLoginRequest::user :23 psw:23
-2021-10-18 19:10:52,296 [ 1] ERROR Unity: Message handler exception:, Index (zero based) must be greater than or equal to zero and less than the size of the argument list., mscorlib,   at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000e8] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1925 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Services.UserService.OnUserLogin (System.Object sender, SkillBridge.Message.UserLoginResponse response) [0x0001a] in E:\unity_mmorpg\mmowork\Src\Client\Assets\Scripts\Services\UserService.cs:127 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserLoginResponse] (System.Object sender, SkillBridge.Message.UserLoginResponse msg) [0x00044] in D:\Projects\ExtremeWorld\project-z\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-10-18 19:10:52,297 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list., System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1925)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-Services.UserService.OnUserLogin (System.Object sender, SkillBridge.Message.UserLoginResponse response) (at Assets/Scripts/Services/UserService.cs:127)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserLoginResponse] (System.Object sender, SkillBridge.Message.UserLoginResponse msg) (at D:/Projects/ExtremeWorld/project-z/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2021-10-18 19:12:02,931 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-10-18 19:12:02,932 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-10-20 16:10:51,832 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-10-20 16:10:51,833 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

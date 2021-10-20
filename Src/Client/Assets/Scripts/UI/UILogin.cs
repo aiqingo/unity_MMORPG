@@ -26,7 +26,7 @@ public class UILogin : MonoBehaviour {
         if (string.IsNullOrEmpty(this.username.text))
         {
             MessageBox.Show("请输入账号");
-            return; ;
+            return; 
         }
 
         if (string.IsNullOrEmpty(this.password.text))
@@ -43,8 +43,8 @@ public class UILogin : MonoBehaviour {
         if (result==Result.Success)
         {
             //登入成功，进入角色选择
-            MessageBox.Show("登入成功，准备选择角色" + message, "提示", MessageBoxType.Information);
-            //SceneManager.Instance.LoadScene("CharSelet");
+            //MessageBox.Show("登入成功，准备选择角色" + message, "提示", MessageBoxType.Information);
+            SceneManager.Instance.LoadScene("CharSelect");
         }
         else
         {
