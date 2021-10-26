@@ -100,8 +100,8 @@ public class UICharacterSelect : MonoBehaviour {
 
         for (int i = 0; i < 3; i++)
         {
-            titles[i].gameObject.SetActive(i == charClass-1);
-            names[i].text = DataManager.Instance.Characters[i+1].Name;
+            titles[i].gameObject.SetActive(i == charClass - 1);
+            names[i].text = DataManager.Instance.Characters[i + 1].Name;
         }
 
         descs.text = DataManager.Instance.Characters[charClass].Description;
@@ -134,7 +134,7 @@ public class UICharacterSelect : MonoBehaviour {
         {
 
             UICharInfo ci = this.uiChars[i].GetComponent<UICharInfo>();
-            ci.Selected =idx==i;
+            ci.Selected = idx == i;
         }
 
     }

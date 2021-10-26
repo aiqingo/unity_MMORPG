@@ -25,7 +25,7 @@ namespace Services
 
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);
-            MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacrer);
+            MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
 
         }
 
@@ -33,7 +33,7 @@ namespace Services
         {
             MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
-            MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacrer);
+            MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
         }
@@ -97,8 +97,13 @@ namespace Services
                         this.OnRegister(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
                     }
                 }
-              
-                
+                else
+                {
+                    if (this.OnCharacterCreate != null)
+                    {
+                        this.OnCharacterCreate(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
+                    }
+                }
                 return true;
             }
             return false;
@@ -171,13 +176,13 @@ namespace Services
         }
 
 
-        public void SendCharacterCreate(string charName, CharacterClass cls)     
+        public void SendCharacterCreate(string name, CharacterClass cls)     
         {
-            Debug.LogFormat("UserCreateCharacteRequest::charName :{0} class:{1}", charName, cls);
+            Debug.LogFormat("UserCreateCharacterRequest::name :{0} class:{1}", name, cls);
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.createChar = new UserCreateCharacterRequest();
-            message.Request.createChar.Name = charName;
+            message.Request.createChar.Name = name;
             message.Request.createChar.Class = cls;
 
             if (this.connected && NetClient.Instance.Connected)
@@ -192,9 +197,9 @@ namespace Services
             }
         }
 
-        void OnUserCreateCharacrer(object sender, UserCreateCharacterResponse response)
+        void OnUserCreateCharacter(object sender, UserCreateCharacterResponse response)
         {
-            Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
+            Debug.LogFormat("OnUserCreateCharacter:{0} [{1}]", response.Result, response.Errormsg);
             if (response.Result==Result.Success)
             {
                 Models.User.Instance.Info.Player.Characters.Clear();

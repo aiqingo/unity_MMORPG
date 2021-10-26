@@ -16,7 +16,8 @@ namespace GameServer.Services
         public UserService()
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserLoginRequest>(this.OnLogin);
-            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegister); MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserCreateCharacterRequest>(this.OnCreateCharacter);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegister);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserCreateCharacterRequest>(this.OnCreateCharacter);
 
         }
 
@@ -64,14 +65,6 @@ namespace GameServer.Services
                     info.Class = (CharacterClass) c.Class;
                     message.Response.userLogin.Userinfo.Player.Characters.Add(info);
                 }
-
-
-
-                /*TPlayer player = DBService.Instance.Entities.Players.Add(new TPlayer());
-                DBService.Instance.Entities.Users.Add(new TUser() { Username = request.User, Password = request.Passward, Player = player });
-                DBService.Instance.Entities.SaveChanges();
-                message.Response.userRegister.Result = Result.Success;
-                message.Response.userRegister.Errormsg = "None";*/
             }
 
             byte[] data = PackageHandler.PackMessage(message);
@@ -109,8 +102,7 @@ namespace GameServer.Services
 
         private void OnCreateCharacter(NetConnection<NetSession> sender, UserCreateCharacterRequest request)
         {
-            Log.InfoFormat("UserOnCreateCharacterRequest: Name:{0}  Class:{1}", request.Name, request.Class);
-
+            Log.InfoFormat("UserCreateCharacterRequest: Name:{0}  Class:{1}", request.Name, request.Class);
 
             TCharacter character = new TCharacter()
             {
@@ -139,6 +131,17 @@ namespace GameServer.Services
 
             message.Response.createChar.Result = Result.Success;
             message.Response.createChar.Errormsg = "None";
+
+            foreach (var c in sender.Session.User.Player.Characters)
+            {
+                NCharacterInfo info = new NCharacterInfo();
+                info.Id = c.ID;
+                info.Name = c.Name;
+                info.Type = CharacterType.Player;
+                info.Class = (CharacterClass)c.Class;
+                message.Response.createChar.Characters.Add(info);
+
+            }
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
