@@ -17,21 +17,24 @@ namespace GameServer
 {
     class GameServer
     {
+        NetService network;
         Thread thread;
         bool running = false;
-        NetService network;
+        //NetService network;
 
         public bool Init()
         {
+            int Port = Properties.Settings.Default.ServerPort;
             network=new NetService();
             network.Init(8000);
 
             //HelloWoridService.Instance.Init();
 
             DBService.Instance.Init();
-            UserService.Instance.Init();
             DataManager.Instance.Load();
-            MapManager.Instance.Init();
+            MapService.Instance.Init();
+            UserService.Instance.Init();
+           
             //var a = DBService.Instance.Entities.Characters.Where(s => s.TID == 1);
             //Console.WriteLine("{0}", a.FirstOrDefault<TCharacter>().Name);
             thread = new Thread(new ThreadStart(this.Update));

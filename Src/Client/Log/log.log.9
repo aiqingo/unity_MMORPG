@@ -1,19 +1,51 @@
-2021-10-26 20:33:17,928 [ 1] INFO  Unity: LoadingManager start
-2021-10-26 20:33:21,873 [ 1] INFO  Unity: DataManager > DataManager()
-2021-10-26 20:33:25,912 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2021-10-26 20:33:25,914 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-10-26 20:33:25,915 [ 1] INFO  Unity: DoConnect
-2021-10-26 20:33:25,917 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-10-26 20:33:25,920 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-11-08 10:23:03,522 [ 1] INFO  Unity: LoadingManager start
+2021-11-08 10:23:06,650 [ 1] INFO  Unity: DataManager > DataManager()
+2021-11-08 10:23:09,708 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2021-11-08 10:23:09,710 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-11-08 10:23:09,711 [ 1] INFO  Unity: DoConnect
+2021-11-08 10:23:09,714 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-11-08 10:23:09,718 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-10-26 20:33:25,925 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-10-26 20:33:29,245 [ 1] INFO  Unity: OnLogin:Success [None]
-2021-10-26 20:33:29,247 [ 1] INFO  Unity: LoadLevel: CharSelect
-2021-10-26 20:33:29,421 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-10-26 20:33:40,614 [ 1] INFO  Unity: UserCreateCharacterRequest::name :111 class:Warrior
-2021-10-26 20:33:41,094 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2021-10-26 20:33:47,661 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-10-26 20:33:47,662 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-11-08 10:23:09,723 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-11-08 10:23:13,156 [ 1] INFO  Unity: OnLogin:Success [None]
+2021-11-08 10:23:13,160 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-11-08 10:23:13,348 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-08 10:23:14,653 [ 1] INFO  Unity: Select Char:[13]xl[Wizard]
+2021-11-08 10:23:15,598 [ 1] INFO  Unity: Select Char:[14]lx[Warrior]
+2021-11-08 10:23:17,371 [ 1] INFO  Unity: UserGameEnterRequest::characterId:2
+2021-11-08 10:23:17,409 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
+  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
+  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
+  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
+  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
+  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\º∞ ¿ΩÁ\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
+2021-11-08 10:23:17,412 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
+System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
+System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
+System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
+UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
+UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
+UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
+Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:233)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
+}</args></log4net.Error>
+2021-11-08 10:23:17,422 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2021-11-08 10:23:17,425 [ 1] INFO  Unity: AddCharacter:14:lx Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-08 10:23:17,427 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-11-08 10:23:17,979 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-08 10:23:17,983 [ 1] ERROR Unity: Character[1] Resource[Character/Warrior] not existed.
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+GameObjectManager:CreateCharacterObject(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:53)
+<InitGameObjects>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/GameObjectManager.cs:41)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+GameObjectManager:Start() (at Assets/Scripts/GameObject/GameObjectManager.cs:17)
+
+2021-11-08 10:23:28,944 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-11-08 10:23:28,946 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

@@ -1,18 +1,18 @@
-2021-11-05 16:23:07,481 [ 1] INFO  Unity: LoadingManager start
-2021-11-05 16:23:10,882 [ 1] INFO  Unity: DataManager > DataManager()
-2021-11-05 16:23:23,647 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2021-11-05 16:23:23,649 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-11-05 16:23:23,651 [ 1] INFO  Unity: DoConnect
-2021-11-05 16:23:23,654 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-11-05 16:23:23,659 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-11-08 10:51:15,776 [ 1] INFO  Unity: LoadingManager start
+2021-11-08 10:51:19,429 [ 1] INFO  Unity: DataManager > DataManager()
+2021-11-08 10:51:56,392 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-11-08 10:51:56,404 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-11-08 10:51:56,405 [ 1] INFO  Unity: DoConnect
+2021-11-08 10:51:56,408 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-11-08 10:51:56,411 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-11-05 16:23:23,662 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-11-05 16:23:28,184 [ 1] INFO  Unity: OnLogin:Success [None]
-2021-11-05 16:23:28,187 [ 1] INFO  Unity: LoadLevel: CharSelect
-2021-11-05 16:23:29,040 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-05 16:23:36,041 [ 1] INFO  Unity: Select Char:[13]xl[Wizard]
-2021-11-05 16:24:34,989 [ 1] INFO  Unity: UserGameEnterRequest::characterId:1
-2021-11-05 16:24:35,024 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
+2021-11-08 10:51:56,422 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-11-08 10:51:56,771 [ 1] INFO  Unity: OnLogin:Success [None]
+2021-11-08 10:51:56,777 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-11-08 10:51:56,988 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-08 10:51:57,964 [ 1] INFO  Unity: Select Char:[18]去去去[Warrior]
+2021-11-08 10:51:58,629 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2021-11-08 10:51:58,751 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
   at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
   at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
   at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
@@ -21,7 +21,7 @@
   at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
   at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\及世界\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
   at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
-2021-11-05 16:24:35,027 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+2021-11-08 10:51:58,755 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
 {1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
 System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
 System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
@@ -32,188 +32,26 @@ UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/
 Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:233)
 Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
 }</args></log4net.Error>
-2021-11-05 16:24:35,043 [ 1] INFO  Unity: OnMapChARACTEReNTER:1
-2021-11-05 16:24:35,046 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-05 16:24:35,049 [ 1] ERROR Unity: Scene 'MainCity' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
-UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
-<LoadLevel>c__Iterator0:MoveNext() (at Assets/Scripts/Scene/SceneManager.cs:29)
+2021-11-08 10:51:58,856 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2021-11-08 10:51:58,864 [ 1] INFO  Unity: AddCharacter:18:去去去 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-08 10:51:58,866 [ 1] INFO  Unity: AddCharacter:14:lx Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-08 10:51:58,868 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-11-08 10:51:59,485 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-08 10:52:23,008 [ 1] ERROR Unity: Character[1] Resource[Character/Warrior] not existed.
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+GameObjectManager:CreateCharacterObject(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:53)
+<InitGameObjects>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/GameObjectManager.cs:41)
 UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+GameObjectManager:Start() (at Assets/Scripts/GameObject/GameObjectManager.cs:17)
 
-2021-11-05 16:24:35,052 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, SceneManager+<LoadLevel>c__Iterator0.MoveNext () (at Assets/Scripts/Scene/SceneManager.cs:30)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-}</args></log4net.Error>
-2021-11-05 16:24:38,805 [ 1] INFO  Unity: Select Char:[14]lx[Warrior]
-2021-11-05 16:24:40,257 [ 1] INFO  Unity: UserGameEnterRequest::characterId:2
-2021-11-05 16:24:40,289 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
-  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\及世界\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
-2021-11-05 16:24:40,291 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
-System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:233)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
-}</args></log4net.Error>
-2021-11-05 16:24:40,306 [ 1] INFO  Unity: OnMapChARACTEReNTER:1
-2021-11-05 16:24:40,308 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-05 16:24:40,310 [ 1] ERROR Unity: Scene 'MainCity' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
-UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
-<LoadLevel>c__Iterator0:MoveNext() (at Assets/Scripts/Scene/SceneManager.cs:29)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+2021-11-08 10:52:25,937 [ 1] ERROR Unity: Character[1] Resource[Character/Warrior] not existed.
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+GameObjectManager:CreateCharacterObject(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:53)
+<InitGameObjects>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/GameObjectManager.cs:41)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
 
-2021-11-05 16:24:40,311 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, SceneManager+<LoadLevel>c__Iterator0.MoveNext () (at Assets/Scripts/Scene/SceneManager.cs:30)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-}</args></log4net.Error>
-2021-11-05 16:24:40,313 [ 1] INFO  Unity: OnMapChARACTEReNTER:1
-2021-11-05 16:24:40,315 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-05 16:24:40,316 [ 1] ERROR Unity: Scene 'MainCity' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
-UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
-<LoadLevel>c__Iterator0:MoveNext() (at Assets/Scripts/Scene/SceneManager.cs:29)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-
-2021-11-05 16:24:40,318 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, SceneManager+<LoadLevel>c__Iterator0.MoveNext () (at Assets/Scripts/Scene/SceneManager.cs:30)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-}</args></log4net.Error>
-2021-11-05 16:24:44,004 [ 1] INFO  Unity: Select Char:[13]xl[Wizard]
-2021-11-05 16:24:44,319 [ 1] INFO  Unity: Select Char:[1]晓绿[Wizard]
-2021-11-05 16:24:47,964 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2021-11-05 16:24:47,998 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
-  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\及世界\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
-2021-11-05 16:24:48,000 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
-System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:233)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
-}</args></log4net.Error>
-2021-11-05 16:24:48,014 [ 1] INFO  Unity: OnMapChARACTEReNTER:1
-2021-11-05 16:24:48,015 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-05 16:24:48,018 [ 1] ERROR Unity: Scene 'MainCity' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
-UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
-<LoadLevel>c__Iterator0:MoveNext() (at Assets/Scripts/Scene/SceneManager.cs:29)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-
-2021-11-05 16:24:48,020 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, SceneManager+<LoadLevel>c__Iterator0.MoveNext () (at Assets/Scripts/Scene/SceneManager.cs:30)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-}</args></log4net.Error>
-2021-11-05 16:24:48,022 [ 1] INFO  Unity: OnMapChARACTEReNTER:1
-2021-11-05 16:24:48,024 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-05 16:24:48,027 [ 1] ERROR Unity: Scene 'MainCity' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
-UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
-<LoadLevel>c__Iterator0:MoveNext() (at Assets/Scripts/Scene/SceneManager.cs:29)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-
-2021-11-05 16:24:48,029 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, SceneManager+<LoadLevel>c__Iterator0.MoveNext () (at Assets/Scripts/Scene/SceneManager.cs:30)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-Services.UserService:OnCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/UserService.cs:259)
-Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-}</args></log4net.Error>
-2021-11-05 16:24:49,248 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-11-05 16:24:49,250 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-11-08 10:52:28,327 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-11-08 10:52:28,328 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
