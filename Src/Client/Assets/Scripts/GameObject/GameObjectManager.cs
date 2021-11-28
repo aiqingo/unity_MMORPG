@@ -4,6 +4,7 @@ using UnityEngine;
 
 using Entities;
 using Managers;
+using Models;
 using Services;
 using SkillBridge.Message;
 
@@ -26,7 +27,7 @@ public class GameObjectManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       
     }
 
     void OnCharacterEnter(Character cha)
@@ -72,6 +73,7 @@ public class GameObjectManager : MonoBehaviour
             {
                 if (character.Info.Id == Models.User.Instance.CurrentCharacter.Id)
                 {
+                    User.Instance.CurrentCharacterObject = go;
                     MainPlayerCamera.Instance.player = go;
                     pc.enabled = true;
                     pc.character = character;

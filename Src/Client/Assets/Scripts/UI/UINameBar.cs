@@ -21,8 +21,7 @@ public class UINameBar : MonoBehaviour
     void Update()
     {
         this.UpdataInfo();
-
-        print(000);
+        
         this.transform.forward = Camera.main.transform.forward;
         //this.transform.LookAt(Camera.main.transform,Vector3.up);
     }
