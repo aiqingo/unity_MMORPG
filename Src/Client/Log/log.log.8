@@ -1,18 +1,18 @@
-2021-11-28 12:00:06,162 [ 1] INFO  Unity: LoadingManager start
-2021-11-28 12:00:11,142 [ 1] INFO  Unity: DataManager > DataManager()
-2021-11-28 12:00:15,107 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2021-11-28 12:00:15,115 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-11-28 12:00:15,117 [ 1] INFO  Unity: DoConnect
-2021-11-28 12:00:15,119 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-11-28 12:00:15,122 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-11-28 12:20:07,535 [ 1] INFO  Unity: LoadingManager start
+2021-11-28 12:20:11,637 [ 1] INFO  Unity: DataManager > DataManager()
+2021-11-28 12:20:18,837 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2021-11-28 12:20:18,847 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-11-28 12:20:18,849 [ 1] INFO  Unity: DoConnect
+2021-11-28 12:20:18,859 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-11-28 12:20:18,866 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-11-28 12:00:15,130 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-11-28 12:00:15,438 [ 1] INFO  Unity: OnLogin:Success [None]
-2021-11-28 12:00:15,446 [ 1] INFO  Unity: LoadLevel: CharSelect
-2021-11-28 12:00:16,087 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-28 12:00:17,956 [ 1] INFO  Unity: Select Char:[1]ÏþÂÌ[Wizard]
-2021-11-28 12:00:18,705 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2021-11-28 12:00:18,806 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
+2021-11-28 12:20:18,877 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-11-28 12:20:19,203 [ 1] INFO  Unity: OnLogin:Success [None]
+2021-11-28 12:20:19,211 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-11-28 12:20:19,808 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-28 12:20:26,794 [ 1] INFO  Unity: Select Char:[1]ÏþÂÌ[Wizard]
+2021-11-28 12:20:30,972 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2021-11-28 12:20:31,082 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
   at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
   at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
   at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
@@ -21,7 +21,7 @@
   at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
   at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\¼°ÊÀ½ç\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
   at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in E:\¼°ÊÀ½ç\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-11-28 12:00:18,810 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+2021-11-28 12:20:31,086 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
 {1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
 System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
 System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
@@ -32,15 +32,15 @@ UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/
 Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:233)
 Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at E:/¼°ÊÀ½ç/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
 }</args></log4net.Error>
-2021-11-28 12:00:18,853 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2021-11-28 12:00:18,861 [ 1] INFO  Unity: AddCharacter:1:ÏþÂÌ Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-11-28 12:00:18,863 [ 1] INFO  Unity: AddCharacter:1:ÏþÂÌ Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-11-28 12:00:18,866 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-28 12:00:19,946 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-28 12:02:41,145 [ 1] INFO  Unity: Character_1_ÏþÂÌ OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2021-11-28 12:02:41,146 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-11-28 12:02:41,147 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-11-28 12:20:31,123 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2021-11-28 12:20:31,136 [ 1] INFO  Unity: AddCharacter:1:ÏþÂÌ Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-28 12:20:31,138 [ 1] INFO  Unity: AddCharacter:1:ÏþÂÌ Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-28 12:20:31,140 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-11-28 12:20:32,273 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-28 12:21:06,440 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-11-28 12:21:06,442 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2021-11-28 12:21:06,449 [ 1] INFO  Unity: Character_1_ÏþÂÌ OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Models;
 using UnityEngine;
 
 public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
@@ -20,6 +21,10 @@ public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
 
     private void LateUpdate()
     {
+        if (player==null)
+        {
+            player = User.Instance.CurrentCharacterObject;
+        }
         if (player == null)
             return;
 

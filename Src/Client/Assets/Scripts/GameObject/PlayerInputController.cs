@@ -91,6 +91,7 @@ public class PlayerInputController : MonoBehaviour
             this.SendEntityEvent(EntityEvent.Jump);
         }
 
+        //float h = Input.GetAxis("Mouse X");
         float h = Input.GetAxis("Horizontal");
         if (h < -0.1 || h > 0.1)
         {

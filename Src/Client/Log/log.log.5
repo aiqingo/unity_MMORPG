@@ -1,123 +1,58 @@
-2021-11-28 12:05:37,129 [ 1] INFO  Unity: LoadingManager start
-2021-11-28 12:05:41,445 [ 1] INFO  Unity: DataManager > DataManager()
-2021-11-28 12:05:45,212 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2021-11-28 12:05:45,222 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-11-28 12:05:45,224 [ 1] INFO  Unity: DoConnect
-2021-11-28 12:05:45,227 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-11-28 12:05:45,231 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-12-02 19:00:34,537 [ 1] INFO  Unity: LoadingManager start
+2021-12-02 19:00:37,780 [ 1] INFO  Unity: DataManager > DataManager()
+2021-12-02 19:00:40,793 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2021-12-02 19:00:40,796 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-12-02 19:00:40,798 [ 1] INFO  Unity: DoConnect
+2021-12-02 19:00:40,800 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-12-02 19:00:40,803 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-11-28 12:05:45,240 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-11-28 12:05:45,570 [ 1] INFO  Unity: OnLogin:Success [None]
-2021-11-28 12:05:45,580 [ 1] INFO  Unity: LoadLevel: CharSelect
-2021-11-28 12:05:46,224 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-28 12:05:47,251 [ 1] INFO  Unity: Select Char:[14]lx[Warrior]
-2021-11-28 12:05:47,996 [ 1] INFO  Unity: UserGameEnterRequest::characterId:2
-2021-11-28 12:05:48,103 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
-  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\及世界\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in E:\及世界\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-11-28 12:05:48,108 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
-System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:233)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at E:/及世界/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2021-11-28 12:05:48,556 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2021-11-28 12:05:48,564 [ 1] INFO  Unity: AddCharacter:14:lx Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-11-28 12:05:48,566 [ 1] INFO  Unity: AddCharacter:14:lx Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-11-28 12:05:48,567 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-28 12:05:49,180 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-28 12:06:48,617 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UnityEditor.ScriptExecutionOrderInspector.DrawElement (Rect r, System.Object obj, Boolean dragging) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:634)
-UnityEditor.ScriptExecutionOrderInspector+DragReorderGUI.DragReorder (Rect position, Int32 elementHeight, System.Collections.Generic.List`1 elements, UnityEditor.DrawElementDelegate drawElementDelegate) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:713)
-UnityEditor.ScriptExecutionOrderInspector.OnInspectorGUI () (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:555)
-UnityEditor.InspectorWindow.DrawEditor (UnityEditor.Editor[] editors, Int32 editorIndex, Boolean rebuildOptimizedGUIBlock, System.Boolean& showImportedObjectBarNext, UnityEngine.Rect& importedObjectBarRect) (at D:/unity/Editor/Mono/Inspector/InspectorWindow.cs:1374)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-}</args></log4net.Error>
-2021-11-28 12:06:48,622 [ 1] WARN  Unity: Unexpected top level layout group! Missing GUILayout.EndScrollView/EndVertical/EndHorizontal?
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:06:48,624 [ 1] ERROR Unity: GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:06:48,630 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UnityEditor.ScriptExecutionOrderInspector.DrawElement (Rect r, System.Object obj, Boolean dragging) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:634)
-UnityEditor.ScriptExecutionOrderInspector+DragReorderGUI.DragReorder (Rect position, Int32 elementHeight, System.Collections.Generic.List`1 elements, UnityEditor.DrawElementDelegate drawElementDelegate) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:713)
-UnityEditor.ScriptExecutionOrderInspector.OnInspectorGUI () (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:555)
-UnityEditor.InspectorWindow.DrawEditor (UnityEditor.Editor[] editors, Int32 editorIndex, Boolean rebuildOptimizedGUIBlock, System.Boolean& showImportedObjectBarNext, UnityEngine.Rect& importedObjectBarRect) (at D:/unity/Editor/Mono/Inspector/InspectorWindow.cs:1374)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-}</args></log4net.Error>
-2021-11-28 12:06:48,636 [ 1] WARN  Unity: Unexpected top level layout group! Missing GUILayout.EndScrollView/EndVertical/EndHorizontal?
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:06:48,638 [ 1] ERROR Unity: GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:08,961 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UnityEditor.ScriptExecutionOrderInspector.DrawElement (Rect r, System.Object obj, Boolean dragging) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:634)
-UnityEditor.ScriptExecutionOrderInspector+DragReorderGUI.DragReorder (Rect position, Int32 elementHeight, System.Collections.Generic.List`1 elements, UnityEditor.DrawElementDelegate drawElementDelegate) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:713)
-UnityEditor.ScriptExecutionOrderInspector.OnInspectorGUI () (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:555)
-UnityEditor.InspectorWindow.DrawEditor (UnityEditor.Editor[] editors, Int32 editorIndex, Boolean rebuildOptimizedGUIBlock, System.Boolean& showImportedObjectBarNext, UnityEngine.Rect& importedObjectBarRect) (at D:/unity/Editor/Mono/Inspector/InspectorWindow.cs:1374)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-}</args></log4net.Error>
-2021-11-28 12:07:08,963 [ 1] WARN  Unity: Unexpected top level layout group! Missing GUILayout.EndScrollView/EndVertical/EndHorizontal?
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:08,965 [ 1] ERROR Unity: GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:08,967 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UnityEditor.ScriptExecutionOrderInspector.DrawElement (Rect r, System.Object obj, Boolean dragging) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:634)
-UnityEditor.ScriptExecutionOrderInspector+DragReorderGUI.DragReorder (Rect position, Int32 elementHeight, System.Collections.Generic.List`1 elements, UnityEditor.DrawElementDelegate drawElementDelegate) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:713)
-UnityEditor.ScriptExecutionOrderInspector.OnInspectorGUI () (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:555)
-UnityEditor.InspectorWindow.DrawEditor (UnityEditor.Editor[] editors, Int32 editorIndex, Boolean rebuildOptimizedGUIBlock, System.Boolean& showImportedObjectBarNext, UnityEngine.Rect& importedObjectBarRect) (at D:/unity/Editor/Mono/Inspector/InspectorWindow.cs:1374)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-}</args></log4net.Error>
-2021-11-28 12:07:08,970 [ 1] WARN  Unity: Unexpected top level layout group! Missing GUILayout.EndScrollView/EndVertical/EndHorizontal?
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:08,972 [ 1] ERROR Unity: GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:12,397 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UnityEditor.ScriptExecutionOrderInspector.DrawElement (Rect r, System.Object obj, Boolean dragging) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:634)
-UnityEditor.ScriptExecutionOrderInspector+DragReorderGUI.DragReorder (Rect position, Int32 elementHeight, System.Collections.Generic.List`1 elements, UnityEditor.DrawElementDelegate drawElementDelegate) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:713)
-UnityEditor.ScriptExecutionOrderInspector.OnInspectorGUI () (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:555)
-UnityEditor.InspectorWindow.DrawEditor (UnityEditor.Editor[] editors, Int32 editorIndex, Boolean rebuildOptimizedGUIBlock, System.Boolean& showImportedObjectBarNext, UnityEngine.Rect& importedObjectBarRect) (at D:/unity/Editor/Mono/Inspector/InspectorWindow.cs:1374)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-}</args></log4net.Error>
-2021-11-28 12:07:12,399 [ 1] WARN  Unity: Unexpected top level layout group! Missing GUILayout.EndScrollView/EndVertical/EndHorizontal?
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:12,401 [ 1] ERROR Unity: GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:12,404 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UnityEditor.ScriptExecutionOrderInspector.DrawElement (Rect r, System.Object obj, Boolean dragging) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:634)
-UnityEditor.ScriptExecutionOrderInspector+DragReorderGUI.DragReorder (Rect position, Int32 elementHeight, System.Collections.Generic.List`1 elements, UnityEditor.DrawElementDelegate drawElementDelegate) (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:713)
-UnityEditor.ScriptExecutionOrderInspector.OnInspectorGUI () (at D:/unity/Editor/Mono/Inspector/ScriptExecutionOrderInspector.cs:555)
-UnityEditor.InspectorWindow.DrawEditor (UnityEditor.Editor[] editors, Int32 editorIndex, Boolean rebuildOptimizedGUIBlock, System.Boolean& showImportedObjectBarNext, UnityEngine.Rect& importedObjectBarRect) (at D:/unity/Editor/Mono/Inspector/InspectorWindow.cs:1374)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-}</args></log4net.Error>
-2021-11-28 12:07:12,407 [ 1] WARN  Unity: Unexpected top level layout group! Missing GUILayout.EndScrollView/EndVertical/EndHorizontal?
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:12,408 [ 1] ERROR Unity: GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-
-2021-11-28 12:07:12,424 [ 1] INFO  Unity: Character_14_lx OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2021-11-28 12:07:12,429 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-11-28 12:07:12,430 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-12-02 19:00:40,808 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-12-02 19:00:40,956 [ 1] INFO  Unity: OnLogin:Success [None]
+2021-12-02 19:00:40,958 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-12-02 19:00:41,133 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-12-02 19:00:41,588 [ 1] INFO  Unity: SetDirection:(19, 98, 0)
+2021-12-02 19:00:41,637 [ 1] INFO  Unity: SetDirection:(43, 90, 0)
+2021-12-02 19:00:41,671 [ 1] INFO  Unity: SetDirection:(59, 80, 0)
+2021-12-02 19:00:41,886 [ 1] INFO  Unity: SetDirection:(74, 67, 0)
+2021-12-02 19:00:42,251 [ 1] INFO  Unity: SetDirection:(58, 82, 0)
+2021-12-02 19:00:42,284 [ 1] INFO  Unity: SetDirection:(41, 91, 0)
+2021-12-02 19:00:42,333 [ 1] INFO  Unity: SetDirection:(17, 99, 0)
+2021-12-02 19:00:42,466 [ 1] INFO  Unity: SetDirection:(-1, 100, 0)
+2021-12-02 19:00:43,178 [ 1] INFO  Unity: SetDirection:(20, 98, 0)
+2021-12-02 19:00:43,261 [ 1] INFO  Unity: SetDirection:(38, 93, 0)
+2021-12-02 19:00:43,509 [ 1] INFO  Unity: SetDirection:(20, 98, 0)
+2021-12-02 19:00:43,559 [ 1] INFO  Unity: SetDirection:(1, 100, 0)
+2021-12-02 19:00:43,658 [ 1] INFO  Unity: SetDirection:(-17, 98, 0)
+2021-12-02 19:00:43,857 [ 1] INFO  Unity: SetDirection:(1, 100, 0)
+2021-12-02 19:00:43,908 [ 1] INFO  Unity: SetDirection:(24, 97, 0)
+2021-12-02 19:00:44,089 [ 1] INFO  Unity: SetDirection:(4, 100, 0)
+2021-12-02 19:00:44,238 [ 1] INFO  Unity: SetDirection:(29, 96, 0)
+2021-12-02 19:00:44,387 [ 1] INFO  Unity: SetDirection:(6, 100, 0)
+2021-12-02 19:00:44,470 [ 1] INFO  Unity: SetDirection:(27, 96, 0)
+2021-12-02 19:00:44,687 [ 1] INFO  Unity: SetDirection:(10, 100, 0)
+2021-12-02 19:00:44,902 [ 1] INFO  Unity: SetDirection:(-14, 99, 0)
+2021-12-02 19:00:45,001 [ 1] INFO  Unity: SetDirection:(14, 99, 0)
+2021-12-02 19:00:46,110 [ 1] INFO  Unity: SetDirection:(32, 95, 0)
+2021-12-02 19:00:46,176 [ 1] INFO  Unity: SetDirection:(52, 86, 0)
+2021-12-02 19:00:46,243 [ 1] INFO  Unity: SetDirection:(67, 74, 0)
+2021-12-02 19:00:46,475 [ 1] INFO  Unity: SetDirection:(49, 87, 0)
+2021-12-02 19:00:46,541 [ 1] INFO  Unity: SetDirection:(29, 96, 0)
+2021-12-02 19:00:46,657 [ 1] INFO  Unity: SetDirection:(11, 99, 0)
+2021-12-02 19:00:46,739 [ 1] INFO  Unity: SetDirection:(-6, 100, 0)
+2021-12-02 19:00:46,873 [ 1] INFO  Unity: SetDirection:(-24, 97, 0)
+2021-12-02 19:00:46,989 [ 1] INFO  Unity: SetDirection:(-41, 91, 0)
+2021-12-02 19:00:47,403 [ 1] INFO  Unity: SetDirection:(-23, 97, 0)
+2021-12-02 19:00:48,032 [ 1] INFO  Unity: SetDirection:(-4, 100, 0)
+2021-12-02 19:00:48,132 [ 1] INFO  Unity: SetDirection:(16, 99, 0)
+2021-12-02 19:00:48,214 [ 1] INFO  Unity: SetDirection:(34, 94, 0)
+2021-12-02 19:00:48,497 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2021-12-02 19:00:48,530 [ 1] INFO  Unity: SetDirection:(76, 65, 0)
+2021-12-02 19:00:48,563 [ 1] INFO  Unity: SetDirection:(88, 47, 0)
+2021-12-02 19:00:48,761 [ 1] INFO  Unity: SetDirection:(78, 62, 0)
+2021-12-02 19:00:48,860 [ 1] INFO  Unity: SetDirection:(64, 77, 0)
+2021-12-02 19:00:50,351 [ 1] INFO  Unity: SetDirection:(49, 87, 0)
+2021-12-02 19:00:52,337 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-12-02 19:00:52,339 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

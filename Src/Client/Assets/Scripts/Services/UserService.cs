@@ -249,6 +249,7 @@ namespace Services
             //MapService.Instance.CurrentMapId = 0;
             Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
 
+
         }
 
         //private void OnCharacterEnter(object sender, MapCharacterEnterResponse messago)

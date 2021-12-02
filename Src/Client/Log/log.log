@@ -1,27 +1,27 @@
-2021-11-28 12:24:14,006 [ 1] INFO  Unity: LoadingManager start
-2021-11-28 12:24:18,085 [ 1] INFO  Unity: DataManager > DataManager()
-2021-11-28 12:24:23,701 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2021-11-28 12:24:23,710 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-11-28 12:24:23,711 [ 1] INFO  Unity: DoConnect
-2021-11-28 12:24:23,714 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-11-28 12:24:23,717 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-12-02 20:55:17,932 [ 1] INFO  Unity: LoadingManager start
+2021-12-02 20:55:21,265 [ 1] INFO  Unity: DataManager > DataManager()
+2021-12-02 20:55:25,555 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2021-12-02 20:55:25,557 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-12-02 20:55:25,559 [ 1] INFO  Unity: DoConnect
+2021-12-02 20:55:25,561 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-12-02 20:55:25,565 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-11-28 12:24:23,726 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-11-28 12:24:24,053 [ 1] INFO  Unity: OnLogin:Success [None]
-2021-11-28 12:24:24,059 [ 1] INFO  Unity: LoadLevel: CharSelect
-2021-11-28 12:24:24,698 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-28 12:24:34,631 [ 1] INFO  Unity: Select Char:[1]晓绿[Wizard]
-2021-11-28 12:24:35,586 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2021-11-28 12:24:35,693 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
+2021-12-02 20:55:25,570 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-12-02 20:55:25,715 [ 1] INFO  Unity: OnLogin:Success [None]
+2021-12-02 20:55:25,718 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-12-02 20:55:25,921 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-12-02 20:55:26,961 [ 1] INFO  Unity: Select Char:[18]去去去[Warrior]
+2021-12-02 20:55:28,304 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
+2021-12-02 20:55:28,341 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
   at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
   at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
   at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
   at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
   at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
   at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\及世界\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
+  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\JSJ\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
   at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in E:\及世界\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-11-28 12:24:35,696 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+2021-12-02 20:55:28,343 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
 {1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
 System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
 System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
@@ -32,25 +32,14 @@ UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/
 Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:233)
 Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at E:/及世界/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
 }</args></log4net.Error>
-2021-11-28 12:24:36,164 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2021-11-28 12:24:36,174 [ 1] INFO  Unity: AddCharacter:1:晓绿 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-11-28 12:24:36,176 [ 1] INFO  Unity: AddCharacter:1:晓绿 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-11-28 12:24:36,178 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-28 12:24:36,872 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-28 12:25:08,488 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
-2021-11-28 12:25:08,586 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
-2021-11-28 12:25:08,636 [ 1] INFO  Unity: MoveForward
-2021-11-28 12:25:08,686 [ 1] INFO  Unity: SetDirection:(84, 54, 0)
-2021-11-28 12:25:08,785 [ 1] INFO  Unity: SetDirection:(72, 70, 0)
-2021-11-28 12:25:08,919 [ 1] INFO  Unity: SetDirection:(58, 81, 0)
-2021-11-28 12:25:09,437 [ 1] INFO  Unity: SetDirection:(42, 91, 0)
-2021-11-28 12:25:09,555 [ 1] INFO  Unity: SetDirection:(24, 97, 0)
-2021-11-28 12:25:09,654 [ 1] INFO  Unity: SetDirection:(6, 100, 0)
-2021-11-28 12:25:09,804 [ 1] INFO  Unity: Stop
-2021-11-28 12:25:09,836 [ 1] INFO  Unity: SetDirection:(-11, 99, 0)
-2021-11-28 12:25:10,247 [ 1] INFO  Unity: Character_1_晓绿 OnDestroy :ID:0 POS:(5184, 4285, 820) DIR:(-11, 99, 0) SPD:0 
-2021-11-28 12:25:10,249 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-11-28 12:25:10,250 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-12-02 20:55:28,353 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2021-12-02 20:55:28,355 [ 1] INFO  Unity: AddCharacter:18:去去去 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-12-02 20:55:28,357 [ 1] INFO  Unity: AddCharacter:14:lx Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-12-02 20:55:28,360 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-12-02 20:55:29,423 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-12-02 20:56:17,540 [ 1] INFO  Unity: Character_18_去去去 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2021-12-02 20:56:17,541 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-12-02 20:56:17,542 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
