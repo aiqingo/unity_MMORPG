@@ -7,7 +7,6 @@ using Network;
 using UnityEngine;
 
 using SkillBridge.Message;
-using Models;
 
 namespace Services
 {
@@ -221,17 +220,18 @@ namespace Services
 
         public void SendGameEnter(int characterIdx)
         {
-            Debug.LogFormat("UserGameEnterRequest::characterId:{0}",characterIdx);
-            NetMessage message=new NetMessage();
-            message.Request=new NetMessageRequest();
-            message.Request.gameEnter=new UserGameEnterRequest();
+            Debug.LogFormat("UserGameEnterRequest::characterId :{0}", characterIdx);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameEnter = new UserGameEnterRequest();
             message.Request.gameEnter.characterIdx = characterIdx;
             NetClient.Instance.SendMessage(message);
         }
         void OnGameEnter(object sender,UserGameEnterResponse response)
         {
-            Debug.LogFormat("OnGameEnter:{0} {[1]}", response.Result, response.Errormsg);
-            if (response.Result==Result.Success)
+            Debug.LogFormat("OnGameEnter:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (response.Result == Result.Success)
             {
 
             }
@@ -246,7 +246,7 @@ namespace Services
         }
         void OnGameLeave( object sender,UserGameLeaveResponse response)
         {
-            //MapService.Instance.CurrentMapId = 0;
+            MapService.Instance.CurrentMapId = 0;
             Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
 
 

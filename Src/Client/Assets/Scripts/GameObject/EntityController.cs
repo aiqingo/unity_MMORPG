@@ -1,9 +1,9 @@
-﻿using System.Collections;
+﻿using SkillBridge.Message;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using Entities;
 using Managers;
-using SkillBridge.Message;
-using UnityEngine;
 
 public class EntityController : MonoBehaviour,IEntityNotify
 {
@@ -77,6 +77,13 @@ public class EntityController : MonoBehaviour,IEntityNotify
             this.UpdateTransform();
         }
     }
+	
+	public void OnEntityChanged(Entity entity)
+    {
+        Debug.LogFormat("OnEntityChanged :ID:{0} POS:{1} DIR:{2} SPD:{3} ", entity.entityId, entity.position, entity.direction, entity.speed);
+    }
+
+
     public void OnEntityRemoved()
     {
         if (UIWorldElementManager.Instance != null)

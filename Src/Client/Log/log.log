@@ -1,46 +1,42 @@
-2021-12-02 20:55:17,932 [ 1] INFO  Unity: LoadingManager start
-2021-12-02 20:55:21,265 [ 1] INFO  Unity: DataManager > DataManager()
-2021-12-02 20:55:25,555 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2021-12-02 20:55:25,557 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-12-02 20:55:25,559 [ 1] INFO  Unity: DoConnect
-2021-12-02 20:55:25,561 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-12-02 20:55:25,565 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-01-07 20:31:57,924 [ 1] INFO  Unity: LoadingManager start
+2022-01-07 20:32:01,141 [ 1] INFO  Unity: DataManager > DataManager()
+2022-01-07 20:32:08,195 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-01-07 20:32:08,197 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-01-07 20:32:08,199 [ 1] INFO  Unity: DoConnect
+2022-01-07 20:32:08,201 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-01-07 20:32:08,204 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-12-02 20:55:25,570 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-12-02 20:55:25,715 [ 1] INFO  Unity: OnLogin:Success [None]
-2021-12-02 20:55:25,718 [ 1] INFO  Unity: LoadLevel: CharSelect
-2021-12-02 20:55:25,921 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-12-02 20:55:26,961 [ 1] INFO  Unity: Select Char:[18]去去去[Warrior]
-2021-12-02 20:55:28,304 [ 1] INFO  Unity: UserGameEnterRequest::characterId:0
-2021-12-02 20:55:28,341 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00011] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495 
-  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00023] in E:\JSJ\unity_MMORPG\Src\Client\Assets\Scripts\Services\UserService.cs:233 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in E:\及世界\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2021-12-02 20:55:28,343 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2495)
-System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:233)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at E:/及世界/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2021-12-02 20:55:28,353 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2021-12-02 20:55:28,355 [ 1] INFO  Unity: AddCharacter:18:去去去 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-12-02 20:55:28,357 [ 1] INFO  Unity: AddCharacter:14:lx Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-12-02 20:55:28,360 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-12-02 20:55:29,423 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-12-02 20:56:17,540 [ 1] INFO  Unity: Character_18_去去去 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2021-12-02 20:56:17,541 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-12-02 20:56:17,542 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-01-07 20:32:08,208 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-01-07 20:32:08,381 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-01-07 20:32:08,383 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-01-07 20:32:08,551 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-01-07 20:32:10,378 [ 1] INFO  Unity: Select Char:[18]去去去[Warrior]
+2022-01-07 20:32:11,371 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-01-07 20:32:11,412 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-01-07 20:32:11,413 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:4
+2022-01-07 20:32:11,416 [ 1] INFO  Unity: AddCharacter:18:去去去 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-01-07 20:32:11,420 [ 1] INFO  Unity: AddCharacter:19:1111 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-01-07 20:32:11,421 [ 1] INFO  Unity: AddCharacter:20:11 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-01-07 20:32:11,423 [ 1] INFO  Unity: AddCharacter:19:1111 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-01-07 20:32:11,426 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-01-07 20:32:12,195 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-01-07 20:32:13,377 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2022-01-07 20:32:13,476 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
+2022-01-07 20:32:13,558 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
+2022-01-07 20:32:13,658 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
+2022-01-07 20:32:13,748 [ 1] INFO  Unity: MoveForward
+2022-01-07 20:32:13,766 [ 1] INFO  Unity: SetDirection:(58, 81, 0)
+2022-01-07 20:32:13,847 [ 1] INFO  Unity: SetDirection:(43, 90, 0)
+2022-01-07 20:32:13,962 [ 1] INFO  Unity: SetDirection:(26, 97, 0)
+2022-01-07 20:32:14,278 [ 1] INFO  Unity: Stop
+2022-01-07 20:32:14,295 [ 1] INFO  Unity: MoveBack
+2022-01-07 20:32:15,912 [ 1] INFO  Unity: Stop
+2022-01-07 20:32:16,425 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-01-07 20:32:16,426 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2022-01-07 20:32:16,431 [ 1] INFO  Unity: Character_18_去去去 OnDestroy :ID:4 POS:(4981, 3798, 820) DIR:(26, 97, 0) SPD:0 
+2022-01-07 20:32:16,432 [ 1] INFO  Unity: Character_19_1111 OnDestroy :ID:3 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-07 20:32:16,433 [ 1] INFO  Unity: Character_20_11 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

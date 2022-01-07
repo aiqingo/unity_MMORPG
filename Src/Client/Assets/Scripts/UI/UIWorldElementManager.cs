@@ -9,10 +9,12 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager> {
 
     private Dictionary<Transform, GameObject> elements = new Dictionary<Transform, GameObject>();
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+    // Use this for initialization
+    protected override void OnStart()
+    {
+        nameBarPrefab.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {

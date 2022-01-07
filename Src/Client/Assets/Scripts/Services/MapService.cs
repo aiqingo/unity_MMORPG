@@ -1,33 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Common;
-using Common.Data;
-using Managers;
 using Network;
 using UnityEngine;
 
+using Common.Data;
 using SkillBridge.Message;
 using Models;
+using Managers;
 
 namespace Services
 {
     class MapService : Singleton<MapService>, IDisposable
     {
 
+        public int CurrentMapId = 0;
         public MapService()
         {
          
 
             MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
             MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
-           
-
 
         }
 
-        public int CurrentMapId { get; private set; }
+      
 
         public void Dispose()
         {
