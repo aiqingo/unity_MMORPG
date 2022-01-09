@@ -1,42 +1,141 @@
-2022-01-07 20:31:57,924 [ 1] INFO  Unity: LoadingManager start
-2022-01-07 20:32:01,141 [ 1] INFO  Unity: DataManager > DataManager()
-2022-01-07 20:32:08,195 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2022-01-07 20:32:08,197 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-01-07 20:32:08,199 [ 1] INFO  Unity: DoConnect
-2022-01-07 20:32:08,201 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-01-07 20:32:08,204 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-01-09 18:06:56,538 [ 1] INFO  Unity: LoadingManager start
+2022-01-09 18:06:59,775 [ 1] INFO  Unity: DataManager > DataManager()
+2022-01-09 18:07:04,437 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2022-01-09 18:07:04,440 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-01-09 18:07:04,442 [ 1] INFO  Unity: DoConnect
+2022-01-09 18:07:04,445 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-01-09 18:07:04,448 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-01-07 20:32:08,208 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-01-07 20:32:08,381 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-01-07 20:32:08,383 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-01-07 20:32:08,551 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-01-07 20:32:10,378 [ 1] INFO  Unity: Select Char:[18]ȥȥȥ[Warrior]
-2022-01-07 20:32:11,371 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-01-07 20:32:11,412 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-01-07 20:32:11,413 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:4
-2022-01-07 20:32:11,416 [ 1] INFO  Unity: AddCharacter:18:ȥȥȥ Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-01-07 20:32:11,420 [ 1] INFO  Unity: AddCharacter:19:1111 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-01-07 20:32:11,421 [ 1] INFO  Unity: AddCharacter:20:11 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-01-07 20:32:11,423 [ 1] INFO  Unity: AddCharacter:19:1111 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-01-07 20:32:11,426 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-01-07 20:32:12,195 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-01-07 20:32:13,377 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
-2022-01-07 20:32:13,476 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
-2022-01-07 20:32:13,558 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
-2022-01-07 20:32:13,658 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
-2022-01-07 20:32:13,748 [ 1] INFO  Unity: MoveForward
-2022-01-07 20:32:13,766 [ 1] INFO  Unity: SetDirection:(58, 81, 0)
-2022-01-07 20:32:13,847 [ 1] INFO  Unity: SetDirection:(43, 90, 0)
-2022-01-07 20:32:13,962 [ 1] INFO  Unity: SetDirection:(26, 97, 0)
-2022-01-07 20:32:14,278 [ 1] INFO  Unity: Stop
-2022-01-07 20:32:14,295 [ 1] INFO  Unity: MoveBack
-2022-01-07 20:32:15,912 [ 1] INFO  Unity: Stop
-2022-01-07 20:32:16,425 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-01-07 20:32:16,426 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-01-09 18:07:04,452 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-01-09 18:07:08,135 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-01-09 18:07:08,137 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-01-09 18:07:08,360 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-01-09 18:07:10,567 [ 1] INFO  Unity: Select Char:[18]ȥȥȥ[Warrior]
+2022-01-09 18:07:11,464 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-01-09 18:07:11,502 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-01-09 18:07:11,505 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-01-09 18:07:11,508 [ 1] INFO  Unity: AddCharacter:18:ȥȥȥ Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-01-09 18:07:11,512 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-01-09 18:07:12,245 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-01-09 18:07:14,970 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-01-09 18:07:14,972 [ 1] INFO  Unity: AddCharacter:13:xl Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-01-09 18:07:17,820 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:300 
+2022-01-09 18:07:17,822 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveFwd entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:300
+
+2022-01-09 18:07:17,887 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(5025, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:17,890 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(5025,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:18,350 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(5025, 4000, 820) DIR:(100, 0, 0) SPD:300 
+2022-01-09 18:07:18,352 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveFwd entity:(2:pos:(5025,4000,820),dir:(100,0,0),spd:300
+
+2022-01-09 18:07:18,996 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(5160, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:18,998 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(5160,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:19,443 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(5160, 4000, 820) DIR:(100, 0, 0) SPD:-300 
+2022-01-09 18:07:19,445 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveBack entity:(2:pos:(5160,4000,820),dir:(100,0,0),spd:-300
+
+2022-01-09 18:07:19,627 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(5105, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:19,630 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(5105,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:19,941 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(5105, 4000, 820) DIR:(100, 0, 0) SPD:-300 
+2022-01-09 18:07:19,942 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveBack entity:(2:pos:(5105,4000,820),dir:(100,0,0),spd:-300
+
+2022-01-09 18:07:21,317 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4695, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:21,318 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(4695,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:21,348 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4695, 4000, 820) DIR:(100, 0, 0) SPD:300 
+2022-01-09 18:07:21,350 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveFwd entity:(2:pos:(4695,4000,820),dir:(100,0,0),spd:300
+
+2022-01-09 18:07:21,979 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4830, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:21,980 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(4830,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:22,526 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4830, 4000, 820) DIR:(100, 0, 0) SPD:300 
+2022-01-09 18:07:22,529 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveFwd entity:(2:pos:(4830,4000,820),dir:(100,0,0),spd:300
+
+2022-01-09 18:07:22,780 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4905, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:22,781 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(4905,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:24,470 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:24,472 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:24,619 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:24,620 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5045,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:24,686 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:24,687 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5045,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:24,834 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:24,835 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5090,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:24,867 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:24,868 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5090,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:24,950 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:24,951 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5115,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:25,018 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:25,019 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5115,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:25,101 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:25,102 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5140,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:25,183 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:25,184 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5140,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:25,201 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:25,202 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5145,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:25,317 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:25,318 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5145,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:25,401 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:25,402 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5170,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:25,467 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:25,469 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5170,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:25,583 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:25,584 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5205,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:25,618 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:25,619 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5205,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:25,733 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:25,735 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5240,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:25,768 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:25,769 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5240,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:25,887 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:25,888 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5275,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:25,924 [ 1] INFO  Unity: MoveForward
+2022-01-09 18:07:25,926 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5275,4000,820) DIR:(100,0,0) SPD:300
+2022-01-09 18:07:26,256 [ 1] INFO  Unity: Stop
+2022-01-09 18:07:26,257 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5375,4000,820) DIR:(100,0,0) SPD:0
+2022-01-09 18:07:28,761 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4905, 4000, 820) DIR:(100, 0, 0) SPD:-300 
+2022-01-09 18:07:28,762 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveBack entity:(2:pos:(4905,4000,820),dir:(100,0,0),spd:-300
+
+2022-01-09 18:07:29,292 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4820, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:29,293 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(4820,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:29,342 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4820, 4000, 820) DIR:(100, 0, 0) SPD:300 
+2022-01-09 18:07:29,343 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveFwd entity:(2:pos:(4820,4000,820),dir:(100,0,0),spd:300
+
+2022-01-09 18:07:29,873 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4980, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:29,874 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(4980,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:29,905 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4980, 4000, 820) DIR:(100, 0, 0) SPD:-300 
+2022-01-09 18:07:29,906 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:MoveBack entity:(2:pos:(4980,4000,820),dir:(100,0,0),spd:-300
+
+2022-01-09 18:07:30,138 [ 1] INFO  Unity: OnEntityChanged :ID:2 POS:(4905, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:30,140 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [2]evt:Idle entity:(2:pos:(4905,4000,820),dir:(100,0,0),spd:0
+
+2022-01-09 18:07:32,433 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-01-09 18:07:32,435 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-01-07 20:32:16,431 [ 1] INFO  Unity: Character_18_ȥȥȥ OnDestroy :ID:4 POS:(4981, 3798, 820) DIR:(26, 97, 0) SPD:0 
-2022-01-07 20:32:16,432 [ 1] INFO  Unity: Character_19_1111 OnDestroy :ID:3 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-01-07 20:32:16,433 [ 1] INFO  Unity: Character_20_11 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:32,440 [ 1] INFO  Unity: Character_18_ȥȥȥ OnDestroy :ID:1 POS:(5375, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-01-09 18:07:32,442 [ 1] INFO  Unity: Character_13_xl OnDestroy :ID:2 POS:(4905, 4000, 820) DIR:(100, 0, 0) SPD:0 

@@ -90,6 +90,7 @@ public class EntityController : MonoBehaviour,IEntityNotify
             UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
         Destroy(this.gameObject);
     }
+    
     public void OnEntityEvent(EntityEvent entityEvent)
     {
         switch (entityEvent)
@@ -108,6 +109,10 @@ public class EntityController : MonoBehaviour,IEntityNotify
                 anim.SetTrigger("Jump");
                 break;
         }
+    }
+    public void OnentityChanged(Entity entity)
+    {
+        Debug.LogFormat("OnEntityChanged :ID:{0} POS:{1} DIR:{2} SPD:{3}",entity.entityId,entity.position,entity.direction,entity.speed);
     }
 
 
