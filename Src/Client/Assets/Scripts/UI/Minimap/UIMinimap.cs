@@ -29,12 +29,16 @@ public class UIMinimap : MonoBehaviour
         this.minimap.SetNativeSize();
         this.minimap.transform.localPosition = Vector3.zero;
 
+      
     }
 
     // Update is called once per frame
 	void Update ()
     {
-        this.playerTransform = User.Instance.CurrentCharacterObject.transform;
+        if (playerTransform==null)
+        {
+            playerTransform = MinimapManager.Instance.PlayerTransform;
+        }
         if (minimapBoundingBox==null||playerTransform==null) return;
         
         float realWidth = minimapBoundingBox.bounds.size.x;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Common;
+using Models;
 using Network;
 using UnityEngine;
 
@@ -53,6 +54,7 @@ namespace Services
         {
             Debug.Log("ConnectToServer() Start ");
             //NetClient.Instance.CryptKey = this.SessionId;
+            //修改IP地址联网
             NetClient.Instance.Init("127.0.0.1", 8000);
             NetClient.Instance.Connect();
         }
@@ -247,6 +249,7 @@ namespace Services
         void OnGameLeave( object sender,UserGameLeaveResponse response)
         {
             MapService.Instance.CurrentMapId = 0;
+            User.Instance.CurrentCharacter = null;
             Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
 
 

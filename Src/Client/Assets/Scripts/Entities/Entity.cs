@@ -14,9 +14,11 @@ namespace Entities
 
         public Vector3Int position;
         public Vector3Int direction;
+
+  
         public int speed;
 
-
+    
         private NEntity entityData;
         public NEntity EntityData
         {
@@ -29,6 +31,7 @@ namespace Entities
                 this.SetEntityData(value);
             }
         }
+
 
         public Entity(NEntity entity)
         {
@@ -44,13 +47,14 @@ namespace Entities
                 Vector3 dir = this.direction;
                 this.position += Vector3Int.RoundToInt(dir * speed * delta / 100f);
             }
-            //entityData.Position.FromVector3Int(this.position);
-            //entityData.Direction.FromVector3Int(this.direction);
-            //entityData.Speed = this.speed;
+            entityData.Position.FromVector3Int(this.position);
+            entityData.Direction.FromVector3Int(this.direction);
+            entityData.Speed = this.speed;
         }
 
         public void SetEntityData(NEntity entity)
         {
+
             this.position = this.position.FromNVector3(entity.Position);
             this.direction = this.direction.FromNVector3(entity.Direction);
             this.speed = entity.Speed;
