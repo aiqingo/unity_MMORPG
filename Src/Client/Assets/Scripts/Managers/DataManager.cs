@@ -53,8 +53,8 @@ public class DataManager : Singleton<DataManager>
 
         yield return null;
 
-        //json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
-        //this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
+        json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
+        this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
 
         //yield return null;
 

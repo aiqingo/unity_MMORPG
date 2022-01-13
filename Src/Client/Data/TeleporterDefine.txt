@@ -2,45 +2,121 @@
   "1": {
     "ID": 1,
     "Name": "主城->野外",
+    "MapID": 1,
     "LinkTo": 6,
-    "MapID": 1
+    "Descript": null,
+    "Position": {
+      "X": 588,
+      "Y": 2600,
+      "Z": 1027
+    },
+    "Direction": {
+      "X": 0,
+      "Y": 100,
+      "Z": 0
+    }
   },
   "2": {
     "ID": 2,
     "Name": "主城->副本",
+    "MapID": 1,
     "LinkTo": 8,
-    "MapID": 1
+    "Descript": null,
+    "Position": {
+      "X": 7393,
+      "Y": 2600,
+      "Z": 1027
+    },
+    "Direction": {
+      "X": 0,
+      "Y": 100,
+      "Z": 0
+    }
   },
   "3": {
     "ID": 3,
     "Name": "主城传入点1",
-    "MapID": 1
+    "MapID": 1,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 1563,
+      "Y": 2618,
+      "Z": 828
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
   },
   "4": {
     "ID": 4,
     "Name": "出城传入点2",
-    "MapID": 1
+    "MapID": 1,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 6840,
+      "Y": 2618,
+      "Z": 828
+    },
+    "Direction": {
+      "X": -100,
+      "Y": 0,
+      "Z": 0
+    }
   },
   "5": {
     "ID": 5,
     "Name": "野外->主城",
+    "MapID": 2,
     "LinkTo": 3,
-    "MapID": 2
+    "Descript": null,
+    "Position": {
+      "X": 2152,
+      "Y": 3949,
+      "Z": 333
+    },
+    "Direction": {
+      "X": 0,
+      "Y": 100,
+      "Z": 0
+    }
   },
   "6": {
     "ID": 6,
     "Name": "野外传入点",
-    "MapID": 2
+    "MapID": 2,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 2845,
+      "Y": 4039,
+      "Z": 38
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
   },
   "7": {
     "ID": 7,
     "Name": "副本->主城",
+    "MapID": 4,
     "LinkTo": 4,
-    "MapID": 4
+    "Descript": null,
+    "Position": null,
+    "Direction": null
   },
   "8": {
     "ID": 8,
     "Name": "副本传入点",
-    "MapID": 4
+    "MapID": 4,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": null,
+    "Direction": null
   }
 }

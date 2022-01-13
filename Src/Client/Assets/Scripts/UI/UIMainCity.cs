@@ -4,13 +4,13 @@ using Models;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMainCity : MonoBehaviour
+public class UIMainCity : MonoSingleton<UIMainCity>
 {
     public Text avatarName;
 
     public Text avatarLevel;
 	// Use this for initialization
-	void Start ()
+	protected override  void OnStart ()
     {
         this.UpdataAvater();
 

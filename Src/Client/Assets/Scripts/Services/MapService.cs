@@ -112,5 +112,14 @@ namespace Services
             Debug.Log(sb.ToString());
         }
 
+        public void SendMapTeleport(int teleporterID)
+        {
+            Debug.LogFormat("MapTeleportRequest :teleporterID:{0}", teleporterID);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.mapTeleport = new MapTeleportRequest();
+            message.Request.mapTeleport.teleporterId = teleporterID;
+            NetClient.Instance.SendMessage(message);
+        }
     }
 }
