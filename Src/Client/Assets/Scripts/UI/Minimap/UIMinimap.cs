@@ -18,18 +18,20 @@ public class UIMinimap : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-       this.InitMap();
+        MinimapManager.Instance.minimap = this;
+       this.UpdataMap();
     }
 
-    void InitMap()
+    public  void UpdataMap()
     {
         this.mapName.text = User.Instance.CurrentMapData.Name;
-        if (this.minimap.overrideSprite==null)
             this.minimap.overrideSprite = MinimapManager.Instance.LoadCurrenMinimap();
+
         this.minimap.SetNativeSize();
         this.minimap.transform.localPosition = Vector3.zero;
+        this.minimapBoundingBox = MinimapManager.Instance.MinimapBoundingBox;
+        this.playerTransform = null;
 
-      
     }
 
     // Update is called once per frame

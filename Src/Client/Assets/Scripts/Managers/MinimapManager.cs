@@ -9,6 +9,14 @@ namespace Managers
 {
     class MinimapManager:Singleton<MinimapManager>
     {
+        public UIMinimap minimap;
+
+        public Collider minimapBoundingBox;
+
+        public Collider MinimapBoundingBox
+        {
+            get { return minimapBoundingBox; }
+        }
 
         public Transform PlayerTransform
         {
@@ -29,5 +37,13 @@ namespace Managers
             return s;
         }
 
+        public void UpdataMinimap(Collider minimapBoundingBox)
+        {
+            this.minimapBoundingBox = minimapBoundingBox;
+            if (this.minimap!=null)
+            {
+                this.minimap.UpdataMap();
+            }
+        }
     }
 }

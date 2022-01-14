@@ -4,7 +4,7 @@ using Models;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMainCity : MonoSingleton<UIMainCity>
+public class UIMain : MonoSingleton<UIMain>
 {
     public Text avatarName;
 
@@ -33,5 +33,17 @@ public class UIMainCity : MonoSingleton<UIMainCity>
     {
         SceneManager.Instance.LoadScene("CharSelect");
         Services.UserService.Instance.SendGamLeave();
+    }
+
+    public void OnClickTest()
+    {
+       UITest uiTest=  UIManager.Instance.Show<UITest>();
+       uiTest.SetTitle("这是JSJ");
+       uiTest.OnClose += Test_Onclse;
+    }
+
+    private void Test_Onclse(UIWindow sender,UIWindow.WindowResult result)
+    {
+        MessageBox.Show("点击了对话框：" + result, "对话框相应结果", MessageBoxType.Confirm);
     }
 }
