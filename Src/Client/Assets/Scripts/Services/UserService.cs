@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Common;
+using Managers;
 using Models;
 using Network;
 using UnityEngine;
@@ -235,7 +236,7 @@ namespace Services
 
             if (response.Result == Result.Success)
             {
-
+                ItemManager.Instance.Init(response.Character.Items);
             }
         }
         public void SendGamLeave()

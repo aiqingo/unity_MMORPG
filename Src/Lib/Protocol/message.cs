@@ -68,6 +68,9 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(8, Name = @"entity")]
         public NEntity Entity { get; set; }
 
+        [global::ProtoBuf.ProtoMember(10)]
+        public global::System.Collections.Generic.List<NItemInfo> Items { get; } = new global::System.Collections.Generic.List<NItemInfo>();
+
     }
 
     [global::ProtoBuf.ProtoContract()]
@@ -85,6 +88,21 @@ namespace SkillBridge.Message
 
         [global::ProtoBuf.ProtoMember(3, Name = @"z")]
         public int Z { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class NItemInfo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"id")]
+        public int Id { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"count")]
+        public int Count { get; set; }
 
     }
 
@@ -357,6 +375,9 @@ namespace SkillBridge.Message
         [global::System.ComponentModel.DefaultValue("")]
         public string Errormsg { get; set; } = "";
 
+        [global::ProtoBuf.ProtoMember(3, Name = @"character")]
+        public NCharacterInfo Character { get; set; }
+
     }
 
     [global::ProtoBuf.ProtoContract()]
@@ -512,6 +533,17 @@ namespace SkillBridge.Message
         MoveBack = 3,
         [global::ProtoBuf.ProtoEnum(Name = @"JUMP")]
         Jump = 4,
+    }
+
+    [global::ProtoBuf.ProtoContract(Name = @"ITEM_TYPE")]
+    public enum ItemType
+    {
+        [global::ProtoBuf.ProtoEnum(Name = @"NORMAL")]
+        Normal = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"MATERIAL")]
+        Material = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"TASK")]
+        Task = 2,
     }
 
 }

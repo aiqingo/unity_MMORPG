@@ -9,7 +9,7 @@
     <EntitySet Name="Users" EntityType="ExtremeWorldModel.Store.Users" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Players" EntityType="ExtremeWorldModel.Store.Players" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Characters" EntityType="ExtremeWorldModel.Store.Characters" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="CharIteams" EntityType="ExtremeWorldModel.Store.CharIteams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CharacterItems" EntityType="ExtremeWorldModel.Store.CharacterItems" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="UserPlayer" Association="ExtremeWorldModel.Store.UserPlayer">
       <End Role="User" EntitySet="Users" />
       <End Role="Player" EntitySet="Players" />
@@ -17,6 +17,10 @@
     <AssociationSet Name="PlayerCharacter" Association="ExtremeWorldModel.Store.PlayerCharacter">
       <End Role="Player" EntitySet="Players" />
       <End Role="Character" EntitySet="Characters" />
+    </AssociationSet>
+    <AssociationSet Name="CharacterItem" Association="ExtremeWorldModel.Store.CharacterItem">
+      <End Role="TCharacter" EntitySet="Characters" />
+      <End Role="TCharacterItem" EntitySet="CharacterItems" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Users">
@@ -49,12 +53,14 @@
     <Property Name="MapPosZ" Type="int" Nullable="false" />
     <Property Name="Player_ID" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="CharIteams">
+  <EntityType Name="CharacterItems">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="ItemCount" Type="int" Nullable="false" />
+    <Property Name="TCharacterID" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="UserPlayer">
     <End Role="User" Type="ExtremeWorldModel.Store.Users" Multiplicity="*" />
@@ -77,6 +83,18 @@
       </Principal>
       <Dependent Role="Character">
         <PropertyRef Name="Player_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CharacterItem">
+    <End Role="TCharacter" Type="ExtremeWorldModel.Store.Characters" Multiplicity="1" />
+    <End Role="TCharacterItem" Type="ExtremeWorldModel.Store.CharacterItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCharacter">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TCharacterItem">
+        <PropertyRef Name="TCharacterID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -106,7 +124,11 @@
             <End Role="Player" EntitySet="Players" />
             <End Role="Character" EntitySet="Characters" />
           </AssociationSet>
-          <EntitySet Name="CharIteams" EntityType="ExtremeWorldModel.CharIteam" />
+          <EntitySet Name="CharacterItems" EntityType="ExtremeWorldModel.TCharacterItem" />
+          <AssociationSet Name="CharacterItem" Association="ExtremeWorldModel.CharacterItem">
+            <End Role="TCharacter" EntitySet="Characters" />
+            <End Role="TCharacterItem" EntitySet="CharacterItems" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="TPlayer">
           <Key>
@@ -132,18 +154,34 @@
           <Property Name="MapPosX" Type="Int32" Nullable="false" />
           <Property Name="MapPosY" Type="Int32" Nullable="false" />
           <Property Name="MapPosZ" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Items" Relationship="ExtremeWorldModel.CharacterItem" FromRole="TCharacter" ToRole="TCharacterItem" />
         </EntityType>
         <Association Name="PlayerCharacter">
           <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />
           <End Type="ExtremeWorldModel.TCharacter" Role="Character" Multiplicity="*" />
         </Association>
-        <EntityType Name="CharIteam">
+        <EntityType Name="TCharacterItem">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="ItemID" Type="Int32" Nullable="false" />
+          <Property Name="ItemCount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Owner" Relationship="ExtremeWorldModel.CharacterItem" FromRole="TCharacterItem" ToRole="TCharacter" />
+          <Property Name="TCharacterID" Type="Int32" Nullable="false" />
         </EntityType>
+        <Association Name="CharacterItem">
+          <End Type="ExtremeWorldModel.TCharacter" Role="TCharacter" Multiplicity="1" />
+          <End Type="ExtremeWorldModel.TCharacterItem" Role="TCharacterItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TCharacter">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TCharacterItem">
+              <PropertyRef Name="TCharacterID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -181,11 +219,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="CharIteams">
-      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.CharIteam)">
-        <MappingFragment StoreEntitySet="CharIteams">
+    <EntitySetMapping Name="CharacterItems">
+      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TCharacterItem)">
+        <MappingFragment StoreEntitySet="CharacterItems">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+          <ScalarProperty Name="TCharacterID" ColumnName="TCharacterID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

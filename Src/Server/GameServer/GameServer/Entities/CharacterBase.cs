@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameServer.Managers;
 
 namespace GameServer.Entities
 {
@@ -35,7 +36,7 @@ namespace GameServer.Entities
             this.Info.Level = level;
             this.Info.Tid = tid;
             this.Info.Entity = this.EntityData;
-            //this.Define = DataManager.Instance.Characters[this.Info.Tid];
+            this.Define = DataManager.Instance.Characters[this.Info.Tid];
             this.Info.Name = this.Define.Name;
         }
     }
