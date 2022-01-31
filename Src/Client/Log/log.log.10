@@ -1,38 +1,32 @@
-2022-01-18 18:56:47,674 [ 1] INFO  Unity: LoadingManager start
-2022-01-18 18:56:51,385 [ 1] INFO  Unity: DataManager > DataManager()
-2022-01-18 18:56:54,108 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2022-01-18 18:56:54,109 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-01-18 18:56:54,111 [ 1] INFO  Unity: DoConnect
-2022-01-18 18:56:54,113 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-01-18 18:56:54,118 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-01-21 19:08:28,858 [ 1] INFO  Unity: LoadingManager start
+2022-01-21 19:08:32,104 [ 1] INFO  Unity: DataManager > DataManager()
+2022-01-21 19:08:35,240 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2022-01-21 19:08:35,241 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-01-21 19:08:35,243 [ 1] INFO  Unity: DoConnect
+2022-01-21 19:08:35,245 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-01-21 19:08:35,248 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-01-18 18:56:56,157 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+2022-01-21 19:08:35,254 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-01-21 19:08:38,667 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-01-21 19:08:38,670 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-01-21 19:08:38,863 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-01-21 19:08:42,275 [ 1] INFO  Unity: UserCreateCharacterRequest::name :23 class:Wizard
+2022-01-21 19:09:14,965 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+
+2022-01-21 19:09:14,966 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:59)
-Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:137)
-UILogin:OnClickLongin() (at Assets/Scripts/UI/UILogin.cs:37)
-UnityEngine.EventSystems.EventSystem:Update()
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
 
-2022-01-18 18:56:56,164 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2022-01-21 19:09:14,979 [ 1] INFO  Unity: DoConnect
+2022-01-21 19:09:14,980 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-01-21 19:09:14,981 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:59)
-Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:137)
-UILogin:OnClickLongin() (at Assets/Scripts/UI/UILogin.cs:37)
-UnityEngine.EventSystems.EventSystem:Update()
-
-2022-01-18 18:56:56,165 [ 1] INFO  Unity: DoConnect
-2022-01-18 18:56:56,166 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-01-18 18:56:56,168 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
-
-2022-01-18 18:56:58,210 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+2022-01-21 19:09:17,017 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
@@ -40,7 +34,7 @@ Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
 Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
 Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
 
-2022-01-18 18:56:58,211 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2022-01-21 19:09:17,018 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
 
   at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
   at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
@@ -50,27 +44,9 @@ Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
 Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
 Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
 
-2022-01-18 18:57:03,598 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-01-18 18:57:03,599 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-01-21 19:10:23,928 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-01-21 19:10:23,929 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
-
-2022-01-18 18:57:03,974 [ 1] ERROR Unity: Some objects were not cleaned up when closing the scene. (Did you spawn new GameObjects from OnDestroy?)
-The following scene GameObjects were found:
-Icons
-Message
-Title
-ButtonCancel
-TitleBar
-Text
-Panel
-Buttons
-IconE
-UIMessageBox(Clone)
-IconQ
-IconI
-ButtonOK
-Text
-
 

@@ -46,4 +46,9 @@ public class UIMain : MonoSingleton<UIMain>
     {
         MessageBox.Show("点击了对话框：" + result, "对话框相应结果", MessageBoxType.Confirm);
     }
+
+    public void OnClickBag()
+    {
+        UIManager.Instance.Show<UIBag>();
+    }
 }

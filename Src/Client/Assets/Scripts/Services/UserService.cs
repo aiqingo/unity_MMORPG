@@ -237,6 +237,7 @@ namespace Services
             if (response.Result == Result.Success)
             {
                 ItemManager.Instance.Init(response.Character.Items);
+                BagManager.Instance.Init(response.Character.Bag);
             }
         }
         public void SendGamLeave()

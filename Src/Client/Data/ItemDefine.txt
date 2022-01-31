@@ -9,6 +9,8 @@
     "UseCD": 1.0,
     "Price": 200,
     "SellPrice": 100,
+    "StackLimit": 99,
+    "Icon": "UI/Item/hongp",
     "Function": "RecoverHP",
     "Param": 500
   },
@@ -22,6 +24,8 @@
     "UseCD": 1.0,
     "Price": 200,
     "SellPrice": 100,
+    "StackLimit": 99,
+    "Icon": "UI/Item/lanp",
     "Function": "RecoverMP",
     "Param": 500
   },
@@ -35,6 +39,8 @@
     "UseCD": 5.0,
     "Price": 200,
     "SellPrice": 100,
+    "StackLimit": 99,
+    "Icon": "UI/Item/mbao",
     "Function": "AddBuff",
     "Param": 1
   },
@@ -48,6 +54,8 @@
     "UseCD": 5.0,
     "Price": 200,
     "SellPrice": 100,
+    "StackLimit": 99,
+    "Icon": "UI/Item/haixiant",
     "Function": "AddBuff",
     "Param": 2
   },
@@ -60,6 +68,8 @@
     "CanUse2": true,
     "UseCD": 0.0,
     "SellPrice": 1,
+    "StackLimit": 1,
+    "Icon": "UI/Item/jinengsh",
     "Function": "AddExp"
   },
   "6": {
@@ -69,7 +79,9 @@
     "Type": "MATERIAL",
     "Category": "徽章",
     "UseCD": 0.0,
-    "SellPrice": 1
+    "SellPrice": 1,
+    "StackLimit": 99,
+    "Icon": "UI/Item/huizhang"
   },
   "7": {
     "ID": 7,
@@ -80,6 +92,8 @@
     "CanUse2": true,
     "UseCD": 0.0,
     "SellPrice": 1,
+    "StackLimit": 1,
+    "Icon": "UI/Item/xiaoqiandai",
     "Function": "AddMoney",
     "Param": 1000
   },
@@ -92,6 +106,8 @@
     "CanUse2": true,
     "UseCD": 0.0,
     "SellPrice": 1,
+    "StackLimit": 1,
+    "Icon": "UI/Item/daqiandai",
     "Function": "AddMoney",
     "Param": 10000
   },
@@ -104,6 +120,8 @@
     "CanUse2": true,
     "UseCD": 0.0,
     "SellPrice": 1,
+    "StackLimit": 1,
+    "Icon": "UI/Item/baoxiang",
     "Function": "Additem"
   },
   "10": {
@@ -115,6 +133,8 @@
     "CanUse2": true,
     "UseCD": 0.0,
     "SellPrice": 1,
+    "StackLimit": 1,
+    "Icon": "UI/Item/jinengshu",
     "Function": "AddSkillPoint",
     "Param": 1
   }
