@@ -1,30 +1,55 @@
-2022-01-31 17:00:12,140 [ 1] INFO  Unity: LoadingManager start
-2022-01-31 17:00:15,603 [ 1] INFO  Unity: DataManager > DataManager()
-2022-01-31 17:00:19,523 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2022-01-31 17:00:19,525 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-01-31 17:00:19,526 [ 1] INFO  Unity: DoConnect
-2022-01-31 17:00:19,528 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-01-31 17:00:19,532 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-02-13 16:38:59,007 [ 1] INFO  Unity: LoadingManager start
+2022-02-13 16:39:03,180 [ 1] INFO  Unity: DataManager > DataManager()
+2022-02-13 16:39:06,624 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2022-02-13 16:39:06,631 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-02-13 16:39:06,633 [ 1] INFO  Unity: DoConnect
+2022-02-13 16:39:06,635 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-02-13 16:39:06,639 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-01-31 17:00:19,536 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-01-31 17:00:22,847 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-01-31 17:00:22,849 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-01-31 17:00:23,028 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-01-31 17:00:23,858 [ 1] INFO  Unity: Select Char:[1]23[Warrior]
-2022-01-31 17:00:24,472 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-01-31 17:00:24,709 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-01-31 17:00:24,711 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:200]
-2022-01-31 17:00:24,712 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:100]
-2022-01-31 17:00:24,714 [ 1] INFO  Unity: ItemManager:Init[Id:3,Count:30]
-2022-01-31 17:00:24,715 [ 1] INFO  Unity: ItemManager:Init[Id:4,Count:120]
-2022-01-31 17:00:24,717 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-01-31 17:00:24,720 [ 1] INFO  Unity: AddCharacter:1:23 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-01-31 17:00:24,725 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-01-31 17:00:25,722 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-01-31 17:00:42,460 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-01-31 17:00:42,461 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-02-13 16:39:06,647 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-02-13 16:39:06,942 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-02-13 16:39:06,948 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-02-13 16:39:07,155 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-02-13 16:39:08,104 [ 1] INFO  Unity: Select Char:[2]23[Archer]
+2022-02-13 16:39:12,044 [ 1] INFO  Unity: UserCreateCharacterRequest::name :1 class:Archer
+2022-02-13 16:39:12,543 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-02-13 16:39:13,336 [ 1] INFO  Unity: Select Char:[0]1[Archer]
+2022-02-13 16:39:14,132 [ 1] INFO  Unity: UserGameEnterRequest::characterId :2
+2022-02-13 16:39:14,316 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-02-13 16:39:14,328 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-02-13 16:39:14,339 [ 1] INFO  Unity: AddCharacter:5:1 Map:1 Entity:(5:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-02-13 16:39:14,355 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-02-13 16:39:15,877 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-02-13 16:39:23,014 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-02-13 16:39:23,015 [ 1] INFO  Unity: UserGameLeaverRequest
+2022-02-13 16:39:23,475 [ 1] INFO  Unity: OnMapCharacterLeave:CharID5
+2022-02-13 16:39:23,480 [ 1] INFO  Unity: RemoveCharacter:5
+2022-02-13 16:39:23,485 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-02-13 16:39:23,488 [ 1] INFO  Unity: Character_5_1 OnDestroy :ID:5 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-02-13 16:39:23,542 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-02-13 16:39:24,156 [ 1] INFO  Unity: Select Char:[0]1[Archer]
+2022-02-13 16:39:24,818 [ 1] INFO  Unity: UserGameEnterRequest::characterId :2
+2022-02-13 16:39:24,855 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-02-13 16:39:24,859 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:200]
+2022-02-13 16:39:24,861 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:100]
+2022-02-13 16:39:24,862 [ 1] INFO  Unity: ItemManager:Init[Id:3,Count:30]
+2022-02-13 16:39:24,863 [ 1] INFO  Unity: ItemManager:Init[Id:4,Count:120]
+2022-02-13 16:39:24,867 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-02-13 16:39:24,868 [ 1] INFO  Unity: AddCharacter:6:1 Map:1 Entity:(6:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-02-13 16:39:24,871 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-02-13 16:39:26,143 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-02-13 16:39:42,323 [ 1] INFO  Unity: UI/Item/hongp
+2022-02-13 16:39:52,702 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIIconItem.SetMainIcon (System.String iconName, System.String text) (at Assets/Scripts/UI/UIIconItem.cs:27)
+UIBag+<InitBags>c__Iterator0.MoveNext () (at Assets/Scripts/UI/Bag/UIBag.cs:44)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+UIBag:Start() (at Assets/Scripts/UI/Bag/UIBag.cs:28)
+}</args></log4net.Error>
+2022-02-13 16:39:54,943 [ 1] INFO  Unity: Character_6_1 OnDestroy :ID:6 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-02-13 16:39:54,944 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-02-13 16:39:54,945 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-01-31 17:00:42,469 [ 1] INFO  Unity: Character_1_23 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

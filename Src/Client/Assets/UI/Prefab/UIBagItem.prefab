@@ -86,7 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainImago: {fileID: 114108982836060852}
   secondImage: {fileID: 0}
-  minText: {fileID: 114946699634640802}
+  mainText: {fileID: 114946699634640802}
 --- !u!114 &114946699634640802
 MonoBehaviour:
   m_ObjectHideFlags: 1

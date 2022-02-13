@@ -10,7 +10,7 @@
     "Price": 200,
     "SellPrice": 100,
     "StackLimit": 99,
-    "Icon": "UI/Item/hongp",
+    "Icon": "UI/Items/hongp",
     "Function": "RecoverHP",
     "Param": 500
   },
@@ -25,7 +25,7 @@
     "Price": 200,
     "SellPrice": 100,
     "StackLimit": 99,
-    "Icon": "UI/Item/lanp",
+    "Icon": "UI/Items/lanp",
     "Function": "RecoverMP",
     "Param": 500
   },
@@ -40,7 +40,7 @@
     "Price": 200,
     "SellPrice": 100,
     "StackLimit": 99,
-    "Icon": "UI/Item/mbao",
+    "Icon": "UI/Items/mbao",
     "Function": "AddBuff",
     "Param": 1
   },
@@ -55,7 +55,7 @@
     "Price": 200,
     "SellPrice": 100,
     "StackLimit": 99,
-    "Icon": "UI/Item/haixiant",
+    "Icon": "UI/Items/haixiant",
     "Function": "AddBuff",
     "Param": 2
   },
@@ -69,7 +69,7 @@
     "UseCD": 0.0,
     "SellPrice": 1,
     "StackLimit": 1,
-    "Icon": "UI/Item/jinengsh",
+    "Icon": "UI/Items/jinengsh",
     "Function": "AddExp"
   },
   "6": {
@@ -81,7 +81,7 @@
     "UseCD": 0.0,
     "SellPrice": 1,
     "StackLimit": 99,
-    "Icon": "UI/Item/huizhang"
+    "Icon": "UI/Items/huizhang"
   },
   "7": {
     "ID": 7,
@@ -93,7 +93,7 @@
     "UseCD": 0.0,
     "SellPrice": 1,
     "StackLimit": 1,
-    "Icon": "UI/Item/xiaoqiandai",
+    "Icon": "UI/Items/xiaoqiandai",
     "Function": "AddMoney",
     "Param": 1000
   },
@@ -107,7 +107,7 @@
     "UseCD": 0.0,
     "SellPrice": 1,
     "StackLimit": 1,
-    "Icon": "UI/Item/daqiandai",
+    "Icon": "UI/Items/daqiandai",
     "Function": "AddMoney",
     "Param": 10000
   },
@@ -121,7 +121,7 @@
     "UseCD": 0.0,
     "SellPrice": 1,
     "StackLimit": 1,
-    "Icon": "UI/Item/baoxiang",
+    "Icon": "UI/Items/baoxiang",
     "Function": "Additem"
   },
   "10": {
@@ -134,7 +134,7 @@
     "UseCD": 0.0,
     "SellPrice": 1,
     "StackLimit": 1,
-    "Icon": "UI/Item/jinengshu",
+    "Icon": "UI/Items/jinengshu",
     "Function": "AddSkillPoint",
     "Param": 1
   }

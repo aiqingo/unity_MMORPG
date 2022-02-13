@@ -9,7 +9,7 @@ public class UIIconItem : MonoBehaviour
 
     public Image secondImage;
 
-    public Text minText;
+    public Text mainText;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +24,6 @@ public class UIIconItem : MonoBehaviour
     public void SetMainIcon(string iconName, string text)
     {
         this.mainImago.overrideSprite = Resloader.Load<Sprite>(iconName);
-        this.minText.text = text;
+        this.mainText.text = text;
     }
 }

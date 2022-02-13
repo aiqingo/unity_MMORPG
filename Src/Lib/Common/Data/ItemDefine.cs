@@ -30,7 +30,7 @@ namespace Common.Data
         public int SellPrice { get; set; }
         public int StackLimit { get; set; }
         public string Icon { get; set; }
-    public ItemFunction Function { get; set; }
+        public ItemFunction Function { get; set; }
         public int Param { get; set; }
         public List<int> Params { get; set; }
 
