@@ -26,6 +26,6 @@ namespace Common.Data
         public NVector3 Position { get; set; }
         public NpcType Type { get; set; }
         public NpcFunction Function { get; set; }
-        public int Pram { get; set; }
+        public int Param { get; set; }
     }
 }

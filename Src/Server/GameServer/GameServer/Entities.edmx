@@ -56,6 +56,7 @@
     <Property Name="MapPosX" Type="int" Nullable="false" />
     <Property Name="MapPosY" Type="int" Nullable="false" />
     <Property Name="MapPosZ" Type="int" Nullable="false" />
+    <Property Name="Gold" Type="bigint" Nullable="false" />
     <Property Name="Player_ID" Type="int" Nullable="false" />
     <Property Name="Bag_Id" Type="int" Nullable="false" />
   </EntityType>
@@ -187,6 +188,7 @@
           <Property Name="MapPosZ" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Items" Relationship="ExtremeWorldModel.CharacterItem" FromRole="TCharacter" ToRole="TCharacterItem" />
           <NavigationProperty Name="Bag" Relationship="ExtremeWorldModel.CharacterBag" FromRole="TCharacter" ToRole="TCharacterBag" />
+          <Property Name="Gold" Type="Int64" Nullable="false" />
         </EntityType>
         <Association Name="PlayerCharacter">
           <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />
@@ -261,6 +263,7 @@
           <ScalarProperty Name="MapPosX" ColumnName="MapPosX" />
           <ScalarProperty Name="MapPosY" ColumnName="MapPosY" />
           <ScalarProperty Name="MapPosZ" ColumnName="MapPosZ" />
+          <ScalarProperty Name="Gold" ColumnName="Gold" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

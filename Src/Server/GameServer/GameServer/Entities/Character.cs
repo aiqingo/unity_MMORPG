@@ -28,6 +28,7 @@ namespace GameServer.Entities
             this.Info.Tid = cha.TID;
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
+            this.Info.Goid = cha.Gold;
             this.Info.Entity = this.EntityData;
             this.Define = DataManager.Instance.Characters[this.Info.Tid];
 
