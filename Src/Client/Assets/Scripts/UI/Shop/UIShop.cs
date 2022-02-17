@@ -7,7 +7,7 @@ using Models;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIShop : MonoBehaviour
+public class UIShop : UIWindow
 {
     public Text title;
     public Text money;

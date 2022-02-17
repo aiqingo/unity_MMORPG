@@ -17,6 +17,8 @@ namespace Network
             if (message.mapEntitySync != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.mapEntitySync); }
 
             if (message.itemBuy!=null){ MessageDistributer<T>.Instance.RaiseEvent(sender,message.itemBuy); }
+
+            if (message.statusNotify!=null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.statusNotify); }
         }
 
         public void Dispatch(T sender, SkillBridge.Message.NetMessageRequest message)

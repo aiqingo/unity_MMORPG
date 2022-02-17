@@ -128,6 +128,39 @@ namespace SkillBridge.Message
     }
 
     [global::ProtoBuf.ProtoContract()]
+    public partial class NStatus : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"type")]
+        public StatusType Type { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"action")]
+        public StatusAction Action { get; set; }
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"id")]
+        public int Id { get; set; }
+
+        [global::ProtoBuf.ProtoMember(4, Name = @"value")]
+        public int Value { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class StatusNotify : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"status")]
+        public global::System.Collections.Generic.List<NStatus> Status { get; } = new global::System.Collections.Generic.List<NStatus>();
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
     public partial class NEntity : global::ProtoBuf.IExtensible
     {
         private global::ProtoBuf.IExtension __pbn__extensionData;
@@ -250,6 +283,9 @@ namespace SkillBridge.Message
 
         [global::ProtoBuf.ProtoMember(10)]
         public ItemBuyResponse itemBuy { get; set; }
+
+        [global::ProtoBuf.ProtoMember(100)]
+        public StatusNotify statusNotify { get; set; }
 
     }
 
@@ -627,6 +663,41 @@ namespace SkillBridge.Message
         Material = 1,
         [global::ProtoBuf.ProtoEnum(Name = @"TASK")]
         Task = 2,
+    }
+
+    [global::ProtoBuf.ProtoContract(Name = @"STATUS_ACTION")]
+    public enum StatusAction
+    {
+        [global::ProtoBuf.ProtoEnum(Name = @"UPDATE")]
+        Update = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"ADD")]
+        Add = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"DELETE")]
+        Delete = 2,
+    }
+
+    [global::ProtoBuf.ProtoContract(Name = @"STATUS_TYPE")]
+    public enum StatusType
+    {
+        [global::ProtoBuf.ProtoEnum(Name = @"MONEY")]
+        Money = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"EXP")]
+        Exp = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"SKILL_POINT")]
+        SkillPoint = 2,
+        [global::ProtoBuf.ProtoEnum(Name = @"ITEM")]
+        Item = 3,
+    }
+
+    [global::ProtoBuf.ProtoContract(Name = @"STATUS_SOURCE")]
+    public enum StatusSource
+    {
+        [global::ProtoBuf.ProtoEnum(Name = @"UPDATE")]
+        Update = 0,
+        [global::ProtoBuf.ProtoEnum(Name = @"ADD")]
+        Add = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"DELETE")]
+        Delete = 2,
     }
 
 }

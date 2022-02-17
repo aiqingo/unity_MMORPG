@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 222617974741975626}
   - component: {fileID: 114714219045107414}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1876,7 +1876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ac1fcd5654e3141bb8d3bab2a1ce95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: {fileID: 0}
+  money: {fileID: 114714219045107414}
   pages:
   - {fileID: 224670600619044758}
   - {fileID: 224378508936272302}

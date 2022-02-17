@@ -95,6 +95,40 @@ message NBagInfo
 	bytes Items = 2;
 }
 
+enum STATUS_ACTION
+{
+UPDATE=0;
+ADD=1;
+DELETE=2;
+}
+
+enum STATUS_TYPE
+{
+	MONEY = 0;
+	EXP = 1;
+	SKILL_POINT = 2;
+	ITEM = 3;
+}
+
+enum STATUS_SOURCE
+{
+	UPDATE = 0;
+	ADD = 1;
+	DELETE = 2;
+}
+
+message NStatus
+{
+STATUS_TYPE type=1;
+STATUS_ACTION action=2;
+int32 id=3;
+int32 value=4;
+}
+
+message StatusNotify
+{
+repeated NStatus status=1;
+}
 ////////////////////////////////////////////////////////////////
 //
 //  Entities
@@ -156,6 +190,8 @@ message NetMessageResponse{
 	MapEntitySyncResponse mapEntitySync = 8;
 
 	ItemBuyResponse itemBuy=10;
+
+	StatusNotify statusNotify=100;
 	
 }
 
