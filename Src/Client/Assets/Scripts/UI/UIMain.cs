@@ -51,4 +51,9 @@ public class UIMain : MonoSingleton<UIMain>
     {
         UIManager.Instance.Show<UIBag>();
     }
+
+    public void OnClickCharEquio()
+    {
+        UIManager.Instance.Show<UICharEquip>();
+    }
 }

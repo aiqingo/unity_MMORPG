@@ -13,6 +13,7 @@ namespace Services
         public delegate bool StatysNotifyHandler(NStatus status);
 
         private Dictionary<StatusType, StatysNotifyHandler> eventMap = new Dictionary<StatusType, StatysNotifyHandler>();
+        HashSet<StatysNotifyHandler>handles=new HashSet<StatysNotifyHandler>();
 
         public void Init()
         {
@@ -20,6 +21,10 @@ namespace Services
 
         public void RegistrerStatusNofity(StatusType function, StatysNotifyHandler action)
         {
+            if (handles.Contains(action))
+            {
+                return;
+            }
             if (!eventMap.ContainsKey(function))
             {
                 eventMap[function] = action;
@@ -28,6 +33,8 @@ namespace Services
             {
                 eventMap[function] += action;
             }
+
+            handles.Add(action);
         }
 
         public StatusService()

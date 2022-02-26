@@ -78,7 +78,7 @@ namespace SkillBridge.Message
         public NBagInfo Bag { get; set; }
 
         [global::ProtoBuf.ProtoMember(12)]
-        public byte[] Equip { get; set; }
+        public byte[] Equips { get; set; }
 
     }
 

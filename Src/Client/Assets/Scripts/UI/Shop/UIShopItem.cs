@@ -11,6 +11,7 @@ public class UIShopItem : MonoBehaviour,ISelectHandler
     public Image icon;
     public Text title;
     public Text price;
+    public Text linitClass;
     public Text count;
 
     public Image background;
@@ -41,8 +42,9 @@ public class UIShopItem : MonoBehaviour,ISelectHandler
         this.item = DataManager.Instance.Items[this.ShopItem.ItemID];
 
         this.title.text = this.item.Name;
-        this.count.text = ShopItem.Count.ToString();
+        this.count.text = "x"+ShopItem.Count.ToString();
         this.price.text = ShopItem.Price.ToString();
+        this.linitClass.text = this.item.LimitClass.ToString();
         this.icon.overrideSprite = Resources.Load<Sprite>(item.Icon);
     }
 
@@ -52,12 +54,5 @@ public class UIShopItem : MonoBehaviour,ISelectHandler
         this.shop.SelectShopItem(this);
     }
 
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

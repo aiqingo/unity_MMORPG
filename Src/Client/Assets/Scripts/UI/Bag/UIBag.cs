@@ -57,9 +57,22 @@ public class UIBag : UIWindow
         this.money.text = User.Instance.CurrentCharacter.Id.ToString();
     }
 
+    void Clear()
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].transform.childCount>0)
+            {
+                Destroy(slots[i].transform.GetChild(0).gameObject);
+            }
+        }
+    }
+
     public void OnReset()
     {
         BagManager.Instance.Reset();
+        this.Clear();
+        StartCoroutine(InitBags());
     }
 
 }

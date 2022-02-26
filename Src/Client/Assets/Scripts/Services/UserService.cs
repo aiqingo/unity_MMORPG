@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Assets.Scripts.Managers;
 using Common;
 using Managers;
 using Models;
@@ -238,6 +239,7 @@ namespace Services
             {
                 ItemManager.Instance.Init(response.Character.Items);
                 BagManager.Instance.Init(response.Character.Bag);
+                EquipManager.Instance.Init(response.Character.Equips);
             }
         }
         public void SendGamLeave()

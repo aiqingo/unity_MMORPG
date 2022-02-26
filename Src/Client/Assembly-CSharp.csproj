@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EntiyManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\EquipManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MinimapManager.cs" />
     <Compile Include="Assets\Scripts\Managers\NPCManager.cs" />
@@ -94,6 +95,8 @@
     <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\UI\Bag\UIBag.cs" />
+    <Compile Include="Assets\Scripts\UI\CharEquip\UICharEquip.cs" />
+    <Compile Include="Assets\Scripts\UI\CharEquip\UIEquipItem.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\Minimap\UIMinimap.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShop.cs" />
