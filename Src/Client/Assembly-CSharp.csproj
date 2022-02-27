@@ -99,6 +99,11 @@
     <Compile Include="Assets\Scripts\UI\CharEquip\UIEquipItem.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\Minimap\UIMinimap.cs" />
+    <Compile Include="Assets\Scripts\UI\QuestSystem\UIQuestDialog.cs" />
+    <Compile Include="Assets\Scripts\UI\QuestSystem\UIQuestInfo.cs" />
+    <Compile Include="Assets\Scripts\UI\QuestSystem\UIQuestItem.cs" />
+    <Compile Include="Assets\Scripts\UI\QuestSystem\UIQuestStatus.cs" />
+    <Compile Include="Assets\Scripts\UI\QuestSystem\UIQuestSystem.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShop.cs" />
     <Compile Include="Assets\Scripts\UI\Shop\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\TabView\TabButton.cs" />
@@ -117,6 +122,7 @@
     <Compile Include="Assets\Scripts\UI\UIWindow.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElement.cs" />
     <Compile Include="Assets\Scripts\UI\UIWorldElementManager.cs" />
+    <Compile Include="Assets\Scripts\Utilities\EnumUtil.cs" />
     <Compile Include="Assets\Scripts\Utilities\GameUtil.cs" />
     <Compile Include="Assets\Scripts\Utilities\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
