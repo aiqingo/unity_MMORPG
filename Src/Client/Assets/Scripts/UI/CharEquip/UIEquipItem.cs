@@ -43,6 +43,7 @@ public class UIEquipItem : MonoBehaviour,IPointerClickHandler
         this.index = idx;
         this.item = item;
         this.isEquiped = equiped;
+
         if (this.title!=null) this.title.text = this.item.Define.Name;
         if (this.level != null) this.level.text = item.Define.Level.ToString();
         if (this.limitClass != null) this.limitClass.text = item.Define.LimitClass.ToString();
@@ -82,7 +83,10 @@ public class UIEquipItem : MonoBehaviour,IPointerClickHandler
             {
                 var newmsg = MessageBox.Show(string.Format("要换掉[{0}]吗", oldEquip.Define.Name), "确认",
                     MessageBoxType.Confirm);
-                newmsg.OnYes = () => { this.owner.DoEquip(this.item); };
+                newmsg.OnYes = () =>
+                {
+                    this.owner.DoEquip(this.item);
+                };
             }
             else
             {
@@ -93,6 +97,9 @@ public class UIEquipItem : MonoBehaviour,IPointerClickHandler
     private void UnEquip()
     {
         var msg = MessageBox.Show(string.Format("要取下装备[{0}]吗？", this.item.Define.Name), "确认", MessageBoxType.Confirm);
-        msg.OnYes = () => { this.owner.UnEquip(this.item); };
+        msg.OnYes = () =>
+        {
+            this.owner.UnEquip(this.item);
+        };
     }
 }

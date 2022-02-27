@@ -38,8 +38,8 @@ namespace GameServer.Services
             Character character = sender.Session.Character;
             Log.InfoFormat("OnItemEquip: :character:{0}:Slot{1} item:{2} Equip:{3}",character.Id,request.Slot,request.itenId,request.isEquip);
             var reqult = EquipManager.Instance.EquipItem(sender, request.Slot, request.itenId,request.isEquip);
-            sender.Session.Response.itemBuy = new ItemBuyResponse();
-            sender.Session.Response.itemBuy.Result = reqult;
+            sender.Session.Response.itemEquip = new ItemEquipResponse();
+            sender.Session.Response.itemEquip.Result = reqult;
             sender.SendResponse();
 
         }

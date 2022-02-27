@@ -1,34 +1,39 @@
-2022-02-26 19:20:58,495 [ 1] INFO  Unity: LoadingManager start
-2022-02-26 19:21:01,672 [ 1] INFO  Unity: DataManager > DataManager()
-2022-02-26 19:21:07,819 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2022-02-26 19:21:07,821 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-02-26 19:21:07,822 [ 1] INFO  Unity: DoConnect
-2022-02-26 19:21:07,826 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-02-26 19:21:07,829 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-02-27 09:34:01,054 [ 1] INFO  Unity: LoadingManager start
+2022-02-27 09:34:04,680 [ 1] INFO  Unity: DataManager > DataManager()
+2022-02-27 09:34:15,171 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2022-02-27 09:34:15,179 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-02-27 09:34:15,180 [ 1] INFO  Unity: DoConnect
+2022-02-27 09:34:15,183 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-02-27 09:34:15,185 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-02-26 19:21:07,833 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-02-26 19:21:08,013 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-02-26 19:21:08,016 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-02-26 19:21:08,198 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-02-26 19:21:10,964 [ 1] INFO  Unity: Select Char:[2]23[Warrior]
-2022-02-26 19:21:11,792 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
-2022-02-26 19:21:11,834 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-02-26 19:21:11,838 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-02-26 19:21:11,840 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-02-26 19:21:11,841 [ 1] INFO  Unity: ItemManager:Init[Id:1001,Count:1]
-2022-02-26 19:21:11,842 [ 1] INFO  Unity: ItemManager:Init[Id:1002,Count:2]
-2022-02-26 19:21:11,844 [ 1] INFO  Unity: ItemManager:Init[Id:3002,Count:2]
-2022-02-26 19:21:11,845 [ 1] INFO  Unity: ItemManager:Init[Id:1003,Count:1]
-2022-02-26 19:21:11,847 [ 1] INFO  Unity: ItemManager:Init[Id:1004,Count:1]
-2022-02-26 19:21:11,854 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-02-26 19:21:11,858 [ 1] INFO  Unity: AddCharacter:7:23 Map:1 Entity:(7:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-02-26 19:21:11,862 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-02-26 19:21:12,896 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-02-26 19:21:16,679 [ 1] INFO  Unity: SendEquipItem
-2022-02-26 19:21:24,329 [ 1] INFO  Unity: Character_7_23 OnDestroy :ID:7 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-02-26 19:21:24,335 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-02-26 19:21:24,337 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-02-27 09:34:15,195 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-02-27 09:34:15,515 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-02-27 09:34:15,521 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-02-27 09:34:15,746 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-02-27 09:34:16,726 [ 1] INFO  Unity: Select Char:[3]23[Wizard]
+2022-02-27 09:34:17,737 [ 1] INFO  Unity: UserGameEnterRequest::characterId :2
+2022-02-27 09:34:17,791 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-02-27 09:34:17,803 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-02-27 09:34:17,804 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-02-27 09:34:17,806 [ 1] INFO  Unity: ItemManager:Init[Id:1001,Count:1]
+2022-02-27 09:34:17,807 [ 1] INFO  Unity: ItemManager:Init[Id:1002,Count:1]
+2022-02-27 09:34:17,809 [ 1] INFO  Unity: ItemManager:Init[Id:2002,Count:1]
+2022-02-27 09:34:17,812 [ 1] INFO  Unity: ItemManager:Init[Id:2001,Count:1]
+2022-02-27 09:34:17,813 [ 1] INFO  Unity: ItemManager:Init[Id:1003,Count:1]
+2022-02-27 09:34:17,836 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-02-27 09:34:17,845 [ 1] INFO  Unity: AddCharacter:4:23 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-02-27 09:34:17,860 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-02-27 09:34:18,914 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-02-27 09:34:51,316 [ 1] INFO  Unity: SendEquipItem
+2022-02-27 09:34:59,993 [ 1] INFO  Unity: SendEquipItem
+2022-02-27 09:35:01,771 [ 1] INFO  Unity: SendEquipItem
+2022-02-27 09:35:03,196 [ 1] INFO  Unity: SendEquipItem
+2022-02-27 09:35:07,123 [ 1] INFO  Unity: SendEquipItem
+2022-02-27 09:35:18,825 [ 1] INFO  Unity: SendEquipItem
+2022-02-27 09:35:32,966 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-02-27 09:35:32,968 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2022-02-27 09:35:32,975 [ 1] INFO  Unity: Character_4_23 OnDestroy :ID:4 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

@@ -44,6 +44,7 @@ public class UIBag : UIWindow
             }
         }
 
+        SetTitle();
         for (int i =BagManager.Instance.Items.Length; i < slots.Count; i++)
         {
             slots[i].color = Color.gray;
@@ -52,9 +53,9 @@ public class UIBag : UIWindow
         yield return null;
     }
 
-    public void SetTitle(string title)
+    public void SetTitle()
     {
-        this.money.text = User.Instance.CurrentCharacter.Id.ToString();
+        this.money.text = User.Instance.CurrentCharacter.Goid.ToString();
     }
 
     void Clear()
