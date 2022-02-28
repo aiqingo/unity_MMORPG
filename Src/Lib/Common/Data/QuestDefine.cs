@@ -24,7 +24,7 @@ namespace Common.Data
 
     public  class QuestDefine
     {
-        public int IDP { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public int LimitLevel { get; set; }
         public CharacterClass LimitClass { get; set; }
