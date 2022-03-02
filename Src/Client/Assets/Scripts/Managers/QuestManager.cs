@@ -79,7 +79,7 @@ namespace Managers
                         continue;//前置任务还没接
                     }
                 }
-                Quest quest = new Quest();
+                Quest quest = new Quest(kv.Value);
                 this.AddNpcQuest(quest.Define.AcceptNPC, quest);
                 this.AddNpcQuest(quest.Define.SubmintNPC, quest);
                 this.allQuests[quest.Define.ID] = quest;
