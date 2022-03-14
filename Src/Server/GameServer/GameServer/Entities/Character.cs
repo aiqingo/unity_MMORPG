@@ -16,6 +16,7 @@ namespace GameServer.Entities
         public TCharacter Data;
         public ItemManager ItemManager;
         public StatusManager StatusManager;
+        public QuestManager QuestManager;
 
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))

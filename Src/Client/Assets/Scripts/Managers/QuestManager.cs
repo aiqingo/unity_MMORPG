@@ -23,6 +23,7 @@ namespace Managers
         public Dictionary<int, Dictionary<NpcQuestStatus, List<Quest>>> npcQuests =
             new Dictionary<int, Dictionary<NpcQuestStatus, List<Quest>>>();
 
+
         public void Init(List<NQuestInfo> quests)
         {
             this.questInfos = quests;
@@ -37,27 +38,28 @@ namespace Managers
             foreach (var info in this.questInfos)
             {
                 Quest quest=new Quest(info);
-                this.AddNpcQuest(quest.Define.AcceptNPC, quest);
-                this.AddNpcQuest(quest.Define.SubmintNPC, quest);
                 this.allQuests[quest.Info.QuestId] = quest;
             }
 
+            this.CheckAvailablbleQuests();
+
+            foreach (var kv in this.allQuests)
+            {
+                this.AddNpcQuest(kv.Value.Define.AcceptNPC, kv.Value);
+                this.AddNpcQuest(kv.Value.Define.SubmintNPC, kv.Value);
+            }
+        }
+
+        void CheckAvailablbleQuests()
+        {
             foreach (var kv in DataManager.Instance.Quests)
             {
                 if (kv.Value.LimitClass!=CharacterClass.None&&kv.Value.LimitClass!=User.Instance.CurrentCharacter.Class)
-                {
                     continue;
-                }
-
                 if (kv.Value.LimitLevel>User.Instance.CurrentCharacter.Level)
-                {
                     continue;
-                }
-
                 if (this.allQuests.ContainsKey(kv.Key))
-                {
                     continue;
-                }
 
                 if (kv.Value.PreQuest>0)
                 {
@@ -65,26 +67,19 @@ namespace Managers
                     if (this.allQuests.TryGetValue(kv.Value.PreQuest,out preQuest))
                     {
                         if (preQuest.Info==null)
-                        {
-                            continue;//前置任务未接取
-                        }
-
+                            continue;
                         if (preQuest.Info.Status!=QuestStatus.Finished)
-                        {
-                            continue;//前置任务未完成
-                        }
+                            continue;
                     }
                     else
-                    {
-                        continue;//前置任务还没接
-                    }
+                        continue;
                 }
-                Quest quest = new Quest(kv.Value);
-                this.AddNpcQuest(quest.Define.AcceptNPC, quest);
-                this.AddNpcQuest(quest.Define.SubmintNPC, quest);
+                Quest quest=new Quest(kv.Value);
                 this.allQuests[quest.Define.ID] = quest;
+
             }
         }
+
 
         void AddNpcQuest(int npcId, Quest quest)
         {
@@ -218,8 +213,21 @@ namespace Managers
             }
         }
 
-        public void OnQuestAccepted(Quest quest)
+
+        Quest RefreshQuestStatus(NQuestInfo quest)
+        {
+            this.npcQuests.Clear();
+            Quest re
+        }
+
+        public void OnQuestSubmited(NQuestInfo messageQuest)
         {
         }
+
+        public void OnQuestAccepted(NQuestInfo messageQuest)
+        {
+        }
+
+        public object OnQuestStatusChanaged { get; set; }
     }
 }

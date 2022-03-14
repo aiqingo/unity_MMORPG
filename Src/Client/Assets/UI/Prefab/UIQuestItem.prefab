@@ -154,6 +154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00cd5c033578a5845b08922f0bb681a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 0}
+  title: {fileID: 114567524290770958}
+  background: {fileID: 114284786254073682}
+  normalBg: {fileID: 21300000, guid: de04c27d2c8b8bc468c13c807d9320b9, type: 3}
+  selectedBg: {fileID: 21300000, guid: d2bd4bfea78cb0c4291d7a7fd5bb95e4, type: 3}
 --- !u!222 &222146613354600142
 CanvasRenderer:
   m_ObjectHideFlags: 1

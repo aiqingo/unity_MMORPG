@@ -54,30 +54,31 @@ public class UIQuestSystem : UIWindow
         {
             if (showAvailableList)
             {
-                if (kv.Value.Info!=null)
+                if (kv.Value.Info != null)
                 {
-                    continue;   
-                }
-                else
-                {
-                    if (kv.Value.Info==null)
-                    {
-                        continue;
-                    }
-                }
-
-                GameObject go = Instantiate(itemPrefab, kv.Value.Define.Type == QuestType.Main ? this.listMain.transform : this.listBranch.transform);
-                UIQuestItem ui = go.GetComponent<UIQuestItem>();
-                ui.SetQuestInfo(kv.Value);
-                if (kv.Value.Define.Type == QuestType.Main) 
-                {
-                    this.listMain.AddItem(ui);
-                }
-                else
-                {
-                    this.listBranch.AddItem(ui);
+                    continue;
                 }
             }
+            else
+            {
+                if (kv.Value.Info==null)
+                {
+                    continue;
+                }
+            }
+
+            GameObject go = Instantiate(itemPrefab, kv.Value.Define.Type == QuestType.Main ? this.listMain.transform : this.listBranch.transform);
+            UIQuestItem ui = go.GetComponent<UIQuestItem>();
+            ui.SetQuestInfo(kv.Value);
+            if (kv.Value.Define.Type == QuestType.Main) 
+            {
+                this.listMain.AddItem(ui);
+            }
+            else
+            {
+                    this.listBranch.AddItem(ui);
+            }
+            
         }
     }
 

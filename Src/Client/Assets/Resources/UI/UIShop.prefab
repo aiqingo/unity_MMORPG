@@ -1744,11 +1744,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17a7566ea7319e488c0ef08177836ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TabButtons:
-  - {fileID: 114785538199067024}
+  tabButtons:
+  - {fileID: 114272916041966586}
   - {fileID: 114785538199067024}
   - {fileID: 114843563289963974}
-  TabPages:
+  tabPages:
   - {fileID: 1630955614604080}
   - {fileID: 1109128367390950}
   - {fileID: 1031460121952114}
@@ -2068,7 +2068,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ca490fc59dc10b84dbc2b0ad95aac11b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f644bae90a9d3a84ea31e5dfc6f255d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

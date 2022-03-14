@@ -12,7 +12,7 @@ public class TabView : MonoBehaviour {
 
     public int index = -1;
     // Use this for initialization
-    IEnumerator Start () {
+    /*IEnumerator Start () {
         for (int i = 0; i < tabButtons.Length; i++)
         {
             tabButtons[i].tabView = this;
@@ -36,5 +36,33 @@ public class TabView : MonoBehaviour {
             if (OnTabSelect != null)
                 OnTabSelect(index);
         }
+    }*/
+   
+
+
+    // Use this for initialization
+    IEnumerator Start()
+    {
+        for (int i = 0; i < tabButtons.Length; i++)
+        {
+            tabButtons[i].tabView = this;
+            tabButtons[i].tabIndex = i;
+        }
+
+        yield return new WaitForEndOfFrame();
+        SelectTab(0);
     }
+
+    public void SelectTab(int index)
+    {
+        if (this.index != index)
+        {
+            for (int i = 0; i < tabButtons.Length; i++)
+            {
+                tabButtons[i].Select(i == index);
+                tabPages[i].SetActive(i == index);
+            }
+        }
+    }
+
 }

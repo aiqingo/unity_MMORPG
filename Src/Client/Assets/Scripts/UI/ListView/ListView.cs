@@ -7,11 +7,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-[System.Serializable]
-public class ItemSelectEvent : UnityEvent<ListView.ListViewItem>
-{
-}
-
 public class ListView : MonoBehaviour
 {
 

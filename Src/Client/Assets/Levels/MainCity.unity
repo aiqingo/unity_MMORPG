@@ -42283,7 +42283,8 @@ MonoBehaviour:
   global: 1
   nameBarPrefab: {fileID: 1808026743108178, guid: 007306703d6214840a45c122ee772742,
     type: 2}
-  npcStatuprefab: {fileID: 0}
+  npcStatuprefab: {fileID: 1298164293968072, guid: 69b4ee6d7395f2d43bbcbfbae93eee74,
+    type: 2}
 --- !u!114 &1394516997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48981,6 +48982,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298164293968072, guid: 69b4ee6d7395f2d43bbcbfbae93eee74, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b4ee6d7395f2d43bbcbfbae93eee74, type: 2}

@@ -22,13 +22,14 @@ GameObject:
   - component: {fileID: 222111229901078046}
   - component: {fileID: 114012639259221492}
   - component: {fileID: 114761471555226810}
+  - component: {fileID: 114052655222542952}
   m_Layer: 5
   m_Name: UIQuestStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1440259874524024
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +108,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114052655222542952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298164293968072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4643eb4a78e3a13459a79797e93e15e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 0}
+  height: 3
 --- !u!114 &114693328275664020
 MonoBehaviour:
   m_ObjectHideFlags: 1
