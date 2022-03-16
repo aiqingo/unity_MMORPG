@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusImage:
+  - {fileID: 0}
   - {fileID: 114876842987755482}
   - {fileID: 114925450535736762}
   - {fileID: 114693328275664020}

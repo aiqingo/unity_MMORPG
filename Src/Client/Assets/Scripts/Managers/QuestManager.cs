@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Models;
 using SkillBridge.Message;
+using UnityEngine.Events;
 
 namespace Managers
 {
@@ -22,6 +23,8 @@ namespace Managers
 
         public Dictionary<int, Dictionary<NpcQuestStatus, List<Quest>>> npcQuests =
             new Dictionary<int, Dictionary<NpcQuestStatus, List<Quest>>>();
+
+        public UnityAction<Quest> onQuestStatusChanged;
 
 
         public void Init(List<NQuestInfo> quests)
@@ -205,7 +208,7 @@ namespace Managers
             UIQuestDialog dlg = (UIQuestDialog) sender;
             if (result==UIWindow.WindowResult.Yes)
             {
-                MessageBox.Show(dlg.quest.Define.DialogIncomplete);
+                MessageBox.Show(dlg.quest.Define.DialogDeny);
             }
             else if(result==UIWindow.WindowResult.NO)
             {
@@ -217,17 +220,44 @@ namespace Managers
         Quest RefreshQuestStatus(NQuestInfo quest)
         {
             this.npcQuests.Clear();
-            Quest re
+            Quest result;
+            if (this.allQuests.ContainsKey(quest.QuestId))
+            {
+                //更新新任务状态
+                this.allQuests[quest.QuestId].Info = quest;
+                result = this.allQuests[quest.QuestId];
+            }
+            else
+            {
+                result = new Quest();
+                this.allQuests[quest.QuestId] = result;
+            }
+            CheckAvailablbleQuests();
+            foreach (var kv in this.allQuests)
+            {
+                this.AddNpcQuest(kv.Value.Define.AcceptNPC, kv.Value);
+                this.AddNpcQuest(kv.Value.Define.SubmintNPC, kv.Value);
+            }
+
+            if (onQuestStatusChanged!=null)
+            {
+                onQuestStatusChanged(result);
+            }
+
+            return result;
         }
 
-        public void OnQuestSubmited(NQuestInfo messageQuest)
+        public void OnQuestAccepted(NQuestInfo info)
         {
+            var quest = this.RefreshQuestStatus(info);
+            MessageBox.Show(quest.Define.DialogAccept);
         }
 
-        public void OnQuestAccepted(NQuestInfo messageQuest)
+        public void OnQuestSubmited(NQuestInfo info)
         {
+            var quest = this.RefreshQuestStatus(info);
+            MessageBox.Show(quest.Define.DialogFinish);
         }
-
-        public object OnQuestStatusChanaged { get; set; }
+        
     }
 }

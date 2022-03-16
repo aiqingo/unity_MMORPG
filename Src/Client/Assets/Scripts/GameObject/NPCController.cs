@@ -25,10 +25,10 @@ public class NPCController : MonoBehaviour
         npc = NPCManager.Instance.GetNpcDefine(this.npcID);
         this.StartCoroutine(Actions());
         RefreshNpcStatus();
-        QuestManager.Instance.OnQuestStatusChanaged += OnQuestStatusChanaged;
+        QuestManager.Instance.onQuestStatusChanged += OnQuestStatusChanaged;
     }
 
-    void OnQuestStatusChanaged()
+    void OnQuestStatusChanaged(Quest quest)
     {
         this.RefreshNpcStatus();
     }
@@ -41,7 +41,7 @@ public class NPCController : MonoBehaviour
 
     void OnDestroy()
     {
-        QuestManager.Instance.OnQuestStatusChanaged -= OnQuestStatusChanaged();
+        QuestManager.Instance.onQuestStatusChanged -= OnQuestStatusChanaged;
         if (UIWorldElementManager.Instance!=null)
         {
             UIWorldElementManager.Instance.RemoveNpcQuestStatus(this.transform);
