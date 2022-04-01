@@ -7,14 +7,18 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
+
+[System.Serializable]
+public class ItemSelectEvent : UnityEvent<ListView.ListViewItem>
+{
+}
+
 public class ListView : MonoBehaviour
 {
-
     public UnityAction<ListViewItem> onItemSelected;
     public class ListViewItem : MonoBehaviour, IPointerClickHandler
     {
         private bool selected;
-
         public bool Selected
         {
             get { return selected; }
@@ -24,7 +28,6 @@ public class ListView : MonoBehaviour
                 onSelected(selected);
             }
         }
-
         public virtual void onSelected(bool selected)
         {
         }
@@ -37,14 +40,14 @@ public class ListView : MonoBehaviour
             {
                 this.Selected = true;
             }
-
-            if (owner!=null&&owner.SelectedItem!=this)
+            if (owner != null && owner.SelectedItem != this)
             {
                 owner.SelectedItem = this;
             }
         }
     }
-    List<ListViewItem> items=new List<ListViewItem>();
+
+    List<ListViewItem> items = new List<ListViewItem>();
 
     private ListViewItem selectedItem = null;
     public ListViewItem SelectedItem

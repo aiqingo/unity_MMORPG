@@ -32,10 +32,8 @@ public class UIQuestItem : ListView.ListViewItem
     public void SetQuestInfo(Quest item)
     {
         this.quest = item;
-        if (this.title!=null)
-        {
-            this.title.text = this.quest.Define.Name;
-        }
+        if (this.title!=null) this.title.text = this.quest.Define.Name;
+        
     }
 
     void Update () {

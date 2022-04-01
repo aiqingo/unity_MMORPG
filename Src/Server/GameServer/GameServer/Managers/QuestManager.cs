@@ -102,15 +102,15 @@ namespace GameServer.Managers
 
                     if (quest.RewardItem1>0)
                     {
-                        character.ItemManager.AddItem(quest.RewardItem1, quest.RewardIatem1Count);
+                        character.ItemManager.AddItem(quest.RewardItem1, quest.RewardItem1Count);
                     }
                     if (quest.RewardItem2 > 0)
                     {
-                        character.ItemManager.AddItem(quest.RewardItem2, quest.RewardIatem2Count);
+                        character.ItemManager.AddItem(quest.RewardItem2, quest.RewardItem2Count);
                     }
                     if (quest.RewardItem3 > 0)
                     {
-                        character.ItemManager.AddItem(quest.RewardItem3, quest.RewardIatem3Count);
+                        character.ItemManager.AddItem(quest.RewardItem3, quest.RewardItem3Count);
                     }
                     DBService.Instance.Save();
                     return Result.Success;

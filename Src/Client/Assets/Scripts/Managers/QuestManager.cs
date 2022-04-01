@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Assets.Scripts.Services;
 using Models;
 using SkillBridge.Message;
 using UnityEngine.Events;
@@ -49,33 +50,33 @@ namespace Managers
             foreach (var kv in this.allQuests)
             {
                 this.AddNpcQuest(kv.Value.Define.AcceptNPC, kv.Value);
-                this.AddNpcQuest(kv.Value.Define.SubmintNPC, kv.Value);
+                this.AddNpcQuest(kv.Value.Define.SubmitNPC, kv.Value);
             }
         }
-
+        //初始化可用任务
         void CheckAvailablbleQuests()
         {
             foreach (var kv in DataManager.Instance.Quests)
             {
                 if (kv.Value.LimitClass!=CharacterClass.None&&kv.Value.LimitClass!=User.Instance.CurrentCharacter.Class)
-                    continue;
+                    continue;//不符合条件
                 if (kv.Value.LimitLevel>User.Instance.CurrentCharacter.Level)
-                    continue;
+                    continue;//不符合等级
                 if (this.allQuests.ContainsKey(kv.Key))
-                    continue;
+                    continue;//任务已经存在
 
                 if (kv.Value.PreQuest>0)
                 {
                     Quest preQuest;
-                    if (this.allQuests.TryGetValue(kv.Value.PreQuest,out preQuest))
+                    if (this.allQuests.TryGetValue(kv.Value.PreQuest,out preQuest))//获取前置任务
                     {
                         if (preQuest.Info==null)
-                            continue;
+                            continue;//前置任务为接取
                         if (preQuest.Info.Status!=QuestStatus.Finished)
-                            continue;
+                            continue;//前置任务未完成
                     }
                     else
-                        continue;
+                        continue;//前置任务还没接
                 }
                 Quest quest=new Quest(kv.Value);
                 this.allQuests[quest.Define.ID] = quest;
@@ -91,9 +92,9 @@ namespace Managers
                 this.npcQuests[npcId]=new Dictionary<NpcQuestStatus, List<Quest>>();
             }
 
-            List<Quest> availables;
-            List<Quest> complates;
-            List<Quest> incomplates;
+            List<Quest> availables;//可用任务
+            List<Quest> complates;//已完成任务
+            List<Quest> incomplates;//未完成任务
 
             if (!this.npcQuests[npcId].TryGetValue(NpcQuestStatus.Available,out  availables))
             {
@@ -122,15 +123,15 @@ namespace Managers
             }
             else
             {
-                if (quest.Define.SubmintNPC==npcId&&quest.Info.Status==QuestStatus.Complated)
+                if (quest.Define.SubmitNPC==npcId&&quest.Info.Status==QuestStatus.Complated)
                 {
-                    if (this.npcQuests[npcId][NpcQuestStatus.Complete].Contains(quest))
+                    if (!this.npcQuests[npcId][NpcQuestStatus.Complete].Contains(quest))
                     {
                         this.npcQuests[npcId][NpcQuestStatus.Complete].Add(quest);
                     }
                 }
 
-                if (quest.Define.SubmintNPC==npcId&&quest.Info.Status==QuestStatus.InProgress)
+                if (quest.Define.SubmitNPC==npcId&&quest.Info.Status==QuestStatus.InProgress)
                 {
                     if (!this.npcQuests[npcId][NpcQuestStatus.Incomplete].Contains(quest))
                     {
@@ -208,7 +209,15 @@ namespace Managers
             UIQuestDialog dlg = (UIQuestDialog) sender;
             if (result==UIWindow.WindowResult.Yes)
             {
-                MessageBox.Show(dlg.quest.Define.DialogDeny);
+                if (dlg.quest.Info==null)
+                {
+                    QuestService.Instance.SendQuestAccept(dlg.quest);
+                }
+                else if(dlg.quest.Info.Status==QuestStatus.Complated)
+                {
+                    QuestService.Instance.SendQuestSubmit(dlg.quest);
+                }
+                //MessageBox.Show(dlg.quest.Define.DialogAccept);
             }
             else if(result==UIWindow.WindowResult.NO)
             {
@@ -232,11 +241,13 @@ namespace Managers
                 result = new Quest();
                 this.allQuests[quest.QuestId] = result;
             }
+
             CheckAvailablbleQuests();
+
             foreach (var kv in this.allQuests)
             {
                 this.AddNpcQuest(kv.Value.Define.AcceptNPC, kv.Value);
-                this.AddNpcQuest(kv.Value.Define.SubmintNPC, kv.Value);
+                this.AddNpcQuest(kv.Value.Define.SubmitNPC, kv.Value);
             }
 
             if (onQuestStatusChanged!=null)

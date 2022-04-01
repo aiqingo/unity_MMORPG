@@ -31,7 +31,7 @@ namespace Common.Data
         public int PreQuest { get; set; }
         public QuestType Type { get; set; }
         public int AcceptNPC { get; set; }
-        public int SubmintNPC { get; set; }
+        public int SubmitNPC { get; set; }
         public string Overview { get; set; }
         public string Dialog { get; set; }
         public string DialogAccept { get; set; }
@@ -52,11 +52,11 @@ namespace Common.Data
         public int RewardExp { get; set; }
 
         public int RewardItem1 { get; set; }
-        public int RewardIatem1Count { get; set; }
+        public int RewardItem1Count { get; set; }
         public int RewardItem2 { get; set; }
-        public int RewardIatem2Count { get; set; }
+        public int RewardItem2Count { get; set; }
         public int RewardItem3 { get; set; }
-        public int RewardIatem3Count { get; set; }
+        public int RewardItem3Count { get; set; }
 
     }
 }

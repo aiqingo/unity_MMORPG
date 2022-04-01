@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 0}
-  height: 3
+  height: 2.5
 --- !u!114 &114693328275664020
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,7 +11,6 @@ public class UIQuestDialog : UIWindow
     public Quest quest;
 
     public GameObject openButtons;
-
     public GameObject submitButtons;
 	// Use this for initialization
 	void Start () {

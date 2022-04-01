@@ -25,7 +25,10 @@ public class UIQuestInfo : MonoBehaviour
 	}
 
     public void SetQuestInfo(Quest quest)
-    {
+    { 
+        //显示奖励ui
+        //todo
+
         this.title.text = string.Format("[{0}]{1}", quest.Define.Type, quest.Define.Name);
         if (quest.Info==null)
         {
@@ -37,14 +40,19 @@ public class UIQuestInfo : MonoBehaviour
             {
                 this.description.text = quest.Define.DialogFinish;
             }
-
-            this.rewardMoney.text = quest.Define.RewardGold.ToString();
-            this.rewardExp.text = quest.Define.RewardExp.ToString();
-            foreach (var fitter in this.GetComponentsInChildren<ContentSizeFitter>())
-            {
-                fitter.SetLayoutVertical();
-            }
         }
+
+    
+
+
+
+        this.rewardMoney.text =quest.Define.RewardGold.ToString();
+        this.rewardExp.text = quest.Define.RewardExp.ToString();
+        foreach (var fitter in this.GetComponentsInChildren<ContentSizeFitter>())
+        {
+            fitter.SetLayoutVertical();
+        }
+        
     }
 
     // Update is called once per frame

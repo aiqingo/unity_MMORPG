@@ -28,6 +28,8 @@ namespace GameServer.Services
 
             sender.Session.Response.questAccept = new QuestAcceptResponse();
             Result result = character.QuestManager.AccepQuest(sender, request.QuestId);
+            sender.Session.Response.questAccept.Result = result;
+            sender.SendResponse();
         }
 
         private void OnQuestSubmit(NetConnection<NetSession> sender, QuestSubmitRequest request)

@@ -27,7 +27,7 @@ public class UIQuestSystem : UIWindow
         this.listBranch.onItemSelected += this.OnQuestSelected;
         this.Tabs.OnTabSelect += OnSelectTab;
         RefreshUI();
-        //QUestManager.Instance.OnQuestChanaged+=RefreshUI;
+        //QuestManager.Instance.OnQuestChanaged+=RefreshUI;
     }
 
     void OnSelectTab(int idx)
@@ -55,30 +55,22 @@ public class UIQuestSystem : UIWindow
             if (showAvailableList)
             {
                 if (kv.Value.Info != null)
-                {
                     continue;
-                }
             }
             else
             {
                 if (kv.Value.Info==null)
-                {
                     continue;
-                }
             }
-
+            //todo
             GameObject go = Instantiate(itemPrefab, kv.Value.Define.Type == QuestType.Main ? this.listMain.transform : this.listBranch.transform);
             UIQuestItem ui = go.GetComponent<UIQuestItem>();
             ui.SetQuestInfo(kv.Value);
-            if (kv.Value.Define.Type == QuestType.Main) 
-            {
+            if (kv.Value.Define.Type == QuestType.Main)
                 this.listMain.AddItem(ui);
-            }
             else
-            {
-                    this.listBranch.AddItem(ui);
-            }
-            
+                this.listBranch.AddItem(ui);
+
         }
     }
 
