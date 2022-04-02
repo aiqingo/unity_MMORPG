@@ -101,6 +101,9 @@
     <Compile Include="Assets\Scripts\UI\Bag\UIBag.cs" />
     <Compile Include="Assets\Scripts\UI\CharEquip\UICharEquip.cs" />
     <Compile Include="Assets\Scripts\UI\CharEquip\UIEquipItem.cs" />
+    <Compile Include="Assets\Scripts\UI\Friends\UIFriendItem.cs" />
+    <Compile Include="Assets\Scripts\UI\Friends\UIFriends.cs" />
+    <Compile Include="Assets\Scripts\UI\InputBox.cs" />
     <Compile Include="Assets\Scripts\UI\ListView\ListView.cs" />
     <Compile Include="Assets\Scripts\UI\MessageBox.cs" />
     <Compile Include="Assets\Scripts\UI\Minimap\UIMinimap.cs" />
@@ -117,6 +120,7 @@
     <Compile Include="Assets\Scripts\UI\UICharacterView.cs" />
     <Compile Include="Assets\Scripts\UI\UICharInfo.cs" />
     <Compile Include="Assets\Scripts\UI\UIIconItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIInputBox.cs" />
     <Compile Include="Assets\Scripts\UI\UILogin.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />

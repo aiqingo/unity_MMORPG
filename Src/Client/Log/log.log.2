@@ -1,111 +1,178 @@
-2022-04-02 16:35:39,195 [ 1] INFO  Unity: LoadingManager start
-2022-04-02 16:35:42,545 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-02 16:35:47,461 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2022-04-02 16:35:47,463 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-02 16:35:47,465 [ 1] INFO  Unity: DoConnect
-2022-04-02 16:35:47,469 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-02 16:35:47,472 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-02 16:56:38,778 [ 1] INFO  Unity: LoadingManager start
+2022-04-02 16:56:42,787 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-02 16:56:46,227 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2022-04-02 16:56:46,230 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-02 16:56:46,233 [ 1] INFO  Unity: DoConnect
+2022-04-02 16:56:46,235 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-02 16:56:46,238 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-02 16:35:47,477 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-02 16:36:19,656 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
-
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
-
-2022-04-02 16:36:19,664 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
-
-2022-04-02 16:36:19,671 [ 1] INFO  Unity: DoConnect
-2022-04-02 16:36:19,672 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-02 16:36:19,675 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2022-04-02 16:36:21,712 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2022-04-02 16:36:21,714 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+2022-04-02 16:56:46,242 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-02 16:56:49,798 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-02 16:56:49,800 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-02 16:56:50,011 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-02 16:56:51,028 [ 1] INFO  Unity: Select Char:[5]1233[Warrior]
+2022-04-02 16:56:54,773 [ 1] INFO  Unity: UserCreateCharacterRequest::name :11111 class:Warrior
+2022-04-02 16:56:55,482 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-04-02 16:56:58,048 [ 1] INFO  Unity: Select Char:[0]11111[Warrior]
+2022-04-02 16:56:58,746 [ 1] INFO  Unity: UserGameEnterRequest::characterId :4
+2022-04-02 16:56:58,788 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-02 16:56:58,791 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-02 16:56:58,793 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-02 16:56:59,202 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-02 16:56:59,205 [ 1] INFO  Unity: AddCharacter:9:11111 Map:1 Entity:(9:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-02 16:56:59,209 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-02 16:57:00,581 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-02 16:57:01,068 [ 1] INFO  Unity: MoveForward
+2022-04-02 16:57:01,070 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2022-04-02 16:57:01,753 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-04-02 16:57:01,754 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5110,4000,820) DIR:(98,-18,0) SPD:300
+2022-04-02 16:57:01,869 [ 1] INFO  Unity: SetDirection:(93, -38, 0)
+2022-04-02 16:57:01,870 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5145,3993,820) DIR:(93,-38,0) SPD:300
+2022-04-02 16:57:01,951 [ 1] INFO  Unity: SetDirection:(84, -53, 0)
+2022-04-02 16:57:01,953 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5170,3983,820) DIR:(84,-53,0) SPD:300
+2022-04-02 16:57:02,034 [ 1] INFO  Unity: SetDirection:(74, -67, 0)
+2022-04-02 16:57:02,035 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5190,3968,820) DIR:(74,-67,0) SPD:300
+2022-04-02 16:57:02,117 [ 1] INFO  Unity: SetDirection:(61, -79, 0)
+2022-04-02 16:57:02,118 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5210,3953,820) DIR:(61,-79,0) SPD:300
+2022-04-02 16:57:02,209 [ 1] INFO  Unity: SetDirection:(46, -89, 0)
+2022-04-02 16:57:02,210 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5225,3933,820) DIR:(46,-89,0) SPD:300
+2022-04-02 16:57:02,299 [ 1] INFO  Unity: SetDirection:(27, -96, 0)
+2022-04-02 16:57:02,300 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5237,3909,820) DIR:(27,-96,0) SPD:300
+2022-04-02 16:57:02,382 [ 1] INFO  Unity: SetDirection:(10, -100, 0)
+2022-04-02 16:57:02,384 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5242,3884,820) DIR:(10,-100,0) SPD:300
+2022-04-02 16:57:02,457 [ 1] INFO  Unity: SetDirection:(-8, -100, 0)
+2022-04-02 16:57:02,458 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5247,3859,820) DIR:(-8,-100,0) SPD:300
+2022-04-02 16:57:02,563 [ 1] INFO  Unity: SetDirection:(-26, -96, 0)
+2022-04-02 16:57:02,564 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5247,3829,820) DIR:(-26,-96,0) SPD:300
+2022-04-02 16:57:02,729 [ 1] INFO  Unity: SetDirection:(-43, -90, 0)
+2022-04-02 16:57:02,730 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5237,3779,820) DIR:(-43,-90,0) SPD:300
+2022-04-02 16:57:03,476 [ 1] INFO  Unity: SetDirection:(-58, -81, 0)
+2022-04-02 16:57:03,477 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5147,3554,820) DIR:(-58,-81,0) SPD:300
+2022-04-02 16:57:04,389 [ 1] INFO  Unity: SetDirection:(-72, -70, 0)
+2022-04-02 16:57:04,390 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4985,3338,820) DIR:(-72,-70,0) SPD:300
+2022-04-02 16:57:04,852 [ 1] INFO  Unity: SetDirection:(-83, -55, 0)
+2022-04-02 16:57:04,853 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4957,3310,820) DIR:(-83,-55,0) SPD:300
+2022-04-02 16:57:04,925 [ 1] INFO  Unity: SetDirection:(-92, -38, 0)
+2022-04-02 16:57:04,926 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4929,3289,820) DIR:(-92,-38,0) SPD:300
+2022-04-02 16:57:06,358 [ 1] INFO  Unity: SetPosition:(4536, 3153, 802)
+2022-04-02 16:57:06,359 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4536,3153,802) DIR:(-92,-38,0) SPD:300
+2022-04-02 16:57:07,516 [ 1] INFO  Unity: SetDirection:(-98, -21, 0)
+2022-04-02 16:57:07,517 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4186,3013,802) DIR:(-98,-21,0) SPD:300
+2022-04-02 16:57:12,011 [ 1] INFO  Unity: SetPosition:(2986, 2756, 802)
+2022-04-02 16:57:12,013 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(2986,2756,802) DIR:(-98,-21,0) SPD:300
+2022-04-02 16:57:15,516 [ 1] INFO  Unity: SetDirection:(-100, -3, 0)
+2022-04-02 16:57:15,517 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(2031,2565,802) DIR:(-100,-3,0) SPD:300
+2022-04-02 16:57:16,686 [ 1] INFO  Unity: TeleporterObject: Character [11111] Enter Teleporter [3:主城传入点1]
+2022-04-02 16:57:17,596 [ 1] INFO  Unity: SetDirection:(-99, 15, 0)
+2022-04-02 16:57:17,597 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(1411,2565,802) DIR:(-99,15,0) SPD:300
+2022-04-02 16:57:18,825 [ 1] INFO  Unity: SetPosition:(1060, 2592, 802)
+2022-04-02 16:57:18,826 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(1060,2592,802) DIR:(-99,15,0) SPD:300
+2022-04-02 16:57:19,387 [ 1] INFO  Unity: SetDirection:(-100, -4, 0)
+2022-04-02 16:57:19,388 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(895,2625,802) DIR:(-100,-4,0) SPD:300
+2022-04-02 16:57:20,181 [ 1] INFO  Unity: TeleporterObject: Character [11111] Enter Teleporter [1:主城->野外]
+2022-04-02 16:57:20,182 [ 1] INFO  Unity: MapTeleportRequest :teleporterID:1
+2022-04-02 16:57:20,218 [ 1] INFO  Unity: OnMapCharacterLeave:CharID9
+2022-04-02 16:57:20,221 [ 1] INFO  Unity: RemoveCharacter:9
+2022-04-02 16:57:20,225 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:5
+2022-04-02 16:57:20,226 [ 1] INFO  Unity: AddCharacter:9:11111 Map:2 Entity:(9:pos:(2845,4039,38),dir:(100,0,0),spd:300
+2022-04-02 16:57:20,229 [ 1] INFO  Unity: AddCharacter:1:恶鬼 Map:2 Entity:(1:pos:(5887,1573,7),dir:(9,100,0),spd:0
+2022-04-02 16:57:20,232 [ 1] ERROR Unity: Character[1001] Resource[Monster/M1001] not existed.
 UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+GameObjectManager:CreateCharacterObject(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:69)
+GameObjectManager:OnCharacterEnter(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+Managers.CharacterManager:AddCharacter(NCharacterInfo) (at Assets/Scripts/Managers/CharacterManager.cs:51)
+Services.MapService:OnMapCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:50)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:15)
+Network.MessageDistributer`1:Distribute() (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
 
-2022-04-02 16:36:21,754 [ 1] INFO  Unity: DoConnect
-2022-04-02 16:36:21,755 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-02 16:36:21,757 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
-
-2022-04-02 16:36:23,799 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2022-04-02 16:36:23,800 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+2022-04-02 16:57:20,233 [ 1] INFO  Unity: AddCharacter:2:山丘巨人 Map:2 Entity:(2:pos:(5540,1682,4),dir:(20,98,0),spd:0
+2022-04-02 16:57:20,236 [ 1] ERROR Unity: Character[1002] Resource[Monster/M1002] not existed.
 UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+GameObjectManager:CreateCharacterObject(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:69)
+GameObjectManager:OnCharacterEnter(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+Managers.CharacterManager:AddCharacter(NCharacterInfo) (at Assets/Scripts/Managers/CharacterManager.cs:51)
+Services.MapService:OnMapCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:50)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:15)
+Network.MessageDistributer`1:Distribute() (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
 
-2022-04-02 16:36:23,899 [ 1] INFO  Unity: DoConnect
-2022-04-02 16:36:23,900 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-02 16:36:23,904 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
-
-2022-04-02 16:36:25,931 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2022-04-02 16:36:25,933 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+2022-04-02 16:57:20,237 [ 1] INFO  Unity: AddCharacter:3:小恶魔 Map:2 Entity:(3:pos:(4775,2865,14),dir:(-30,95,0),spd:0
+2022-04-02 16:57:20,239 [ 1] ERROR Unity: Character[1003] Resource[Monster/M1003] not existed.
 UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+GameObjectManager:CreateCharacterObject(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:69)
+GameObjectManager:OnCharacterEnter(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+Managers.CharacterManager:AddCharacter(NCharacterInfo) (at Assets/Scripts/Managers/CharacterManager.cs:51)
+Services.MapService:OnMapCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:50)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:15)
+Network.MessageDistributer`1:Distribute() (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
 
-2022-04-02 16:36:25,933 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2022-04-02 16:36:58,817 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
-2022-04-02 16:36:58,818 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-02 16:36:58,819 [ 1] INFO  Unity: DoConnect
-2022-04-02 16:36:58,821 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-02 16:36:58,824 [ 1] INFO  Unity: Connect[3] to server 127.0.0.1:8000
+2022-04-02 16:57:20,240 [ 1] INFO  Unity: AddCharacter:4:死神 Map:2 Entity:(4:pos:(5683,4173,0),dir:(28,-96,0),spd:0
+2022-04-02 16:57:20,241 [ 1] ERROR Unity: Character[1005] Resource[Monster/M1005] not existed.
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+GameObjectManager:CreateCharacterObject(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:69)
+GameObjectManager:OnCharacterEnter(Character) (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+Managers.CharacterManager:AddCharacter(NCharacterInfo) (at Assets/Scripts/Managers/CharacterManager.cs:51)
+Services.MapService:OnMapCharacterEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:50)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDispatch.cs:15)
+Network.MessageDistributer`1:Distribute() (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
 
-2022-04-02 16:36:58,825 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-02 16:37:21,077 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
-
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
-
-2022-04-02 16:37:21,079 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
-
-2022-04-02 16:37:21,875 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-02 16:37:21,876 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-02 16:57:20,243 [ 1] INFO  Unity: LoadLevel: Map01
+2022-04-02 16:57:20,244 [ 1] INFO  Unity: Character_9_11111 OnDestroy :ID:9 POS:(645, 2625, 802) DIR:(-100, -4, 0) SPD:300 
+2022-04-02 16:57:20,627 [ 1] INFO  Unity: MoveForward
+2022-04-02 16:57:20,628 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(2850,4039,38) DIR:(100,0,0) SPD:300
+2022-04-02 16:57:20,914 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-02 16:57:20,919 [ 1] INFO  Unity: Stop
+2022-04-02 16:57:20,921 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(2905,4039,38) DIR:(100,0,0) SPD:0
+2022-04-02 16:57:20,923 [ 1] INFO  Unity: TeleporterObject: Character [11111] Enter Teleporter [6:野外传入点]
+2022-04-02 16:57:21,511 [ 1] INFO  Unity: MoveForward
+2022-04-02 16:57:21,512 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(2905,4039,38) DIR:(100,0,0) SPD:300
+2022-04-02 16:57:21,957 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-04-02 16:57:21,959 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(3040,4039,38) DIR:(98,-18,0) SPD:300
+2022-04-02 16:57:22,058 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2022-04-02 16:57:22,059 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(3070,4033,38) DIR:(94,-35,0) SPD:300
+2022-04-02 16:57:22,157 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
+2022-04-02 16:57:22,158 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(3100,4021,38) DIR:(86,-51,0) SPD:300
+2022-04-02 16:57:23,187 [ 1] INFO  Unity: SetPosition:(3367, 3865, 2)
+2022-04-02 16:57:23,188 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(3367,3865,2) DIR:(86,-51,0) SPD:300
+2022-04-02 16:57:24,742 [ 1] INFO  Unity: SetPosition:(3768, 3627, 2)
+2022-04-02 16:57:24,743 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(3768,3627,2) DIR:(86,-51,0) SPD:300
+2022-04-02 16:57:24,907 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2022-04-02 16:57:24,908 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(3808,3597,2) DIR:(94,-35,0) SPD:300
+2022-04-02 16:57:26,928 [ 1] INFO  Unity: SetDirection:(98, -17, 0)
+2022-04-02 16:57:26,929 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4413,3355,2) DIR:(98,-17,0) SPD:300
+2022-04-02 16:57:27,178 [ 1] INFO  Unity: SetPosition:(4454, 3377, 2)
+2022-04-02 16:57:27,179 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4454,3377,2) DIR:(98,-17,0) SPD:300
+2022-04-02 16:57:30,609 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2022-04-02 16:57:30,610 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5479,3172,2) DIR:(93,-36,0) SPD:300
+2022-04-02 16:57:30,708 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
+2022-04-02 16:57:30,709 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5509,3160,2) DIR:(84,-55,0) SPD:300
+2022-04-02 16:57:30,808 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2022-04-02 16:57:30,809 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5533,3142,2) DIR:(71,-71,0) SPD:300
+2022-04-02 16:57:30,890 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2022-04-02 16:57:30,891 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5553,3122,2) DIR:(57,-82,0) SPD:300
+2022-04-02 16:57:30,994 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2022-04-02 16:57:30,995 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5571,3098,2) DIR:(39,-92,0) SPD:300
+2022-04-02 16:57:31,076 [ 1] INFO  Unity: SetDirection:(22, -97, 0)
+2022-04-02 16:57:31,077 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5581,3073,2) DIR:(22,-97,0) SPD:300
+2022-04-02 16:57:31,192 [ 1] INFO  Unity: SetDirection:(3, -100, 0)
+2022-04-02 16:57:31,193 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5588,3038,2) DIR:(3,-100,0) SPD:300
+2022-04-02 16:57:32,037 [ 1] INFO  Unity: Stop
+2022-04-02 16:57:32,038 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5588,2783,2) DIR:(3,-100,0) SPD:0
+2022-04-02 16:57:51,764 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-02 16:57:51,765 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2022-04-02 16:57:51,767 [ 1] INFO  Unity: Character_9_11111 OnDestroy :ID:9 POS:(5588, 2783, 2) DIR:(3, -100, 0) SPD:0 

@@ -69,7 +69,7 @@ namespace GameServer.Services
                     info.Name = c.Name;
                     info.Type = CharacterType.Player;
                     info.Class = (CharacterClass) c.Class;
-                    info.Tid = c.ID; sender.Session.Response.userLogin.Userinfo.Player.Characters.Add(info);
+                    info.ConfigId = c.ID; sender.Session.Response.userLogin.Userinfo.Player.Characters.Add(info);
                 }
             }
             sender.SendResponse();
@@ -111,6 +111,7 @@ namespace GameServer.Services
                 Name = request.Name,
                 Class = (int)request.Class,
                 TID = (int)request.Class,
+                Level=1,
                 MapID = 1,
                 MapPosX = 5000,
                 MapPosY = 4000,
@@ -156,11 +157,11 @@ namespace GameServer.Services
             foreach (var c in sender.Session.User.Player.Characters)
             {
                 NCharacterInfo info = new NCharacterInfo();
-                info.Id = 0;
+                info.Id = c.ID;
                 info.Name = c.Name;
                 info.Type = CharacterType.Player;
                 info.Class = (CharacterClass)c.Class;
-                info.Tid = c.ID;
+                info.ConfigId = c.TID;
                 sender.Session.Response.createChar.Characters.Add(info);
 
             }
