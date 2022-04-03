@@ -113,10 +113,12 @@
     <Compile Include="Managers\DataManager.cs" />
     <Compile Include="Managers\EntityManager.cs" />
     <Compile Include="Managers\EquipManager.cs" />
+    <Compile Include="Managers\FriendManager.cs" />
     <Compile Include="Managers\ItemManager.cs" />
     <Compile Include="Managers\MapManager.cs" />
     <Compile Include="Managers\MonsterManager.cs" />
     <Compile Include="Managers\QuestManager.cs" />
+    <Compile Include="Managers\SessionManager.cs" />
     <Compile Include="Managers\ShopManager.cs" />
     <Compile Include="Managers\Spawner.cs" />
     <Compile Include="Managers\SpawnManager.cs" />
@@ -140,6 +142,7 @@
     </Compile>
     <Compile Include="Services\BagService.cs" />
     <Compile Include="Services\DBService.cs" />
+    <Compile Include="Services\FriendService.cs" />
     <Compile Include="Services\ItemService.cs" />
     <Compile Include="Services\MapService.cs" />
     <Compile Include="Services\QuestService.cs" />

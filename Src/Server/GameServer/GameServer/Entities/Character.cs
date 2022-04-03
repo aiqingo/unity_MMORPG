@@ -7,16 +7,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Network;
 
 namespace GameServer.Entities
 {
-    class Character : CharacterBase
+    class Character : CharacterBase,IPostResponser
     {
        
         public TCharacter Data;
         public ItemManager ItemManager;
         public StatusManager StatusManager;
         public QuestManager QuestManager;
+        public FriendManager FriendManager;
 
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
@@ -45,7 +47,9 @@ namespace GameServer.Entities
             this.QuestManager = new QuestManager(this);
             this.QuestManager.GetQuestInfos(this.Info.Quests);
             this.StatusManager = new StatusManager(this);
-            
+            this.FriendManager=new FriendManager(this);
+            this.FriendManager.GetFriendInfos(this.Info.Friends);
+
         }
 
         public long Gold
@@ -62,5 +66,20 @@ namespace GameServer.Entities
                 this.Data.Gold = value;
             }
         }
+
+        public void PostProcess(NetMessageResponse message)
+        {
+            this.FriendManager.PostProcess(message);
+            if (this.StatusManager.HasStatus)
+            {
+                this.StatusManager.PostProcess(message);
+            }
+        }
+
+        public void Clear()
+        {
+            this.FriendManager.UpdateFriendInfo(this.Info, 0);
+        }
+
     }
 }

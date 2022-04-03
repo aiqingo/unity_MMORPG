@@ -84,11 +84,18 @@ public class UICharacterSelect : MonoBehaviour {
 
     public void OnClickCreate()
     {
-        if (string.IsNullOrEmpty(this.charName.text))
+        if (string.IsNullOrEmpty(this.charName.text) )
         {
             MessageBox.Show("请输入角色名称");
             return;
         }
+
+        if (charClass==0)
+        {
+            MessageBox.Show("没有选择角色，请选择角色");
+            return;
+        }
+      
         UserService.Instance.SendCharacterCreate(this.charName.text,this.charClass);
     }
 

@@ -52,7 +52,7 @@ namespace GameServer.Managers
             this.AddStatus(StatusType.Item,id,count,action);
         }
 
-        public void ApplyResponse(NetMessageResponse message)
+        public void PostProcess(NetMessageResponse message)
         {
             if (message.statusNotify==null)
             {

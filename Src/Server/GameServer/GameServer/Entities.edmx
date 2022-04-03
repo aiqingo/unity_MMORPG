@@ -63,7 +63,7 @@
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Class" Type="int" Nullable="false" />
     <Property Name="Level" Type="int" Nullable="false" />
-    <Property Name="Exp" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Exp" Type="bigint" Nullable="false" />
     <Property Name="MapID" Type="int" Nullable="false" DefaultValue="1" />
     <Property Name="MapPosX" Type="int" Nullable="false" />
     <Property Name="MapPosY" Type="int" Nullable="false" />
@@ -253,7 +253,7 @@
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Class" Type="Int32" Nullable="false" />
           <Property Name="Level" Type="Int32" Nullable="false" />
-          <Property Name="Exp" Type="String" Nullable="false" />
+          <Property Name="Exp" Type="Int64" Nullable="false" />
           <Property Name="MapID" Type="Int32" Nullable="false" DefaultValue="1" />
           <Property Name="MapPosX" Type="Int32" Nullable="false" />
           <Property Name="MapPosY" Type="Int32" Nullable="false" />
