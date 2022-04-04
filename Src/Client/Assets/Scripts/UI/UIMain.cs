@@ -9,6 +9,9 @@ public class UIMain : MonoSingleton<UIMain>
     public Text avatarName;
 
     public Text avatarLevel;
+
+    public UITeam TeamWindow;
+
 	// Use this for initialization
 	protected override  void OnStart ()
     {
@@ -65,5 +68,11 @@ public class UIMain : MonoSingleton<UIMain>
     public void OnClickFriend()
     {
         UIManager.Instance.Show<UIFriends>();
+    }
+
+
+    public void ShowTeamUI(bool show)
+    {
+        TeamWindow.ShowTeam(show);
     }
 }

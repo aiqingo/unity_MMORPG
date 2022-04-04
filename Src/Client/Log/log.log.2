@@ -1,30 +1,93 @@
-2022-04-03 14:33:13,317 [ 1] INFO  Unity: LoadingManager start
-2022-04-03 14:33:17,216 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-03 14:33:24,473 [ 1] INFO  Unity: UserLoginRequest::user :2 psw:2
-2022-04-03 14:33:24,475 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-03 14:33:24,477 [ 1] INFO  Unity: DoConnect
-2022-04-03 14:33:24,479 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-03 14:33:24,481 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-04 16:17:24,888 [ 1] INFO  Unity: LoadingManager start
+2022-04-04 16:17:28,623 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-04 16:17:43,853 [ 1] INFO  Unity: UserRegisterRequest::user :8 psw:8
+2022-04-04 16:17:43,856 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-04 16:17:43,858 [ 1] INFO  Unity: DoConnect
+2022-04-04 16:17:43,861 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-04 16:17:43,864 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-03 14:33:24,485 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-03 14:33:24,664 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-03 14:33:24,667 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-03 14:33:24,860 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-03 14:33:30,321 [ 1] INFO  Unity: UserCreateCharacterRequest::name :2 class:Wizard
-2022-04-03 14:33:30,407 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2022-04-03 14:33:31,596 [ 1] INFO  Unity: Select Char:[4]2[Wizard]
-2022-04-03 14:33:32,556 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
-2022-04-03 14:33:32,600 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-03 14:33:32,604 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-03 14:33:32,606 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-03 14:33:32,619 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-03 14:33:32,621 [ 1] INFO  Unity: AddCharacter:4:2 Map:1 Entity:(12:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-03 14:33:32,627 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-03 14:33:33,949 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-03 14:33:35,625 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-03 14:33:35,626 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-04 16:17:45,909 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:61)
+Services.UserService:SendRegister(String, String) (at Assets/Scripts/Services/UserService.cs:174)
+UIRegister:OnClickRegistor() (at Assets/Scripts/UI/UIRegister.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
 
-2022-04-03 14:33:35,631 [ 1] INFO  Unity: Character_4_2 OnDestroy :ID:12 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:17:45,953 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:61)
+Services.UserService:SendRegister(String, String) (at Assets/Scripts/Services/UserService.cs:174)
+UIRegister:OnClickRegistor() (at Assets/Scripts/UI/UIRegister.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2022-04-04 16:17:45,955 [ 1] INFO  Unity: DoConnect
+2022-04-04 16:17:45,956 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-04 16:17:45,959 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2022-04-04 16:17:47,994 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-04-04 16:17:47,995 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-04-04 16:17:48,055 [ 1] INFO  Unity: DoConnect
+2022-04-04 16:17:48,056 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-04 16:17:48,060 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2022-04-04 16:17:50,111 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-04-04 16:17:50,113 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-04-04 16:17:50,115 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2022-04-04 16:18:07,833 [ 1] WARN  Unity: Assets/Scripts/GameObject/MainPlayerCamera.cs(8,19): warning CS0108: `MainPlayerCamera.camera' hides inherited member `UnityEngine.Component.camera'. Use the new keyword if hiding was intended
+
+2022-04-04 16:18:07,834 [ 1] WARN  Unity: Assets/Scripts/GameObject/NPCController.cs(11,33): warning CS0108: `NPCController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
+
+2022-04-04 16:18:07,834 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(19,17): warning CS0649: Field `EntityController.rotation' is never assigned to, and will always have its default value
+
+2022-04-04 16:18:07,835 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(22,17): warning CS0414: The private field `EntityController.lastRotation' is assigned but its value is never used
+
+2022-04-04 16:18:07,835 [ 1] WARN  Unity: Assets/Scripts/GameObject/PlayerInputController.cs(114,12): warning CS0414: The private field `PlayerInputController.lastSync' is assigned but its value is never used
+
+2022-04-04 16:18:07,836 [ 1] WARN  Unity: Assets/Scripts/UI/Friends/UIFriendItem.cs(29,18): warning CS0414: The private field `UIFriendItem.IsEquiped' is assigned but its value is never used
+
+2022-04-04 16:18:07,837 [ 1] WARN  Unity: Assets/Scripts/UI/QuestSystem/UIQuestItem.cs(30,18): warning CS0414: The private field `UIQuestItem.isEquiped' is assigned but its value is never used
+
+2022-04-04 16:18:07,837 [ 1] WARN  Unity: Assets/Scripts/UI/QuestSystem/UIQuestStatus.cs(11,28): warning CS0414: The private field `UIQuestStatus.questStatus' is assigned but its value is never used
+
+2022-04-04 16:18:07,838 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(22,32): warning CS0219: The variable `allTeleporterObjects' is assigned but its value is never used
+

@@ -1,28 +1,326 @@
-2022-04-03 14:37:16,164 [ 1] INFO  Unity: LoadingManager start
-2022-04-03 14:37:19,485 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-03 14:37:26,342 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-04-03 14:37:26,344 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-03 14:37:26,346 [ 1] INFO  Unity: DoConnect
-2022-04-03 14:37:26,348 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-03 14:37:26,352 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-04 16:18:19,317 [ 1] INFO  Unity: LoadingManager start
+2022-04-04 16:18:24,526 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-04 16:18:28,680 [ 1] INFO  Unity: UserRegisterRequest::user :8 psw:8
+2022-04-04 16:18:28,682 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-04 16:18:28,684 [ 1] INFO  Unity: DoConnect
+2022-04-04 16:18:28,687 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-04 16:18:28,689 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-03 14:37:26,356 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-03 14:37:26,516 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-03 14:37:26,519 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-03 14:37:26,718 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-03 14:37:35,670 [ 1] INFO  Unity: Select Char:[1]1[Warrior]
-2022-04-03 14:37:37,027 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-03 14:37:37,068 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-03 14:37:37,071 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-03 14:37:37,072 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-03 14:37:37,086 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-03 14:37:37,088 [ 1] INFO  Unity: AddCharacter:1:1 Map:1 Entity:(13:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-03 14:37:37,092 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-03 14:37:38,014 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-03 14:41:54,701 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-03 14:41:54,702 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-04 16:18:28,694 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-04 16:18:32,478 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2022-04-04 16:18:35,887 [ 1] INFO  Unity: UserLoginRequest::user :8 psw:8
+2022-04-04 16:18:36,455 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-04 16:18:36,457 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-04 16:18:36,713 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-04 16:18:40,525 [ 1] INFO  Unity: UserCreateCharacterRequest::name :8 class:Wizard
+2022-04-04 16:18:40,768 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-04-04 16:18:56,862 [ 1] INFO  Unity: Select Char:[7]8[Wizard]
+2022-04-04 16:18:57,558 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-04 16:18:57,601 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-04 16:18:57,604 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-04 16:18:57,605 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-04 16:18:57,620 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2022-04-04 16:18:57,622 [ 1] INFO  Unity: AddCharacter:8:7 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-04 16:18:57,627 [ 1] INFO  Unity: AddCharacter:7:8 Map:1 Entity:(10:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-04 16:18:57,629 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-04 16:18:58,403 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:None entity:(1:pos:(5000,3951,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:18:58,686 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-04 16:19:00,757 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2022-04-04 16:19:00,760 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5000,4000,820) DIR:(98,18,0) SPD:0
+2022-04-04 16:19:00,773 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:19:00,775 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5000,4000,820) DIR:(98,18,0) SPD:300
+2022-04-04 16:19:00,791 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
+2022-04-04 16:19:00,793 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5005,4001,820) DIR:(93,36,0) SPD:300
+2022-04-04 16:19:00,871 [ 1] INFO  Unity: SetDirection:(86, 52, 0)
+2022-04-04 16:19:00,872 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5030,4011,820) DIR:(86,52,0) SPD:300
+2022-04-04 16:19:00,954 [ 1] INFO  Unity: SetDirection:(75, 66, 0)
+2022-04-04 16:19:00,955 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5050,4026,820) DIR:(75,66,0) SPD:300
+2022-04-04 16:19:01,055 [ 1] INFO  Unity: SetDirection:(60, 80, 0)
+2022-04-04 16:19:01,056 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5074,4044,820) DIR:(60,80,0) SPD:300
+2022-04-04 16:19:01,138 [ 1] INFO  Unity: SetDirection:(45, 89, 0)
+2022-04-04 16:19:01,139 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5089,4064,820) DIR:(45,89,0) SPD:300
+2022-04-04 16:19:01,220 [ 1] INFO  Unity: SetDirection:(29, 96, 0)
+2022-04-04 16:19:01,221 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5099,4084,820) DIR:(29,96,0) SPD:300
+2022-04-04 16:19:01,303 [ 1] INFO  Unity: SetDirection:(12, 99, 0)
+2022-04-04 16:19:01,304 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5104,4109,820) DIR:(12,99,0) SPD:300
+2022-04-04 16:19:01,389 [ 1] INFO  Unity: SetDirection:(-6, 100, 0)
+2022-04-04 16:19:01,391 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5109,4134,820) DIR:(-6,100,0) SPD:300
+2022-04-04 16:19:01,488 [ 1] INFO  Unity: SetDirection:(-26, 96, 0)
+2022-04-04 16:19:01,490 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5109,4164,820) DIR:(-26,96,0) SPD:300
+2022-04-04 16:19:01,564 [ 1] INFO  Unity: SetDirection:(-43, 90, 0)
+2022-04-04 16:19:01,565 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5104,4189,820) DIR:(-43,90,0) SPD:300
+2022-04-04 16:19:01,664 [ 1] INFO  Unity: SetDirection:(-60, 80, 0)
+2022-04-04 16:19:01,665 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5092,4219,820) DIR:(-60,80,0) SPD:300
+2022-04-04 16:19:01,748 [ 1] INFO  Unity: SetDirection:(-73, 68, 0)
+2022-04-04 16:19:01,748 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5077,4239,820) DIR:(-73,68,0) SPD:300
+2022-04-04 16:19:01,830 [ 1] INFO  Unity: SetDirection:(-84, 54, 0)
+2022-04-04 16:19:01,831 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5057,4254,820) DIR:(-84,54,0) SPD:300
+2022-04-04 16:19:01,882 [ 1] INFO  Unity: Stop
+2022-04-04 16:19:01,883 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-84,54,0) SPD:0
+2022-04-04 16:19:01,929 [ 1] INFO  Unity: SetDirection:(-93, 35, 0)
+2022-04-04 16:19:01,930 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-93,35,0) SPD:0
+2022-04-04 16:19:02,029 [ 1] INFO  Unity: SetDirection:(-99, 15, 0)
+2022-04-04 16:19:02,030 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-99,15,0) SPD:0
+2022-04-04 16:19:02,130 [ 1] INFO  Unity: SetDirection:(-100, -6, 0)
+2022-04-04 16:19:02,131 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-100,-6,0) SPD:0
+2022-04-04 16:19:02,228 [ 1] INFO  Unity: SetDirection:(-96, -26, 0)
+2022-04-04 16:19:02,229 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-96,-26,0) SPD:0
+2022-04-04 16:19:02,312 [ 1] INFO  Unity: SetDirection:(-90, -43, 0)
+2022-04-04 16:19:02,312 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-90,-43,0) SPD:0
+2022-04-04 16:19:02,413 [ 1] INFO  Unity: SetDirection:(-80, -60, 0)
+2022-04-04 16:19:02,414 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-80,-60,0) SPD:0
+2022-04-04 16:19:02,496 [ 1] INFO  Unity: SetDirection:(-68, -73, 0)
+2022-04-04 16:19:02,497 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-68,-73,0) SPD:0
+2022-04-04 16:19:02,613 [ 1] INFO  Unity: SetDirection:(-54, -84, 0)
+2022-04-04 16:19:02,614 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-54,-84,0) SPD:0
+2022-04-04 16:19:03,029 [ 1] INFO  Unity: SetDirection:(-37, -93, 0)
+2022-04-04 16:19:03,030 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-37,-93,0) SPD:0
+2022-04-04 16:19:03,163 [ 1] INFO  Unity: SetDirection:(-19, -98, 0)
+2022-04-04 16:19:03,164 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(-19,-98,0) SPD:0
+2022-04-04 16:19:03,277 [ 1] INFO  Unity: SetDirection:(0, -100, 0)
+2022-04-04 16:19:03,278 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(0,-100,0) SPD:0
+2022-04-04 16:19:03,412 [ 1] INFO  Unity: SetDirection:(18, -98, 0)
+2022-04-04 16:19:03,413 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(18,-98,0) SPD:0
+2022-04-04 16:19:03,577 [ 1] INFO  Unity: SetDirection:(35, -94, 0)
+2022-04-04 16:19:03,578 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(35,-94,0) SPD:0
+2022-04-04 16:19:15,108 [ 1] INFO  Unity: SendFriendAdd
+2022-04-04 16:19:17,204 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:19:22,155 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:19:22,156 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4263,820) DIR:(35,-94,0) SPD:300
+2022-04-04 16:19:22,535 [ 1] INFO  Unity: Stop
+2022-04-04 16:19:22,536 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5089,4153,820) DIR:(35,-94,0) SPD:0
+2022-04-04 16:19:23,112 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(5000, 3951, 802) DIR:(100, 0, 0) SPD:300 
+2022-04-04 16:19:23,114 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveFwd entity:(1:pos:(5000,3951,802),dir:(100,0,0),spd:300
+
+2022-04-04 16:19:23,115 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:19:23,311 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(5055, 3951, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:19:23,313 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(5055,3951,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:19:23,725 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(5030, 3951, 802) DIR:(100, 0, 0) SPD:-300 
+2022-04-04 16:19:23,726 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveBack entity:(1:pos:(5030,3951,802),dir:(100,0,0),spd:-300
+
+2022-04-04 16:19:24,272 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4870, 3951, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:19:24,273 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(4870,3951,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:19:37,469 [ 1] INFO  Unity: SendTeamInviteRequest
+2022-04-04 16:19:41,874 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:19:44,209 [ 1] INFO  Unity: SendTeamInviteResponse
+2022-04-04 16:19:44,265 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:19:44,270 [ 1] INFO  Unity: OnteamInfo
+2022-04-04 16:19:44,273 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at UIMain.ShowTeamUI (Boolean show) [0x00008] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\UIMain.cs:76 
+  at Managers.TeamManager.ShowTeamUI (Boolean show) [0x00018] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:26 
+  at Managers.TeamManager.UpdateTeamInfo (SkillBridge.Message.NTeamInfo team) [0x00014] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:19 
+  at Services.TeamService.OnTeamInfo (System.Object sender, SkillBridge.Message.TeamInfoResponse message) [0x00016] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\TeamService.cs:93 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[TeamInfoResponse] (System.Object sender, SkillBridge.Message.TeamInfoResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-04-04 16:19:44,274 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMain.ShowTeamUI (Boolean show) (at Assets/Scripts/UI/UIMain.cs:76)
+Managers.TeamManager.ShowTeamUI (Boolean show) (at Assets/Scripts/Managers/TeamManager.cs:26)
+Managers.TeamManager.UpdateTeamInfo (SkillBridge.Message.NTeamInfo team) (at Assets/Scripts/Managers/TeamManager.cs:19)
+Services.TeamService.OnTeamInfo (System.Object sender, SkillBridge.Message.TeamInfoResponse message) (at Assets/Scripts/Services/TeamService.cs:93)
+Network.MessageDistributer`1[System.Object].RaiseEvent[TeamInfoResponse] (System.Object sender, SkillBridge.Message.TeamInfoResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-04-04 16:20:08,485 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:20:12,577 [ 1] INFO  Unity: SendTeamInviteResponse
+2022-04-04 16:20:12,610 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:20:12,614 [ 1] INFO  Unity: OnteamInfo
+2022-04-04 16:20:12,615 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at UIMain.ShowTeamUI (Boolean show) [0x00008] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\UIMain.cs:76 
+  at Managers.TeamManager.ShowTeamUI (Boolean show) [0x00018] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:26 
+  at Managers.TeamManager.UpdateTeamInfo (SkillBridge.Message.NTeamInfo team) [0x00014] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:19 
+  at Services.TeamService.OnTeamInfo (System.Object sender, SkillBridge.Message.TeamInfoResponse message) [0x00016] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\TeamService.cs:93 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[TeamInfoResponse] (System.Object sender, SkillBridge.Message.TeamInfoResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-04-04 16:20:12,616 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMain.ShowTeamUI (Boolean show) (at Assets/Scripts/UI/UIMain.cs:76)
+Managers.TeamManager.ShowTeamUI (Boolean show) (at Assets/Scripts/Managers/TeamManager.cs:26)
+Managers.TeamManager.UpdateTeamInfo (SkillBridge.Message.NTeamInfo team) (at Assets/Scripts/Managers/TeamManager.cs:19)
+Services.TeamService.OnTeamInfo (System.Object sender, SkillBridge.Message.TeamInfoResponse message) (at Assets/Scripts/Services/TeamService.cs:93)
+Network.MessageDistributer`1[System.Object].RaiseEvent[TeamInfoResponse] (System.Object sender, SkillBridge.Message.TeamInfoResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-04-04 16:20:36,398 [ 1] INFO  Unity: SendTeamInviteRequest
+2022-04-04 16:20:58,373 [ 1] INFO  Unity: SendTeamLeaveRequest
+2022-04-04 16:20:58,407 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:20:58,408 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at UIMain.ShowTeamUI (Boolean show) [0x00008] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\UIMain.cs:76 
+  at Managers.TeamManager.ShowTeamUI (Boolean show) [0x00018] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:26 
+  at Managers.TeamManager.UpdateTeamInfo (SkillBridge.Message.NTeamInfo team) [0x00014] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\TeamManager.cs:19 
+  at Services.TeamService.OnTeamLeave (System.Object sender, SkillBridge.Message.TeamLeaveResponse message) [0x00013] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\TeamService.cs:111 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[TeamLeaveResponse] (System.Object sender, SkillBridge.Message.TeamLeaveResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-04-04 16:20:58,409 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMain.ShowTeamUI (Boolean show) (at Assets/Scripts/UI/UIMain.cs:76)
+Managers.TeamManager.ShowTeamUI (Boolean show) (at Assets/Scripts/Managers/TeamManager.cs:26)
+Managers.TeamManager.UpdateTeamInfo (SkillBridge.Message.NTeamInfo team) (at Assets/Scripts/Managers/TeamManager.cs:19)
+Services.TeamService.OnTeamLeave (System.Object sender, SkillBridge.Message.TeamLeaveResponse message) (at Assets/Scripts/Services/TeamService.cs:111)
+Network.MessageDistributer`1[System.Object].RaiseEvent[TeamLeaveResponse] (System.Object sender, SkillBridge.Message.TeamLeaveResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-04-04 16:21:00,132 [ 1] INFO  Unity: SetDirection:(51, -86, 0)
+2022-04-04 16:21:00,133 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5089,4153,820) DIR:(51,-86,0) SPD:0
+2022-04-04 16:21:00,298 [ 1] INFO  Unity: SetDirection:(66, -75, 0)
+2022-04-04 16:21:00,299 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5089,4153,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:00,713 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:21:00,714 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5089,4153,820) DIR:(66,-75,0) SPD:300
+2022-04-04 16:21:01,028 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:01,029 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5143,4081,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:01,194 [ 1] INFO  Unity: MoveBack
+2022-04-04 16:21:01,195 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5143,4081,820) DIR:(66,-75,0) SPD:-300
+2022-04-04 16:21:01,726 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:01,727 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5047,4209,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:01,743 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:21:01,744 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5047,4209,820) DIR:(66,-75,0) SPD:300
+2022-04-04 16:21:01,992 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:01,993 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5092,4149,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:02,091 [ 1] INFO  Unity: MoveBack
+2022-04-04 16:21:02,092 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5092,4149,820) DIR:(66,-75,0) SPD:-300
+2022-04-04 16:21:02,242 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:02,243 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5065,4185,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:02,360 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:21:02,361 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5065,4185,820) DIR:(66,-75,0) SPD:300
+2022-04-04 16:21:02,480 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:02,481 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5086,4157,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:02,579 [ 1] INFO  Unity: MoveBack
+2022-04-04 16:21:02,580 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5086,4157,820) DIR:(66,-75,0) SPD:-300
+2022-04-04 16:21:02,703 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:02,704 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5062,4189,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:02,904 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:21:02,905 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5062,4189,820) DIR:(66,-75,0) SPD:300
+2022-04-04 16:21:03,155 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:03,155 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5107,4129,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:03,187 [ 1] INFO  Unity: MoveBack
+2022-04-04 16:21:03,188 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5107,4129,820) DIR:(66,-75,0) SPD:-300
+2022-04-04 16:21:03,718 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:03,719 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5011,4257,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:03,734 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:21:03,736 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5011,4257,820) DIR:(66,-75,0) SPD:300
+2022-04-04 16:21:04,054 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:04,055 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5068,4181,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:04,110 [ 1] INFO  Unity: MoveBack
+2022-04-04 16:21:04,111 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5068,4181,820) DIR:(66,-75,0) SPD:-300
+2022-04-04 16:21:04,280 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:04,281 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5038,4221,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:04,503 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:21:04,504 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5038,4221,820) DIR:(66,-75,0) SPD:300
+2022-04-04 16:21:04,652 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:04,654 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5068,4181,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:11,389 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4870, 3951, 802) DIR:(100, 0, 0) SPD:300 
+2022-04-04 16:21:11,390 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveFwd entity:(1:pos:(4870,3951,802),dir:(100,0,0),spd:300
+
+2022-04-04 16:21:11,391 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:21:11,853 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4935, 3951, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:11,855 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(4935,3951,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:21:11,886 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4935, 3951, 802) DIR:(100, 0, 0) SPD:-300 
+2022-04-04 16:21:11,888 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveBack entity:(1:pos:(4935,3951,802),dir:(100,0,0),spd:-300
+
+2022-04-04 16:21:12,468 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4765, 3951, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:12,470 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(4765,3951,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:21:12,479 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4770, 3951, 802) DIR:(100, 0, 0) SPD:300 
+2022-04-04 16:21:12,481 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveFwd entity:(1:pos:(4770,3951,802),dir:(100,0,0),spd:300
+
+2022-04-04 16:21:12,816 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4790, 3951, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:12,817 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(4790,3951,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:21:12,916 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4790, 3951, 802) DIR:(100, 0, 0) SPD:-300 
+2022-04-04 16:21:12,917 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveBack entity:(1:pos:(4790,3951,802),dir:(100,0,0),spd:-300
+
+2022-04-04 16:21:13,415 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4650, 3951, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:13,417 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(4650,3951,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:21:13,418 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4650, 3951, 802) DIR:(100, 0, 0) SPD:300 
+2022-04-04 16:21:13,419 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveFwd entity:(1:pos:(4650,3951,802),dir:(100,0,0),spd:300
+
+2022-04-04 16:21:14,972 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(5035, 3951, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:14,974 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(5035,3951,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:21:14,989 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(5035, 3951, 802) DIR:(100, 0, 0) SPD:-300 
+2022-04-04 16:21:14,991 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveBack entity:(1:pos:(5035,3951,802),dir:(100,0,0),spd:-300
+
+2022-04-04 16:21:16,154 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4790, 3947, 802) DIR:(100, 0, 0) SPD:-300 
+2022-04-04 16:21:16,155 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:None entity:(1:pos:(4790,3947,802),dir:(100,0,0),spd:-300
+
+2022-04-04 16:21:16,535 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4680, 3947, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:16,536 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(4680,3947,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:21:16,572 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(4680, 3947, 802) DIR:(100, 0, 0) SPD:300 
+2022-04-04 16:21:16,575 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:MoveFwd entity:(1:pos:(4680,3947,802),dir:(100,0,0),spd:300
+
+2022-04-04 16:21:17,750 [ 1] INFO  Unity: OnEntityChanged :ID:1 POS:(5035, 3947, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:17,752 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [1]evt:Idle entity:(1:pos:(5035,3947,802),dir:(100,0,0),spd:0
+
+2022-04-04 16:21:19,044 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
+2022-04-04 16:21:19,046 [ 1] INFO  Unity: RemoveCharacter:1
+2022-04-04 16:21:19,051 [ 1] INFO  Unity: OnFriendList
+2022-04-04 16:21:19,054 [ 1] INFO  Unity: Character_8_7 OnDestroy :ID:1 POS:(5035, 3947, 802) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:28,701 [ 1] INFO  Unity: SetDirection:(78, -62, 0)
+2022-04-04 16:21:28,701 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5068,4181,820) DIR:(78,-62,0) SPD:0
+2022-04-04 16:21:28,818 [ 1] INFO  Unity: SetDirection:(88, -47, 0)
+2022-04-04 16:21:28,819 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5068,4181,820) DIR:(88,-47,0) SPD:0
+2022-04-04 16:21:28,917 [ 1] INFO  Unity: SetDirection:(96, -28, 0)
+2022-04-04 16:21:28,918 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5068,4181,820) DIR:(96,-28,0) SPD:0
+2022-04-04 16:21:29,000 [ 1] INFO  Unity: SetDirection:(99, -11, 0)
+2022-04-04 16:21:29,001 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5068,4181,820) DIR:(99,-11,0) SPD:0
+2022-04-04 16:21:29,018 [ 1] INFO  Unity: MoveForward
+2022-04-04 16:21:29,019 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5068,4181,820) DIR:(99,-11,0) SPD:300
+2022-04-04 16:21:29,104 [ 1] INFO  Unity: SetDirection:(100, 6, 0)
+2022-04-04 16:21:29,105 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5093,4176,820) DIR:(100,6,0) SPD:300
+2022-04-04 16:21:29,353 [ 1] INFO  Unity: Stop
+2022-04-04 16:21:29,354 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5168,4176,820) DIR:(100,6,0) SPD:0
+2022-04-04 16:21:29,782 [ 1] INFO  Unity: SetDirection:(99, -12, 0)
+2022-04-04 16:21:29,783 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5168,4176,820) DIR:(99,-12,0) SPD:0
+2022-04-04 16:21:29,877 [ 1] INFO  Unity: SetDirection:(96, -29, 0)
+2022-04-04 16:21:29,878 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5168,4176,820) DIR:(96,-29,0) SPD:0
+2022-04-04 16:21:29,959 [ 1] INFO  Unity: SetDirection:(89, -45, 0)
+2022-04-04 16:21:29,961 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5168,4176,820) DIR:(89,-45,0) SPD:0
+2022-04-04 16:21:30,042 [ 1] INFO  Unity: SetDirection:(80, -60, 0)
+2022-04-04 16:21:30,043 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5168,4176,820) DIR:(80,-60,0) SPD:0
+2022-04-04 16:21:30,145 [ 1] INFO  Unity: SetDirection:(66, -75, 0)
+2022-04-04 16:21:30,146 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5168,4176,820) DIR:(66,-75,0) SPD:0
+2022-04-04 16:21:30,261 [ 1] INFO  Unity: SetDirection:(51, -86, 0)
+2022-04-04 16:21:30,262 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5168,4176,820) DIR:(51,-86,0) SPD:0
+2022-04-04 16:21:34,493 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UITeam.<OnClickLeave>m__0 () (at Assets/Scripts/UI/Team/UITeam.cs:68)
+UIMessageBox.OnClickYes () (at Assets/Scripts/UI/UIMessageBox.cs:52)
+UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-04-04 16:21:49,486 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UITeam.<OnClickLeave>m__0 () (at Assets/Scripts/UI/Team/UITeam.cs:68)
+UIMessageBox.OnClickYes () (at Assets/Scripts/UI/UIMessageBox.cs:52)
+UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-04-04 16:21:55,184 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-04 16:21:55,185 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-04-03 14:41:54,705 [ 1] INFO  Unity: Character_1_1 OnDestroy :ID:13 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-04 16:21:55,189 [ 1] INFO  Unity: Character_7_8 OnDestroy :ID:10 POS:(5168, 4176, 820) DIR:(51, -86, 0) SPD:0 
