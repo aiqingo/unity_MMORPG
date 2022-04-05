@@ -43666,7 +43666,7 @@ MonoBehaviour:
   global: 1
   avatarName: {fileID: 1313931748}
   avatarLevel: {fileID: 1059413320}
-  TeamWindow: {fileID: 0}
+  TeamWindow: {fileID: 2106642600}
 --- !u!114 &1415483397
 MonoBehaviour:
   m_ObjectHideFlags: 0

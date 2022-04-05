@@ -1,30 +1,34 @@
-2022-04-03 14:33:13,317 [ 1] INFO  Unity: LoadingManager start
-2022-04-03 14:33:17,216 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-03 14:33:24,473 [ 1] INFO  Unity: UserLoginRequest::user :2 psw:2
-2022-04-03 14:33:24,475 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-03 14:33:24,477 [ 1] INFO  Unity: DoConnect
-2022-04-03 14:33:24,479 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-03 14:33:24,481 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-05 10:23:32,354 [ 1] INFO  Unity: LoadingManager start
+2022-04-05 10:23:35,602 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-05 10:23:47,174 [ 1] INFO  Unity: UserLoginRequest::user :13 psw:13
+2022-04-05 10:23:47,176 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-05 10:23:47,177 [ 1] INFO  Unity: DoConnect
+2022-04-05 10:23:47,180 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-05 10:23:47,184 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-03 14:33:24,485 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-03 14:33:24,664 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-03 14:33:24,667 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-03 14:33:24,860 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-03 14:33:30,321 [ 1] INFO  Unity: UserCreateCharacterRequest::name :2 class:Wizard
-2022-04-03 14:33:30,407 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2022-04-03 14:33:31,596 [ 1] INFO  Unity: Select Char:[4]2[Wizard]
-2022-04-03 14:33:32,556 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
-2022-04-03 14:33:32,600 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-03 14:33:32,604 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-03 14:33:32,606 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-03 14:33:32,619 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-03 14:33:32,621 [ 1] INFO  Unity: AddCharacter:4:2 Map:1 Entity:(12:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-03 14:33:32,627 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-03 14:33:33,949 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-03 14:33:35,625 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-03 14:33:35,626 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-05 10:23:47,190 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-05 10:23:47,389 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-05 10:23:47,392 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-05 10:23:47,587 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-05 10:23:48,465 [ 1] INFO  Unity: Select Char:[9]小学生[Wizard]
+2022-04-05 10:23:49,194 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-05 10:23:49,237 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-05 10:23:49,240 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-05 10:23:49,242 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-05 10:23:49,258 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2022-04-05 10:23:49,261 [ 1] INFO  Unity: AddCharacter:9:小学生 Map:1 Entity:(12:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-05 10:23:49,266 [ 1] INFO  Unity: AddCharacter:11:绿1 Map:1 Entity:(11:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-05 10:23:49,268 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-05 10:23:49,269 [ 1] INFO  Unity: OnFriendList
+2022-04-05 10:23:50,080 [ 1] INFO  Unity: MaoEntityUpdataResponse: Entity: 1
+    [11]evt:None entity:(11:pos:(5000,3952,803),dir:(100,0,0),spd:0
+
+2022-04-05 10:23:50,368 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-05 10:24:05,667 [ 1] INFO  Unity: Character_9_小学生 OnDestroy :ID:12 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-05 10:24:05,668 [ 1] INFO  Unity: Character_11_绿1 OnDestroy :ID:11 POS:(5000, 3952, 803) DIR:(100, 0, 0) SPD:0 
+2022-04-05 10:24:05,674 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-05 10:24:05,677 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-04-03 14:33:35,631 [ 1] INFO  Unity: Character_4_2 OnDestroy :ID:12 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
