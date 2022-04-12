@@ -38,7 +38,7 @@ namespace GameServer
             QuestService.Instance.Init();
             FriendService.Instance.Init();
             TeamService.Instance.Init();
-
+            GuildService.Instance.Init();
             //var a = DBService.Instance.Entities.Characters.Where(s => s.TID == 1);
             //Console.WriteLine("{0}", a.FirstOrDefault<TCharacter>().Name);
             thread = new Thread(new ThreadStart(this.Update));

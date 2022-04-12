@@ -1,30 +1,31 @@
-2022-04-05 10:47:19,842 [ 1] INFO  Unity: LoadingManager start
-2022-04-05 10:47:24,081 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-05 10:47:31,043 [ 1] INFO  Unity: UserLoginRequest::user :13 psw:13
-2022-04-05 10:47:31,046 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-05 10:47:31,048 [ 1] INFO  Unity: DoConnect
-2022-04-05 10:47:31,052 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-05 10:47:31,055 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-12 21:48:52,807 [ 1] INFO  Unity: LoadingManager start
+2022-04-12 21:48:56,050 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-12 21:49:39,941 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2022-04-12 21:49:39,943 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-12 21:49:39,944 [ 1] INFO  Unity: DoConnect
+2022-04-12 21:49:39,960 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-12 21:49:39,964 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-05 10:47:31,059 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-05 10:47:31,233 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-05 10:47:31,237 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-05 10:47:31,427 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-05 10:47:32,352 [ 1] INFO  Unity: Select Char:[9]小学生[Wizard]
-2022-04-05 10:47:32,919 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-05 10:47:32,961 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-05 10:47:32,965 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-05 10:47:32,966 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-05 10:47:32,980 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-05 10:47:32,983 [ 1] INFO  Unity: AddCharacter:9:小学生 Map:1 Entity:(18:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-05 10:47:32,988 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-05 10:47:34,362 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-05 10:47:40,033 [ 1] INFO  Unity: SendFriendRemoveRequest
-2022-04-05 10:47:40,236 [ 1] INFO  Unity: OnFriendList
-2022-04-05 10:47:43,349 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-05 10:47:43,350 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-12 21:49:39,969 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-12 21:49:40,173 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-12 21:49:40,175 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-12 21:49:40,360 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-12 21:49:41,827 [ 1] INFO  Unity: Select Char:[1]23[Warrior]
+2022-04-12 21:49:42,573 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-12 21:49:42,624 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-12 21:49:42,628 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-12 21:49:42,629 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-12 21:49:42,645 [ 1] INFO  Unity: OnGuild:Success1:是是是是
+2022-04-12 21:49:42,647 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2022-04-12 21:49:42,651 [ 1] INFO  Unity: AddCharacter:1:23 Map:1 Entity:(22:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-12 21:49:42,655 [ 1] INFO  Unity: AddCharacter:3:333 Map:1 Entity:(21:pos:(5187,4000,840),dir:(100,0,0),spd:0
+2022-04-12 21:49:42,657 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-12 21:49:43,719 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-12 21:49:55,663 [ 1] INFO  Unity: Character_1_23 OnDestroy :ID:22 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-12 21:49:55,664 [ 1] INFO  Unity: Character_3_333 OnDestroy :ID:21 POS:(5187, 4000, 840) DIR:(100, 0, 0) SPD:0 
+2022-04-12 21:49:55,665 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-12 21:49:55,667 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-04-05 10:47:43,356 [ 1] INFO  Unity: Character_9_小学生 OnDestroy :ID:18 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

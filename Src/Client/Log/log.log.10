@@ -1,55 +1,32 @@
-2022-04-05 10:08:05,890 [ 1] INFO  Unity: LoadingManager start
-2022-04-05 10:08:10,230 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-05 10:08:14,427 [ 1] INFO  Unity: UserLoginRequest::user :13 psw:13
-2022-04-05 10:08:14,429 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-05 10:08:14,430 [ 1] INFO  Unity: DoConnect
-2022-04-05 10:08:14,432 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-05 10:08:14,437 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-10 17:04:56,547 [ 1] INFO  Unity: LoadingManager start
+2022-04-10 17:05:00,534 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-10 17:05:04,308 [ 1] INFO  Unity: UserLoginRequest::user :23 psw:23
+2022-04-10 17:05:04,311 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-10 17:05:04,313 [ 1] INFO  Unity: DoConnect
+2022-04-10 17:05:04,315 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-10 17:05:04,318 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-05 10:08:14,441 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-05 10:08:18,092 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-05 10:08:18,095 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-05 10:08:18,255 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-05 10:08:19,358 [ 1] INFO  Unity: Select Char:[9]小学生[Wizard]
-2022-04-05 10:08:20,105 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-05 10:08:20,719 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-05 10:08:20,722 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-05 10:08:20,723 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-05 10:08:20,736 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-05 10:08:20,739 [ 1] INFO  Unity: AddCharacter:9:小学生 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-05 10:08:20,743 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-05 10:08:21,709 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-05 10:08:58,923 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-05 10:08:58,938 [ 1] INFO  Unity: AddCharacter:10:绿 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-05 10:08:58,941 [ 1] INFO  Unity: OnFriendList
-2022-04-05 10:08:59,008 [ 1] INFO  Unity: SetPosition:(5000, 4049, 802)
-2022-04-05 10:08:59,010 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:1 POS:(5000,4049,802) DIR:(100,0,0) SPD:0
-2022-04-05 10:10:48,735 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-05 10:10:48,737 [ 1] INFO  Unity: UserGameLeaverRequest
-2022-04-05 10:10:48,832 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
-2022-04-05 10:10:48,836 [ 1] INFO  Unity: RemoveCharacter:1
-2022-04-05 10:10:48,841 [ 1] INFO  Unity: RemoveCharacter:2
-2022-04-05 10:10:48,844 [ 1] INFO  Unity: OnFriendList
-2022-04-05 10:10:48,846 [ 1] ERROR Unity: Message handler exception:, The object of type 'ListView' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
-  at UIFriends.InitFriendItems () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Friends\UIFriends.cs:114 
-  at UIFriends.RefreshUI () [0x00008] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Friends\UIFriends.cs:105 
-  at Services.FriendServer.OnFriendList (System.Object seder, SkillBridge.Message.FriendListResponse message) [0x0002d] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\FriendServer.cs:106 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[FriendListResponse] (System.Object sender, SkillBridge.Message.FriendListResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-04-05 10:10:48,847 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{MissingReferenceException: The object of type 'ListView' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., UIFriends.InitFriendItems () (at Assets/Scripts/UI/Friends/UIFriends.cs:114)
-UIFriends.RefreshUI () (at Assets/Scripts/UI/Friends/UIFriends.cs:105)
-Services.FriendServer.OnFriendList (System.Object seder, SkillBridge.Message.FriendListResponse message) (at Assets/Scripts/Services/FriendServer.cs:106)
-Network.MessageDistributer`1[System.Object].RaiseEvent[FriendListResponse] (System.Object sender, SkillBridge.Message.FriendListResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-04-05 10:10:48,865 [ 1] INFO  Unity: Character_9_小学生 OnDestroy :ID:1 POS:(5000, 4049, 802) DIR:(100, 0, 0) SPD:0 
-2022-04-05 10:10:48,867 [ 1] INFO  Unity: Character_10_绿 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-04-05 10:10:48,882 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-04-05 10:10:48,925 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-05 10:10:50,264 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-05 10:10:50,277 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-10 17:05:04,323 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-10 17:05:04,530 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-10 17:05:04,533 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-10 17:05:04,730 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-10 17:05:05,545 [ 1] INFO  Unity: Select Char:[1]23[Warrior]
+2022-04-10 17:05:06,226 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-10 17:05:06,266 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-10 17:05:06,269 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-10 17:05:06,271 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-10 17:05:06,284 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-10 17:05:06,288 [ 1] INFO  Unity: AddCharacter:1:23 Map:1 Entity:(10:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-10 17:05:06,294 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-10 17:05:07,358 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-10 17:05:08,344 [ 1] INFO  Unity: MoveForward
+2022-04-10 17:05:08,346 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2022-04-10 17:05:08,795 [ 1] INFO  Unity: Stop
+2022-04-10 17:05:08,796 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5135,4000,820) DIR:(100,0,0) SPD:0
+2022-04-10 17:05:17,576 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-10 17:05:17,578 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2022-04-10 17:05:17,580 [ 1] INFO  Unity: Character_1_23 OnDestroy :ID:10 POS:(5135, 4000, 820) DIR:(100, 0, 0) SPD:0 
