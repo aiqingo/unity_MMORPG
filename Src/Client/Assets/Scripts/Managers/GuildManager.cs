@@ -31,7 +31,6 @@ namespace Managers
             {
                 var win = UIManager.Instance.Show<UIGuildPopNoGuild>();
                 win.OnClose += PopNoGuild_OnClose;
-                win.OnCloseClick();
             }
         }
 
@@ -41,7 +40,7 @@ namespace Managers
             {
                 UIManager.Instance.Show<UIGuildPopCreate>();
             }
-            else
+            else if(result==UIWindow.WindowResult.NO)
             {
                 UIManager.Instance.Show<UIGuildList>();
             }

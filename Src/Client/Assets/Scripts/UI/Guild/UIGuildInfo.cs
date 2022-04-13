@@ -22,7 +22,12 @@ public class UIGuildInfo : MonoBehaviour
     public NGuildInfo Info
     {
         get { return this.info; }
-        set { this.info = value;this.UpdateUI(); }
+        set
+        {
+            this.info = value;
+            this.UpdateUI();
+
+        }
     }
 
     // Use this for initialization

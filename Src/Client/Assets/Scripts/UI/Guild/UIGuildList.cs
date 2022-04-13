@@ -68,6 +68,7 @@ public class UIGuildList : UIWindow
             return;
         }
 
-        MessageBox.Show(string.Format("确定要加入公会【{0}】吗?", selectedItem.Info.GuildName), "申请加入公会", MessageBoxType.Confirm, "申请加入", "取消").OnYes = () => { GuildService.Instance.SendGuildJoinRequest(this.selectedItem.Info.Id); };
+        MessageBox.Show(string.Format("确定要加入公会【{0}】吗?", selectedItem.Info.GuildName), "申请加入公会", MessageBoxType.Confirm, "申请加入", "取消").OnYes = () => 
+            { GuildService.Instance.SendGuildJoinRequest(this.selectedItem.Info.Id); };
     }
 }

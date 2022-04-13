@@ -17,7 +17,8 @@ namespace GameServer.Services
         {
             MessageDistributer<NetConnection<NetSession >>.Instance.Subscribe<GuildCreateRequest>(this.OnGuildCreate);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<GuildListRequest>(this.OnGuildList);
-            MessageDistributer<NetConnection<NetSession >>.Instance.Subscribe<GuildJoinRequest>(this.OnGuildJoinRrquest);
+
+            MessageDistributer<NetConnection<NetSession >>.Instance.Subscribe<GuildJoinRequest>(this.OnGuildJoinRequest);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<GuildJoinResponse>(this.OnGuildJoinResponse);
         }
 
@@ -49,6 +50,7 @@ namespace GameServer.Services
 
             GuildManager.Instance.CreateGuild(request.GuildName, request.GuildNotice, character);
             sender.Session.Response.guildCreate.guildInfo = character.Guild.GuildInfo(character);
+            sender.Session.Response.guildCreate.Result = Result.Success;
             sender.SendResponse();
         }
 
@@ -56,6 +58,7 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("OnGuildList:character:[{0}]{1}",character.Id,character.Name);
+
             sender.Session.Response.guildList=new GuildListResponse();
             sender.Session.Response.guildList.Guilds.AddRange(GuildManager.Instance.GetGuildsInfo());
             sender.Session.Response.guildList.Result = Result.Success;
@@ -63,12 +66,13 @@ namespace GameServer.Services
             
         }
 
-        private void OnGuildJoinRrquest(NetConnection<NetSession> sender, GuildJoinRequest request)
+        private void OnGuildJoinRequest(NetConnection<NetSession> sender, GuildJoinRequest request)
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("OnGuildJoinRequest::GuildId:{0} characterId:[{1}]{2}",request.Apply.GuildId,request.Apply.characterId,request.Apply.Name);
+
             var guild = GuildManager.Instance.GetGuild(request.Apply.GuildId);
-            if (guild != null)
+            if (guild == null)
             {
                 sender.Session.Response.guildJoinRes=new GuildJoinResponse();
                 sender.Session.Response.guildJoinRes.Result = Result.Failed;
@@ -81,6 +85,7 @@ namespace GameServer.Services
             request.Apply.Name = character.Data.Name;
             request.Apply.Class = character.Data.Class;
             request.Apply.Level = character.Data.Level;
+
             if (guild.JoinApply(request.Apply))
             {
                 var leader = SessionManager.Instance.GetSession(guild.Data.LeaderID);
@@ -103,6 +108,7 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("OnGuildJoinResponse::GuildId:{0} characterId[{1}]{2}",response.Apply.GuildId,response.Apply.characterId,response.Apply.Name);
+
             var guild = GuildManager.Instance.GetGuild(response.Apply.GuildId);
             if (response.Result == Result.Success)
             {

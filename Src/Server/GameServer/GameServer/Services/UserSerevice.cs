@@ -184,6 +184,7 @@ namespace GameServer.Services
             sender.Session.PostResponser = character;
 
             sender.Session.Response.gameEnter.Character = character.Info;
+
             #region 给某人增加某个道具  GM增加道具
 
             //给某人增加某个道具  GM增加道具
