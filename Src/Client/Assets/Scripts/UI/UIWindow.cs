@@ -14,6 +14,8 @@ public abstract class UIWindow : MonoBehaviour
         get { return this.GetType(); }
     }
 
+    public GameObject Root;
+
     public enum WindowResult
     {
         None=0,

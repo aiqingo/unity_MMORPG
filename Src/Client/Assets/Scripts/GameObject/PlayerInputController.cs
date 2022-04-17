@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Managers;
 using Entities;
 using Services;
 using SkillBridge.Message;
@@ -54,6 +55,10 @@ public class PlayerInputController : MonoBehaviour
 
         if (character==null)
              return;
+        if (InputManager.Instance.IsInputMode)
+        {
+            return;
+        }
         float v = Input.GetAxis("Vertical");
         if (v>0.01)
         {
