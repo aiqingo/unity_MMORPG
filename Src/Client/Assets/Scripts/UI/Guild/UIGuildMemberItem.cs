@@ -40,7 +40,9 @@ public class UIGuildMemberItem : ListView.ListViewItem {
         if (this.level != null) this.level.text = this.Info.Info.Level.ToString();
         if (this.title != null) this.title.text = Info.Title.ToString();
         if (this.joinTime != null) this.joinTime.text = TimeUtil.GetTime(this.Info.joinTime).ToShortDateString();
-        if (this.status != null) this.status.text = this.Info.Status == 1 ? "在线" : TimeUtil.GetTime(this.Info.lastTime).ToLongDateString();
+        if (this.status != null)
+            this.status.text =
+                this.Info.Status == 1 ? "在线" : "离线"; /*TimeUtil.GetTime(this.Info.lastTime).ToLongDateString();*/
     }
 
     // Use this for initialization

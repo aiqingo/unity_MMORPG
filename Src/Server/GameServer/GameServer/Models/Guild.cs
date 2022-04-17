@@ -17,12 +17,7 @@ namespace GameServer.Models
     {
         public int Id { get { return this.Data.Id; } }
 
-        private Character Leader;
-
         public string name { get { return this.Data.Name; } }
-
-
-        public List<Character> Membres = new List<Character>();
 
         public double timestamp;
 
@@ -74,12 +69,12 @@ namespace GameServer.Models
             return true;
         }
 
-        public void AddMember(int id, string mane, int @class, int level, GuildTitle title)
+        public void AddMember(int characterid, string mane, int @class, int level, GuildTitle title)
         {
             DateTime now = DateTime.Now;
             TGuildMember dbMember = new TGuildMember()
             {
-                CharacterId = id,
+                CharacterId = characterid,
                 Name = name,
                 Class = @class,
                 Level = level,
@@ -88,6 +83,16 @@ namespace GameServer.Models
                 LastTime = now,
             };
             this.Data.Members.Add(dbMember);
+            var character = CharacterManager.Instance.GetCharacter(characterid);
+            if (character!=null)
+            {
+                character.Data.GuildId = this.Id;
+            }
+            else
+            {
+                TCharacter dbChar = DBService.Instance.Entities.Characters.SingleOrDefault(c => c.ID == characterid);
+                dbChar.GuildId = this.Id;
+            }
             timestamp = TimeUtil.timestamp;
 
         }
@@ -95,21 +100,14 @@ namespace GameServer.Models
         public void Leave(Character member)
         {
             Log.InfoFormat("Leave Guild:{0}:{1}", member.Id, member.Info.Name);
-            this.Membres.Remove(member);
-            if (member == this.Leader)
-            {
-                if (this.Membres.Count > 0)
-                {
-                    this.Leader = this.Membres[0];
-                }
-                else
-                {
-                    this.Leader = null;
-                }
-            }
 
+            if (member.Guild==null)
+            {
+                return;
+            }
             member.Guild = null;
-            timestamp = TimeUtil.timestamp;
+
+
         }
 
         public void PostProcess(Character from, NetMessageResponse message)
@@ -166,19 +164,13 @@ namespace GameServer.Models
                     member.Level = character.Data.Level;
                     member.Name = character.Data.Name;
                     member.LastTime=DateTime.Now;
-                    if (member.Id == this.Data.Id)
-                    {
-                        this.Leader = character;
-                    }
+                
                 }
                 else
                 {
                     memberInfo.Info = this.GetMemberInfo(member);
                     memberInfo.Status = 0;
-                    if (member.Id == this.Data.LeaderID)
-                    {
-                        this.Leader = null;
-                    }
+                   
                 }
                 members.Add(memberInfo);
             }
@@ -201,6 +193,10 @@ namespace GameServer.Models
             List<NGuildApplyInfo> applies = new List<NGuildApplyInfo>();
             foreach (var apply in this.Data.Applies)
             {
+                if (apply.Result!=(int)ApplyResult.None)
+                {
+                    continue;
+                }
                 applies.Add(new NGuildApplyInfo()
                 {
                     characterId = apply.CharacterId,
@@ -214,6 +210,45 @@ namespace GameServer.Models
             }
 
             return applies;
+        }
+
+        TGuildMember GetDBMember(int characterid)
+        {
+            foreach (var member in this.Data.Members)
+            {
+                if (member.CharacterId ==characterid)
+                {
+                    return member;
+                }
+            }
+            return null;
+        }
+
+        internal void ExecuteAdmin(GuildAdminCommand Command, int targetId, int sourceId)
+        {
+            var target = GetDBMember(targetId);
+            var souecr = GetDBMember(sourceId);
+            switch (Command)
+            {
+                case GuildAdminCommand.Promote:
+                    target.Title = (int) GuildTitle.VicePresident;
+                    break;
+                case GuildAdminCommand.Depost:
+                    target.Title = (int) GuildTitle.None;
+                    break;
+                case GuildAdminCommand.Transfer:
+                    target.Title = (int) GuildTitle.President;
+                    souecr.Title = (int) GuildTitle.None;
+                    this.Data.LeaderID = targetId;
+                    this.Data.LeaderNmae = target.Name;
+                    break;
+                case GuildAdminCommand.Kickout:
+                    //踢人
+
+                    break;
+            }
+            DBService.Instance.Save();
+            timestamp = TimeUtil.timestamp;
         }
     }
 }

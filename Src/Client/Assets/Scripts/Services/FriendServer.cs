@@ -29,11 +29,11 @@ namespace Services
 
         public void Dispose()
         {
-            MessageDistributer.Instance.Subscribe<FriendAddRequest>(this
+            MessageDistributer.Instance.Unsubscribe<FriendAddRequest>(this
                 .OnFriendAddRequest);
-            MessageDistributer.Instance.Subscribe<FriendAddResponse>(this.OnFriendAddResponse);
-            MessageDistributer.Instance.Subscribe<FriendListResponse>(this.OnFriendList);
-            MessageDistributer.Instance.Subscribe<FriendRemoveResponse>(this
+            MessageDistributer.Instance.Unsubscribe<FriendAddResponse>(this.OnFriendAddResponse);
+            MessageDistributer.Instance.Unsubscribe<FriendListResponse>(this.OnFriendList);
+            MessageDistributer.Instance.Unsubscribe<FriendRemoveResponse>(this
                 .OnFriendRemove);
         }
         /// <summary>

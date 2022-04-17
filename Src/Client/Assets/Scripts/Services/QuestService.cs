@@ -25,7 +25,7 @@ namespace Assets.Scripts.Services
         {
             MessageDistributer.Instance.Unsubscribe<QuestAcceptResponse>(this
                 .OnQuestAccept);
-            MessageDistributer.Instance.Subscribe<QuestSubmitResponse>(this
+            MessageDistributer.Instance.Unsubscribe<QuestSubmitResponse>(this
                 .OnQuestSubmit);
         }
 
