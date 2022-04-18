@@ -44,7 +44,7 @@ namespace Managers
         public LocalChannel displayChannel;
         public LocalChannel sendChannel;
 
-        public int PrivateID;
+        public int PrivateID = 0;
         public string PrivateName="";
 
         public ChatChannel SendChannel
@@ -82,7 +82,7 @@ namespace Managers
 
         public bool SetSendChannel(LocalChannel channel)
         {
-            if (channel==LocalChannel.Team)
+            if (channel == LocalChannel.Team)
             {
                 if (User.Instance.TeamInfo==null)
                 {
@@ -91,7 +91,7 @@ namespace Managers
                 }
             }
 
-            if (channel==LocalChannel.Guild)
+            if (channel == LocalChannel.Guild)
             {
                 if (User.Instance.CurrentCharacter.Guild==null)
                 {

@@ -1,45 +1,36 @@
-2022-04-13 22:02:17,095 [ 1] INFO  Unity: LoadingManager start
-2022-04-13 22:02:20,950 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-13 22:02:26,188 [ 1] INFO  Unity: UserLoginRequest::user :7 psw:7
-2022-04-13 22:02:26,198 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-13 22:02:26,201 [ 1] INFO  Unity: DoConnect
-2022-04-13 22:02:26,203 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-13 22:02:26,207 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-18 22:08:56,274 [ 1] INFO  Unity: LoadingManager start
+2022-04-18 22:08:59,603 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-18 22:09:02,805 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-04-18 22:09:02,806 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-18 22:09:02,808 [ 1] INFO  Unity: DoConnect
+2022-04-18 22:09:02,810 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-18 22:09:02,813 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-13 22:02:26,218 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-13 22:02:26,612 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-13 22:02:26,619 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-13 22:02:26,874 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-13 22:02:27,924 [ 1] INFO  Unity: Select Char:[13]7[Warrior]
-2022-04-13 22:02:28,520 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-13 22:02:28,580 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-13 22:02:28,591 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-13 22:02:28,592 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-13 22:03:10,311 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-13 22:03:11,714 [ 1] INFO  Unity: AddCharacter:13:7 Map:1 Entity:(11:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-13 22:03:13,567 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-13 22:03:22,083 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-13 22:03:30,150 [ 1] INFO  Unity: SendGuildListRequest
-2022-04-13 22:12:13,242 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
-
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
-
-2022-04-13 22:12:13,244 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
-
-2022-04-13 22:12:13,350 [ 1] INFO  Unity: DoConnect
-2022-04-13 22:12:13,352 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-13 22:12:13,355 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2022-04-13 22:12:13,356 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-13 22:12:15,093 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-13 22:12:15,093 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-18 22:09:02,818 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-18 22:09:03,013 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-18 22:09:03,016 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-18 22:09:03,228 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-18 22:09:03,993 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-18 22:09:04,607 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-18 22:09:04,654 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-18 22:09:04,658 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-18 22:09:04,659 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-18 22:09:04,673 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-18 22:09:04,675 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-18 22:09:04,678 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(10:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-18 22:09:04,682 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-18 22:09:05,698 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-18 22:09:05,791 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
+UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
+TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:38)
+TabView+<Start>c__Iterator0.MoveNext () (at Assets/Scripts/UI/TabView/TabView.cs:22)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+}</args></log4net.Error>
+2022-04-18 22:09:49,063 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:10 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-18 22:09:49,067 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-18 22:09:49,069 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-04-13 22:12:15,097 [ 1] INFO  Unity: Character_13_7 OnDestroy :ID:11 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

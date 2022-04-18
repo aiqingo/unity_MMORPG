@@ -30,7 +30,7 @@ public class UIManager : Singleton<UIManager>
         this.UIResources.Add(typeof(UIGuildPopNoGuild), new UIElement() { Resources = "UI/Guild/UIGuildPopNoGuild", Cache = false });
         this.UIResources.Add(typeof(UIGuildPopCreate), new UIElement() { Resources = "UI/Guild/UIGuildPopCreate", Cache = false });
 
-        this.UIResources.Add(typeof(UIPopCharMenu), new UIElement() { Resources = "UI/Guild/UIPopCharMenu", Cache = false });
+        this.UIResources.Add(typeof(UIPopCharMenu), new UIElement() { Resources = "UI/UIPopCharMenu", Cache = false });
     }
 
 
