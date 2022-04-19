@@ -7,9 +7,9 @@ namespace Common
 {
     public  class GameDefine
     {
-        public const int MaxChatRecoredNums=30;
-        public const int MaxChatRecoredTime=5;
-        public const int BagMaxItemPerPage=60;
+        public const int MaxChatRecoredNums=20;
+        public const int MaxChatRecoredTime=600;
+        public const int BagMaxItemPerPage=30;
         public const  int GuildMaxMemberCount=40;
     }
 }

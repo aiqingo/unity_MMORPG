@@ -31,10 +31,12 @@
 
 using System;
 using System.Runtime.InteropServices;
+
 class Time
 {
     [DllImport("kernel32.dll")]
     static extern bool QueryPerformanceCounter([In, Out] ref long lpPerformanceCount);
+
     [DllImport("kernel32.dll")]
     static extern bool QueryPerformanceFrequency([In, Out] ref long lpFrequency);
 
@@ -48,7 +50,10 @@ class Time
     /// <summary>
     /// The total number of frames that have passed (Read Only).
     /// </summary>
-    public static long frameCount { get { return _frameCount; } }
+    public static long frameCount
+    {
+        get { return _frameCount; }
+    }
 
     static long startupTicks = 0;
 
@@ -74,13 +79,15 @@ class Time
                     freq = -1;
                 }
             }
+
             if (f == -1)
             {
                 return Environment.TickCount * 10000;
             }
+
             long c = 0;
             QueryPerformanceCounter(ref c);
-            return (long)(((double)c) * 1000 * 10000 / ((double)f));
+            return (long) (((double) c) * 1000 * 10000 / ((double) f));
         }
     }
 
@@ -92,24 +99,19 @@ class Time
     /// </summary>
     public static float deltaTime
     {
-        get
-        {
-            return _deltaTime;
-        }
+        get { return _deltaTime; }
     }
 
 
     private static float _time = 0;
+
     /// <summary>
     ///  The time at the beginning of this frame (Read Only). This is the time in seconds
     ///  since the start of the game.
     /// </summary> 
     public static float time
     {
-        get
-        {
-            return _time;
-        }
+        get { return _time; }
     }
 
 
@@ -140,22 +142,4 @@ class Time
         lastTick = _ticks;
     }
 
-    public static int timestamp
-    {
-        get { return GetTimestamp(DateTime.Now); }
-    }
-
-    public static DateTime GetTime(long timeStamp)
-    {
-        DateTime dateTimeStart = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
-        long lTime = timeStamp * 10000000;
-        TimeSpan toNow = new TimeSpan(lTime);
-        return dateTimeStart.Add(toNow);
-    }
-
-    public static int GetTimestamp(System.DateTime time)
-    {
-        System.DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
-        return (int) (time - startTime).TotalSeconds;
-    }
 }
