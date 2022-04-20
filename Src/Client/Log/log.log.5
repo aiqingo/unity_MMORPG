@@ -1,29 +1,75 @@
-2022-04-18 22:21:38,010 [ 1] INFO  Unity: LoadingManager start
-2022-04-18 22:21:41,333 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-18 22:21:44,265 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-04-18 22:21:44,268 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-18 22:21:44,269 [ 1] INFO  Unity: DoConnect
-2022-04-18 22:21:44,272 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-18 22:21:44,275 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-20 21:40:34,273 [ 1] INFO  Unity: LoadingManager start
+2022-04-20 21:40:37,730 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-20 21:40:42,472 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-04-20 21:40:42,474 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-20 21:40:42,475 [ 1] INFO  Unity: DoConnect
+2022-04-20 21:40:42,478 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-20 21:40:42,481 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-18 22:21:44,279 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-18 22:21:44,478 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-18 22:21:44,480 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-18 22:21:44,673 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-18 22:21:45,609 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-18 22:21:46,404 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-18 22:21:46,452 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-18 22:21:46,456 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-18 22:21:46,458 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-18 22:21:46,472 [ 1] INFO  Unity: OnGuild:Success1:11111
-2022-04-18 22:21:46,474 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-18 22:21:46,477 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(15:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-18 22:21:46,481 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-18 22:21:47,543 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-18 22:22:27,432 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-18 22:22:27,434 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-20 21:40:42,485 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-20 21:40:44,041 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-20 21:40:44,043 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-20 21:40:44,249 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 21:40:45,556 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 21:40:46,152 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-20 21:40:47,032 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-20 21:40:47,035 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-20 21:40:47,036 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-20 21:40:47,052 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-20 21:40:47,063 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-20 21:40:47,066 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-20 21:40:47,070 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-20 21:40:48,332 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 21:40:48,473 [ 1] INFO  Unity: Set Channel:Local
+2022-04-20 21:40:58,463 [ 1] INFO  Unity: SendBuyItem
+2022-04-20 21:40:58,469 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Services.ChatService.SendChat (ChatChannel channel, System.String content, Int32 toId, System.String toName) (at Assets/Scripts/Services/ChatService.cs:29)
+Managers.ChatManager.SendChat (System.String content, Int32 toId, System.String toName) (at Assets/Scripts/Managers/ChatManager.cs:88)
+UIChat.SendChat (System.String content) (at Assets/Scripts/UI/Chat/UIChat.cs:97)
+UIChat.OnEndInput (System.String text) (at Assets/Scripts/UI/Chat/UIChat.cs:89)
+UnityEngine.Events.InvokableCall`1[System.String].Invoke (System.String args0) (at D:/unity/Runtime/Export/UnityEvent.cs:207)
+UnityEngine.Events.UnityEvent`1[T0].Invoke (.T0 arg0) (at D:/unity/Runtime/Export/UnityEvent_1.cs:58)
+UnityEngine.UI.InputField.SendOnSubmit () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/InputField.cs:1590)
+UnityEngine.UI.InputField.DeactivateInputField () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/InputField.cs:2306)
+UnityEngine.UI.InputField.OnUpdateSelected (UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/InputField.cs:1262)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IUpdateSelectedHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:99)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IUpdateSelectedHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-04-20 21:40:59,958 [ 1] INFO  Unity: SendBuyItem
+2022-04-20 21:40:59,960 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Services.ChatService.SendChat (ChatChannel channel, System.String content, Int32 toId, System.String toName) (at Assets/Scripts/Services/ChatService.cs:29)
+Managers.ChatManager.SendChat (System.String content, Int32 toId, System.String toName) (at Assets/Scripts/Managers/ChatManager.cs:88)
+UIChat.SendChat (System.String content) (at Assets/Scripts/UI/Chat/UIChat.cs:97)
+UIChat.OnEndInput (System.String text) (at Assets/Scripts/UI/Chat/UIChat.cs:89)
+UnityEngine.Events.InvokableCall`1[System.String].Invoke (System.String args0) (at D:/unity/Runtime/Export/UnityEvent.cs:207)
+UnityEngine.Events.UnityEvent`1[T0].Invoke (.T0 arg0) (at D:/unity/Runtime/Export/UnityEvent_1.cs:58)
+UnityEngine.UI.InputField.SendOnSubmit () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/InputField.cs:1590)
+UnityEngine.UI.InputField.DeactivateInputField () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/InputField.cs:2306)
+UnityEngine.UI.InputField.OnDeselect (UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/InputField.cs:2324)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IDeselectHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:113)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IDeselectHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-04-20 21:41:01,757 [ 1] INFO  Unity: SendBuyItem
+2022-04-20 21:41:01,759 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Services.ChatService.SendChat (ChatChannel channel, System.String content, Int32 toId, System.String toName) (at Assets/Scripts/Services/ChatService.cs:29)
+Managers.ChatManager.SendChat (System.String content, Int32 toId, System.String toName) (at Assets/Scripts/Managers/ChatManager.cs:88)
+UIChat.SendChat (System.String content) (at Assets/Scripts/UI/Chat/UIChat.cs:97)
+UIChat.OnEndInput (System.String text) (at Assets/Scripts/UI/Chat/UIChat.cs:89)
+UIChat.OnClickSend () (at Assets/Scripts/UI/Chat/UIChat.cs:82)
+UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-04-20 21:41:21,782 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-20 21:41:21,787 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-20 21:41:21,789 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-04-18 22:22:27,442 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:15 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

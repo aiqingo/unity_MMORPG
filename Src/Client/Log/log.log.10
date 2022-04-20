@@ -1,127 +1,29 @@
-2022-04-18 21:54:53,725 [ 1] INFO  Unity: LoadingManager start
-2022-04-18 21:54:57,096 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-18 21:54:59,938 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-04-18 21:54:59,940 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-18 21:54:59,942 [ 1] INFO  Unity: DoConnect
-2022-04-18 21:54:59,945 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-18 21:54:59,948 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-18 22:26:11,756 [ 1] INFO  Unity: LoadingManager start
+2022-04-18 22:26:15,060 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-18 22:26:17,745 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-04-18 22:26:17,747 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-18 22:26:17,748 [ 1] INFO  Unity: DoConnect
+2022-04-18 22:26:17,751 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-18 22:26:17,754 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-18 21:54:59,952 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-18 21:55:01,398 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-18 21:55:01,400 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-18 21:55:01,618 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-18 21:55:02,576 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-18 21:55:03,304 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-18 21:55:03,716 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-18 21:55:03,719 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-18 21:55:03,720 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-18 21:55:03,736 [ 1] INFO  Unity: OnGuild:Success1:11111
-2022-04-18 21:55:03,738 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-18 21:55:03,741 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-18 21:55:03,745 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-18 21:55:04,806 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-18 21:55:04,899 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
-UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
-TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:41)
-TabView+<Start>c__Iterator0.MoveNext () (at Assets/Scripts/UI/TabView/TabView.cs:22)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-}</args></log4net.Error>
-2022-04-18 21:55:37,377 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
-UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
-TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:41)
-TabButton.OnClick () (at Assets/Scripts/UI/TabView/TabButton.cs:36)
-UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
-UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
-UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
-UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-04-18 21:55:37,664 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
-UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
-TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:41)
-TabButton.OnClick () (at Assets/Scripts/UI/TabView/TabButton.cs:36)
-UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
-UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
-UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
-UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-04-18 21:55:38,028 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
-UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
-TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:41)
-TabButton.OnClick () (at Assets/Scripts/UI/TabView/TabButton.cs:36)
-UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
-UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
-UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
-UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-04-18 21:55:38,377 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
-UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
-TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:41)
-TabButton.OnClick () (at Assets/Scripts/UI/TabView/TabButton.cs:36)
-UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
-UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
-UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
-UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-04-18 21:55:39,950 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
-UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
-TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:41)
-TabButton.OnClick () (at Assets/Scripts/UI/TabView/TabButton.cs:36)
-UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
-UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
-UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
-UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-04-18 21:55:40,398 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
-UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
-TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:41)
-TabButton.OnClick () (at Assets/Scripts/UI/TabView/TabButton.cs:36)
-UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
-UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
-UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
-UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-04-18 21:55:40,663 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:44)
-UIChat.OnDisplayChannelSelected (Int32 idx) (at Assets/Scripts/UI/Chat/UIChat.cs:38)
-TabView.SelectTab (Int32 index) (at Assets/Scripts/UI/TabView/TabView.cs:41)
-TabButton.OnClick () (at Assets/Scripts/UI/TabView/TabButton.cs:36)
-UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
-UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
-UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
-UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-04-18 21:55:48,137 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-04-18 21:55:48,147 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-18 21:55:48,149 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-18 22:26:17,758 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-18 22:26:19,040 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-18 22:26:19,042 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-18 22:26:19,229 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-18 22:26:19,972 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-18 22:26:20,552 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-18 22:26:20,967 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-18 22:26:20,971 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-18 22:26:20,973 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-18 22:26:20,990 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-18 22:26:20,992 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-18 22:26:20,995 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-18 22:26:20,999 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-18 22:26:22,094 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-18 22:26:45,441 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-18 22:26:45,443 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2022-04-18 22:26:45,453 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
