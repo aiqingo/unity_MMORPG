@@ -29,13 +29,29 @@ namespace Models
 
         public SkillBridge.Message.NCharacterInfo CurrentCharacter { get; set; }
 
-        public GameObject CurrentCharacterObject { get; set; }
+        public PlayerInputController CurrentCharacterObject { get; set; }
 
         public NTeamInfo TeamInfo { get; set; }
 
         public void AddGold(int gold)
         {
             this.CurrentCharacter.Goid += gold;
+        }
+
+        public int CurrentRide = 0;
+
+        internal void Ride(int id)
+        {
+            if (CurrentRide != id)
+            {
+                CurrentRide = id;
+                CurrentCharacterObject.SendEntityEvent(EntityEvent.Ride, CurrentRide);
+            }
+            else
+            {
+                CurrentRide = 0;
+                CurrentCharacterObject.SendEntityEvent(EntityEvent.Ride, 0);
+            }
         }
     }
 }

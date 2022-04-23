@@ -44,6 +44,7 @@ enum ENTITY_EVENT
 	MOVE_FWD = 2;
 	MOVE_BACK = 3;
 	JUMP = 4;
+	RIDE = 5;
 }
 
 
@@ -53,6 +54,7 @@ enum ITEM_TYPE
 	MATERIAL = 1;
 	TASK = 2;  //任务道具
 	EQUIP = 3;
+	RIDE = 4;
 }
 
 enum EQUIP_SLOT
@@ -96,8 +98,10 @@ message NCharacterInfo {
 	repeated NQuestInfo quests=14;
 	repeated NFriendInfo friends=15;
 	NGuildInfo guild = 16;
-
+	int32 ride = 17;
 }
+
+
 
 message NVector3
 {
@@ -170,7 +174,7 @@ message NEntitySync {
 	int32 id = 1;
 	ENTITY_EVENT event = 2;
 	NEntity entity = 3;
-	
+	int32 param = 4;
 }
 
 

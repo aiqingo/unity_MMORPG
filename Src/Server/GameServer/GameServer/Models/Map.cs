@@ -124,6 +124,10 @@ namespace GameServer.Models
                     kv.Value.character.Position = entity.Entity.Position;
                     kv.Value.character.Direction = entity.Entity.Direction;
                     kv.Value.character.Speed = entity.Entity.Speed;
+                    if (entity.Event == EntityEvent.Ride)
+                    {
+                        kv.Value.character.Ride = entity.Param;
+                    }
                 }
                 else
                 {

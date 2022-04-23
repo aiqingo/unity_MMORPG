@@ -1,29 +1,194 @@
-2022-04-18 22:26:11,756 [ 1] INFO  Unity: LoadingManager start
-2022-04-18 22:26:15,060 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-18 22:26:17,745 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-04-18 22:26:17,747 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-18 22:26:17,748 [ 1] INFO  Unity: DoConnect
-2022-04-18 22:26:17,751 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-18 22:26:17,754 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-20 21:54:43,257 [ 1] INFO  Unity: LoadingManager start
+2022-04-20 21:54:46,419 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-20 21:54:52,081 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-04-20 21:54:52,084 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-20 21:54:52,086 [ 1] INFO  Unity: DoConnect
+2022-04-20 21:54:52,088 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-20 21:54:52,092 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-18 22:26:17,758 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-18 22:26:19,040 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-18 22:26:19,042 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-18 22:26:19,229 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-18 22:26:19,972 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-18 22:26:20,552 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-18 22:26:20,967 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-18 22:26:20,971 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-18 22:26:20,973 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-18 22:26:20,990 [ 1] INFO  Unity: OnGuild:Success1:11111
-2022-04-18 22:26:20,992 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-18 22:26:20,995 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-18 22:26:20,999 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-18 22:26:22,094 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-18 22:26:45,441 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-18 22:26:45,443 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-20 21:54:52,095 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-20 21:54:53,434 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-20 21:54:53,437 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-20 21:54:53,629 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 21:54:55,414 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 21:54:56,225 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-20 21:54:56,643 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-20 21:54:56,647 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-20 21:54:56,648 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-20 21:54:56,664 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-20 21:54:56,666 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-20 21:54:56,669 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-20 21:54:56,673 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-20 21:54:57,805 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 21:54:57,916 [ 1] INFO  Unity: Set Channel:Local
+2022-04-20 21:54:59,573 [ 1] INFO  Unity: SendBuyItem
+2022-04-20 21:55:01,407 [ 1] INFO  Unity: Set Channel:World
+2022-04-20 21:55:02,931 [ 1] INFO  Unity: SendBuyItem
+2022-04-20 21:55:06,741 [ 1] INFO  Unity: Set Channel:Guild
+2022-04-20 21:55:09,726 [ 1] INFO  Unity: SendBuyItem
+2022-04-20 21:55:21,322 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-20 21:55:21,325 [ 1] INFO  Unity: UserGameLeaverRequest
+2022-04-20 21:55:21,426 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
+2022-04-20 21:55:21,433 [ 1] INFO  Unity: RemoveCharacter:1
+2022-04-20 21:59:33,822 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-20 21:59:34,050 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
+  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
+  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
+  at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
+  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
+  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-04-20 21:59:34,054 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
+Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
+Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
+UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:43)
+Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:127)
+Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
+Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-04-20 21:59:34,263 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-20 21:59:34,432 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 21:59:43,317 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 21:59:43,749 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 21:59:44,724 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 21:59:44,907 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 21:59:45,686 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-20 21:59:45,720 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-20 21:59:45,720 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-20 21:59:45,722 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-20 21:59:45,724 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-20 22:00:01,366 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-20 22:00:01,368 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(10:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-20 22:00:01,371 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-20 22:00:02,444 [ 1] INFO  Unity: SetPosition:(5000, 4000, 768)
+2022-04-20 22:00:02,446 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5000,4000,768) DIR:(100,0,0) SPD:0
+2022-04-20 22:00:02,689 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 22:00:21,309 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-20 22:00:21,309 [ 1] INFO  Unity: UserGameLeaverRequest
+2022-04-20 22:00:21,404 [ 1] INFO  Unity: OnMapCharacterLeave:CharID10
+2022-04-20 22:00:21,407 [ 1] INFO  Unity: RemoveCharacter:10
+2022-04-20 22:01:22,098 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-20 22:01:22,378 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
+  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
+  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
+  at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
+  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
+  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-04-20 22:01:22,381 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
+Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
+Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
+UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:43)
+Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:127)
+Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
+Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-04-20 22:01:22,481 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:10 POS:(5000, 4000, 768) DIR:(100, 0, 0) SPD:0 
+2022-04-20 22:01:22,568 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 22:01:30,348 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 22:01:31,127 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-20 22:01:31,161 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-20 22:01:31,162 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-20 22:01:31,163 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-20 22:01:31,165 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-20 22:01:31,166 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-20 22:01:31,168 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(11:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-20 22:01:31,170 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-20 22:01:32,354 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 22:01:35,492 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-20 22:01:35,494 [ 1] INFO  Unity: UserGameLeaverRequest
+2022-04-20 22:01:35,596 [ 1] INFO  Unity: OnMapCharacterLeave:CharID11
+2022-04-20 22:01:35,598 [ 1] INFO  Unity: RemoveCharacter:11
+2022-04-20 22:01:35,600 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-20 22:01:35,602 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
+  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
+  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
+  at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
+  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
+  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-04-20 22:01:35,603 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
+Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
+Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
+UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:43)
+Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:127)
+Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
+Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-04-20 22:01:35,605 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:11 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-20 22:01:35,685 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 22:01:36,790 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 22:01:37,603 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-20 22:01:37,636 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-20 22:01:37,638 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-20 22:01:37,639 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-20 22:01:37,640 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-20 22:01:37,642 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-20 22:01:37,643 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(12:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-20 22:01:37,646 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-20 22:01:38,700 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 22:01:51,529 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-20 22:01:51,530 [ 1] INFO  Unity: UserGameLeaverRequest
+2022-04-20 22:01:51,627 [ 1] INFO  Unity: OnMapCharacterLeave:CharID12
+2022-04-20 22:01:51,630 [ 1] INFO  Unity: RemoveCharacter:12
+2022-04-20 22:02:26,910 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-20 22:02:27,333 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
+  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
+  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
+  at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
+  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
+  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-04-20 22:02:27,335 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
+Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
+Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
+UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:43)
+Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:127)
+Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
+Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-04-20 22:02:27,421 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:12 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-20 22:02:27,503 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 22:02:31,727 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-20 22:02:32,407 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-20 22:02:32,440 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-20 22:02:32,441 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-20 22:02:32,441 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-20 22:02:32,442 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-20 22:02:55,144 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-20 22:02:55,146 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(13:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-20 22:02:55,148 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-20 22:03:19,024 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 22:03:22,633 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-20 22:03:22,634 [ 1] INFO  Unity: UserGameLeaverRequest
+2022-04-20 22:03:22,733 [ 1] INFO  Unity: OnMapCharacterLeave:CharID13
+2022-04-20 22:03:22,735 [ 1] INFO  Unity: RemoveCharacter:13
+2022-04-20 22:04:15,986 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-20 22:04:16,828 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
+  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
+  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
+  at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
+  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
+  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-04-20 22:04:16,831 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
+Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
+Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
+UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:43)
+Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:127)
+Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
+Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-04-20 22:04:16,837 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:13 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-20 22:04:16,920 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-20 22:04:23,778 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-20 22:04:23,780 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-04-18 22:26:45,453 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
