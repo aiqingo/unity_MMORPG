@@ -1,6 +1,6 @@
 服务器名称  DESKTOP-E95CKC1       这个是电脑名称
 数据库表  ExtremeWorld     数据库的表
-链接数据库名称  DESKTOP-E95CKC1\MMORPG       是你自己创建的数据库的名称
+链接数据库名称  DESKTOP-E95CKC1\MMORPG       是你自己创建的数据库的名称1
 
 
 
