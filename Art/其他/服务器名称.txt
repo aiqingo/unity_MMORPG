@@ -5,3 +5,11 @@
 
 
 Data Source=DESKTOP-E95CKC1\MMORPG;Initial Catalog=ExtremeWorld;User ID=mmo
+
+
+DESKTOP-IQDVDFU\MMORPG
+
+DESKTOP-IQDVDFU\MMORPG
+
+
+Data Source=DESKTOP-IQDVDFU\MMORPG;Initial Catalog=ExtremeWorld;Integrated Security=True
