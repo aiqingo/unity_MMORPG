@@ -6,7 +6,8 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "MainCity",
-    "MinMap": "buluzheng"
+    "MiniMap": "buluzheng",
+    "Music": "bgm-town"
   },
   "2": {
     "ID": 2,
@@ -15,24 +16,27 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map01",
-    "MinMap": "luorisenl"
+    "MiniMap": "luorisenl",
+    "Music": "bgm-map01"
   },
   "3": {
     "ID": 3,
-    "Name": "落日深林",
+    "Name": "野外2",
     "Type": "Normal",
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map02",
-    "MinMap": "luorisenl"
+    "MiniMap": "luorisenl",
+    "Music": "bgm-map02"
   },
   "4": {
     "ID": 4,
-    "Name": "落日余晖",
+    "Name": "落日空间",
     "Type": "Normal",
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map03",
-    "MinMap": "luoriyuhui"
+    "MiniMap": "luoriyuhui",
+    "Music": "bgm-map02"
   }
 }

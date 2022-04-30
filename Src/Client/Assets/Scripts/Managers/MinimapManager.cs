@@ -33,12 +33,13 @@ namespace Managers
 
         public Sprite LoadCurrenMinimap()
         {
-            Sprite s = Resloader.Load<Sprite>("UI/Minimap/" + User.Instance.CurrentMapData.MinMap);
+            Sprite s = Resloader.Load<Sprite>("UI/Minimap/" + User.Instance.CurrentMapData.MiniMap);
             return s;
         }
 
         public void UpdataMinimap(Collider minimapBoundingBox)
         {
+            
             this.minimapBoundingBox = minimapBoundingBox;
             if (this.minimap!=null)
             {

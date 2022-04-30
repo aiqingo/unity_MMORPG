@@ -36,7 +36,7 @@ public class UIRegister : MonoBehaviour
         if (string.IsNullOrEmpty(this.username.text))
         {
             MessageBox.Show("请输入账号");
-            return;;
+            return;
         }
 
         if (string.IsNullOrEmpty(this.password.text))
@@ -56,6 +56,7 @@ public class UIRegister : MonoBehaviour
             MessageBox.Show("两次密码输入不一致");
             return;
         }
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         UserService.Instance.SendRegister(this.username.text,this.password.text);
 
 
