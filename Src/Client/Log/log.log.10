@@ -1,44 +1,42 @@
-2022-04-20 21:54:43,257 [ 1] INFO  Unity: LoadingManager start
-2022-04-20 21:54:46,419 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-20 21:54:52,081 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-04-20 21:54:52,084 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-20 21:54:52,086 [ 1] INFO  Unity: DoConnect
-2022-04-20 21:54:52,088 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-20 21:54:52,092 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-04-23 16:05:15,966 [ 1] INFO  Unity: LoadingManager start
+2022-04-23 16:05:19,644 [ 1] INFO  Unity: DataManager > DataManager()
+2022-04-23 16:05:22,639 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-04-23 16:05:22,642 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-04-23 16:05:22,643 [ 1] INFO  Unity: DoConnect
+2022-04-23 16:05:22,646 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-04-23 16:05:22,649 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-20 21:54:52,095 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-20 21:54:53,434 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-20 21:54:53,437 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-20 21:54:53,629 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 21:54:55,414 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-20 21:54:56,225 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-20 21:54:56,643 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-20 21:54:56,647 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-20 21:54:56,648 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-20 21:54:56,664 [ 1] INFO  Unity: OnGuild:Success1:11111
-2022-04-20 21:54:56,666 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-20 21:54:56,669 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-20 21:54:56,673 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-20 21:54:57,805 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 21:54:57,916 [ 1] INFO  Unity: Set Channel:Local
-2022-04-20 21:54:59,573 [ 1] INFO  Unity: SendBuyItem
-2022-04-20 21:55:01,407 [ 1] INFO  Unity: Set Channel:World
-2022-04-20 21:55:02,931 [ 1] INFO  Unity: SendBuyItem
-2022-04-20 21:55:06,741 [ 1] INFO  Unity: Set Channel:Guild
-2022-04-20 21:55:09,726 [ 1] INFO  Unity: SendBuyItem
-2022-04-20 21:55:21,322 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-20 21:55:21,325 [ 1] INFO  Unity: UserGameLeaverRequest
-2022-04-20 21:55:21,426 [ 1] INFO  Unity: OnMapCharacterLeave:CharID1
-2022-04-20 21:55:21,433 [ 1] INFO  Unity: RemoveCharacter:1
-2022-04-20 21:59:33,822 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-04-20 21:59:34,050 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
+2022-04-23 16:05:22,653 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-04-23 16:05:22,856 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-04-23 16:05:22,859 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-23 16:05:23,105 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-23 16:05:23,888 [ 1] INFO  Unity: Select Char:[1002]21[Archer]
+2022-04-23 16:05:24,434 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
+2022-04-23 16:05:24,481 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-23 16:05:24,483 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-23 16:05:24,485 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-23 16:05:24,487 [ 1] INFO  Unity: ItemManager:Init[Id:8002,Count:1]
+2022-04-23 16:05:24,488 [ 1] INFO  Unity: ItemManager:Init[Id:8003,Count:1]
+2022-04-23 16:05:24,503 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-23 16:05:24,506 [ 1] INFO  Unity: AddCharacter:1002:21 Map:1 Entity:(21:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-23 16:05:24,511 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-23 16:05:25,588 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-23 16:05:25,698 [ 1] INFO  Unity: Set Channel:Local
+2022-04-23 16:05:27,999 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:21 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2022-04-23 16:05:32,633 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:21 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2022-04-23 16:05:35,104 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-23 16:05:35,106 [ 1] INFO  Unity: UserGameLeaverRequest
+2022-04-23 16:05:35,215 [ 1] INFO  Unity: OnMapCharacterLeave:CharID21
+2022-04-23 16:05:35,218 [ 1] INFO  Unity: RemoveCharacter:21
+2022-04-23 16:05:35,221 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-23 16:05:35,223 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
   at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
   at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
   at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
   at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
   at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
   at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-04-20 21:59:34,054 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+2022-04-23 16:05:35,225 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
 {1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
 Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
 Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
@@ -47,36 +45,35 @@ Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generi
 Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
 Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
 }</args></log4net.Error>
-2022-04-20 21:59:34,263 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-04-20 21:59:34,432 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 21:59:43,317 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-20 21:59:43,749 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-20 21:59:44,724 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-20 21:59:44,907 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-20 21:59:45,686 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-20 21:59:45,720 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-20 21:59:45,720 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-20 21:59:45,722 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-20 21:59:45,724 [ 1] INFO  Unity: OnGuild:Success1:11111
-2022-04-20 22:00:01,366 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-20 22:00:01,368 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(10:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-20 22:00:01,371 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-20 22:00:02,444 [ 1] INFO  Unity: SetPosition:(5000, 4000, 768)
-2022-04-20 22:00:02,446 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5000,4000,768) DIR:(100,0,0) SPD:0
-2022-04-20 22:00:02,689 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 22:00:21,309 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-20 22:00:21,309 [ 1] INFO  Unity: UserGameLeaverRequest
-2022-04-20 22:00:21,404 [ 1] INFO  Unity: OnMapCharacterLeave:CharID10
-2022-04-20 22:00:21,407 [ 1] INFO  Unity: RemoveCharacter:10
-2022-04-20 22:01:22,098 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-04-20 22:01:22,378 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
+2022-04-23 16:05:35,231 [ 1] INFO  Unity: Character_1002_21 OnDestroy :ID:21 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-23 16:05:35,298 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-23 16:05:36,163 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-23 16:05:36,281 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-23 16:05:38,403 [ 1] INFO  Unity: Select Char:[1002]21[Archer]
+2022-04-23 16:05:39,246 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
+2022-04-23 16:05:39,279 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-23 16:05:39,280 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-23 16:05:39,283 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-23 16:05:39,284 [ 1] INFO  Unity: ItemManager:Init[Id:8002,Count:1]
+2022-04-23 16:05:39,285 [ 1] INFO  Unity: ItemManager:Init[Id:8003,Count:1]
+2022-04-23 16:05:39,286 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-23 16:05:39,288 [ 1] INFO  Unity: AddCharacter:1002:21 Map:1 Entity:(22:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-23 16:05:39,291 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-23 16:05:40,288 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-23 16:05:44,755 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:22 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2022-04-23 16:05:47,388 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-04-23 16:05:47,390 [ 1] INFO  Unity: UserGameLeaverRequest
+2022-04-23 16:05:47,505 [ 1] INFO  Unity: OnMapCharacterLeave:CharID22
+2022-04-23 16:05:47,507 [ 1] INFO  Unity: RemoveCharacter:22
+2022-04-23 16:05:47,509 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2022-04-23 16:05:47,510 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
   at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
   at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
   at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
   at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
   at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
   at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-04-20 22:01:22,381 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+2022-04-23 16:05:47,510 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
 {1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
 Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
 Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
@@ -85,110 +82,165 @@ Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generi
 Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
 Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
 }</args></log4net.Error>
-2022-04-20 22:01:22,481 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:10 POS:(5000, 4000, 768) DIR:(100, 0, 0) SPD:0 
-2022-04-20 22:01:22,568 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 22:01:30,348 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-20 22:01:31,127 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-20 22:01:31,161 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-20 22:01:31,162 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-20 22:01:31,163 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-20 22:01:31,165 [ 1] INFO  Unity: OnGuild:Success1:11111
-2022-04-20 22:01:31,166 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-20 22:01:31,168 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(11:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-20 22:01:31,170 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-20 22:01:32,354 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 22:01:35,492 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-20 22:01:35,494 [ 1] INFO  Unity: UserGameLeaverRequest
-2022-04-20 22:01:35,596 [ 1] INFO  Unity: OnMapCharacterLeave:CharID11
-2022-04-20 22:01:35,598 [ 1] INFO  Unity: RemoveCharacter:11
-2022-04-20 22:01:35,600 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-04-20 22:01:35,602 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
-  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
-  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
-  at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
-  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
-  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-04-20 22:01:35,603 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
-Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
-Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
-UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:43)
-Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:127)
-Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
-Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-04-20 22:01:35,605 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:11 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-04-20 22:01:35,685 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 22:01:36,790 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-20 22:01:37,603 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-20 22:01:37,636 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-20 22:01:37,638 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-20 22:01:37,639 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-20 22:01:37,640 [ 1] INFO  Unity: OnGuild:Success1:11111
-2022-04-20 22:01:37,642 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-20 22:01:37,643 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(12:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-20 22:01:37,646 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-20 22:01:38,700 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 22:01:51,529 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-20 22:01:51,530 [ 1] INFO  Unity: UserGameLeaverRequest
-2022-04-20 22:01:51,627 [ 1] INFO  Unity: OnMapCharacterLeave:CharID12
-2022-04-20 22:01:51,630 [ 1] INFO  Unity: RemoveCharacter:12
-2022-04-20 22:02:26,910 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-04-20 22:02:27,333 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
-  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
-  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
-  at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
-  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
-  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-04-20 22:02:27,335 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
-Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
-Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
-UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:43)
-Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:127)
-Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
-Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-04-20 22:02:27,421 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:12 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-04-20 22:02:27,503 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 22:02:31,727 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
-2022-04-20 22:02:32,407 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-20 22:02:32,440 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-20 22:02:32,441 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-20 22:02:32,441 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-20 22:02:32,442 [ 1] INFO  Unity: OnGuild:Success1:11111
-2022-04-20 22:02:55,144 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-20 22:02:55,146 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(13:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-20 22:02:55,148 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-20 22:03:19,024 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 22:03:22,633 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-20 22:03:22,634 [ 1] INFO  Unity: UserGameLeaverRequest
-2022-04-20 22:03:22,733 [ 1] INFO  Unity: OnMapCharacterLeave:CharID13
-2022-04-20 22:03:22,735 [ 1] INFO  Unity: RemoveCharacter:13
-2022-04-20 22:04:15,986 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2022-04-20 22:04:16,828 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:180 
-  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:162 
-  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:151 
-  at UIChat.RefreshUI () [0x0000c] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:43 
-  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x0003b] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Managers\ChatManager.cs:127 
-  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\unitymmorpg\unity_MMORPG\Src\Client\Assets\Scripts\Services\ChatService.cs:41 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00044] in E:\unitymmorpg\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-04-20 22:04:16,831 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:180)
-Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:162)
-Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:151)
-UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:43)
-Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:127)
-Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:41)
-Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) (at E:/unitymmorpg/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-04-20 22:04:16,837 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:13 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-04-20 22:04:16,920 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-20 22:04:23,778 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-20 22:04:23,780 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-04-23 16:05:47,513 [ 1] INFO  Unity: Character_1002_21 OnDestroy :ID:22 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-04-23 16:05:47,579 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-23 16:05:48,492 [ 1] INFO  Unity: Select Char:[2]1[Warrior]
+2022-04-23 16:05:49,187 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-04-23 16:05:49,227 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-04-23 16:05:49,229 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-04-23 16:05:49,230 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-04-23 16:05:49,232 [ 1] INFO  Unity: ItemManager:Init[Id:8001,Count:1]
+2022-04-23 16:05:49,233 [ 1] INFO  Unity: OnGuild:Success1:11111
+2022-04-23 16:05:49,234 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-04-23 16:05:49,235 [ 1] INFO  Unity: AddCharacter:2:1 Map:1 Entity:(23:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-04-23 16:05:49,238 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-04-23 16:05:50,207 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-23 16:05:54,389 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2022-04-23 16:06:01,262 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2022-04-23 16:06:03,847 [ 1] INFO  Unity: SendBuyItem
+2022-04-23 16:06:03,969 [ 1] INFO  Unity: StatusNotify:[Item][Add]8003:1
+2022-04-23 16:06:03,971 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:1000
+2022-04-23 16:06:07,553 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2022-04-23 16:06:12,530 [ 1] INFO  Unity: MoveForward
+2022-04-23 16:06:12,531 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2022-04-23 16:06:12,928 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-04-23 16:06:12,929 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5115,4000,820) DIR:(98,-18,0) SPD:300
+2022-04-23 16:06:13,028 [ 1] INFO  Unity: SetDirection:(93, -37, 0)
+2022-04-23 16:06:13,029 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5145,3994,820) DIR:(93,-37,0) SPD:300
+2022-04-23 16:06:13,125 [ 1] INFO  Unity: SetDirection:(83, -55, 0)
+2022-04-23 16:06:13,126 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5175,3982,820) DIR:(83,-55,0) SPD:300
+2022-04-23 16:06:13,208 [ 1] INFO  Unity: SetDirection:(72, -69, 0)
+2022-04-23 16:06:13,209 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5195,3967,820) DIR:(72,-69,0) SPD:300
+2022-04-23 16:06:13,308 [ 1] INFO  Unity: SetDirection:(56, -83, 0)
+2022-04-23 16:06:13,309 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5219,3949,820) DIR:(56,-83,0) SPD:300
+2022-04-23 16:06:13,407 [ 1] INFO  Unity: SetDirection:(38, -92, 0)
+2022-04-23 16:06:13,408 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5237,3925,820) DIR:(38,-92,0) SPD:300
+2022-04-23 16:06:13,492 [ 1] INFO  Unity: SetDirection:(21, -98, 0)
+2022-04-23 16:06:13,493 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5247,3900,820) DIR:(21,-98,0) SPD:300
+2022-04-23 16:06:13,592 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
+2022-04-23 16:06:13,593 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5253,3870,820) DIR:(1,-100,0) SPD:300
+2022-04-23 16:06:13,691 [ 1] INFO  Unity: SetDirection:(-17, -99, 0)
+2022-04-23 16:06:13,692 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5253,3840,820) DIR:(-17,-99,0) SPD:300
+2022-04-23 16:06:14,735 [ 1] INFO  Unity: SetDirection:(3, -100, 0)
+2022-04-23 16:06:14,736 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5190,3525,820) DIR:(3,-100,0) SPD:300
+2022-04-23 16:06:14,817 [ 1] INFO  Unity: SetDirection:(21, -98, 0)
+2022-04-23 16:06:14,818 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5190,3500,820) DIR:(21,-98,0) SPD:300
+2022-04-23 16:06:15,199 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
+2022-04-23 16:06:15,201 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5212,3390,820) DIR:(1,-100,0) SPD:300
+2022-04-23 16:06:15,281 [ 1] INFO  Unity: SetDirection:(-16, -99, 0)
+2022-04-23 16:06:15,282 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5212,3365,820) DIR:(-16,-99,0) SPD:300
+2022-04-23 16:06:15,364 [ 1] INFO  Unity: SetDirection:(-33, -94, 0)
+2022-04-23 16:06:15,365 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5207,3340,820) DIR:(-33,-94,0) SPD:300
+2022-04-23 16:06:15,465 [ 1] INFO  Unity: SetDirection:(-52, -86, 0)
+2022-04-23 16:06:15,466 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5195,3310,820) DIR:(-52,-86,0) SPD:300
+2022-04-23 16:06:15,762 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
+2022-04-23 16:06:15,763 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5141,3238,820) DIR:(-34,-94,0) SPD:300
+2022-04-23 16:06:15,861 [ 1] INFO  Unity: SetDirection:(-14, -99, 0)
+2022-04-23 16:06:15,863 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5129,3208,820) DIR:(-14,-99,0) SPD:300
+2022-04-23 16:06:15,960 [ 1] INFO  Unity: SetDirection:(7, -100, 0)
+2022-04-23 16:06:15,961 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5123,3178,820) DIR:(7,-100,0) SPD:300
+2022-04-23 16:06:16,060 [ 1] INFO  Unity: SetDirection:(26, -97, 0)
+2022-04-23 16:06:16,061 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5123,3148,820) DIR:(26,-97,0) SPD:300
+2022-04-23 16:06:16,193 [ 1] INFO  Unity: SetDirection:(43, -90, 0)
+2022-04-23 16:06:16,194 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5131,3108,820) DIR:(43,-90,0) SPD:300
+2022-04-23 16:06:16,990 [ 1] INFO  Unity: SetPosition:(5264, 2897, 802)
+2022-04-23 16:06:16,991 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5264,2897,802) DIR:(43,-90,0) SPD:300
+2022-04-23 16:06:17,617 [ 1] INFO  Unity: SetDirection:(27, -96, 0)
+2022-04-23 16:06:17,618 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5338,2712,802) DIR:(27,-96,0) SPD:300
+2022-04-23 16:06:17,717 [ 1] INFO  Unity: SetDirection:(7, -100, 0)
+2022-04-23 16:06:17,718 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5344,2682,802) DIR:(7,-100,0) SPD:300
+2022-04-23 16:06:17,816 [ 1] INFO  Unity: SetDirection:(-14, -99, 0)
+2022-04-23 16:06:17,817 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5344,2652,802) DIR:(-14,-99,0) SPD:300
+2022-04-23 16:06:17,916 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
+2022-04-23 16:06:17,918 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5338,2622,802) DIR:(-34,-94,0) SPD:300
+2022-04-23 16:06:18,017 [ 1] INFO  Unity: SetDirection:(-53, -85, 0)
+2022-04-23 16:06:18,018 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5326,2592,802) DIR:(-53,-85,0) SPD:300
+2022-04-23 16:06:18,117 [ 1] INFO  Unity: SetDirection:(-69, -72, 0)
+2022-04-23 16:06:18,129 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5308,2568,802) DIR:(-69,-72,0) SPD:300
+2022-04-23 16:06:18,196 [ 1] INFO  Unity: SetDirection:(-81, -59, 0)
+2022-04-23 16:06:18,197 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5293,2548,802) DIR:(-81,-59,0) SPD:300
+2022-04-23 16:06:18,295 [ 1] INFO  Unity: SetDirection:(-91, -41, 0)
+2022-04-23 16:06:18,296 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5269,2530,802) DIR:(-91,-41,0) SPD:300
+2022-04-23 16:06:18,411 [ 1] INFO  Unity: SetDirection:(-97, -24, 0)
+2022-04-23 16:06:18,411 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(5234,2516,802) DIR:(-97,-24,0) SPD:300
+2022-04-23 16:06:19,291 [ 1] INFO  Unity: SetDirection:(-100, -7, 0)
+2022-04-23 16:06:19,292 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(4974,2464,802) DIR:(-100,-7,0) SPD:300
+2022-04-23 16:06:19,455 [ 1] INFO  Unity: SetDirection:(-99, 11, 0)
+2022-04-23 16:06:19,456 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(4924,2464,802) DIR:(-99,11,0) SPD:300
+2022-04-23 16:06:21,279 [ 1] INFO  Unity: SetPosition:(4407, 2531, 802)
+2022-04-23 16:06:21,281 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(4407,2531,802) DIR:(-99,11,0) SPD:300
+2022-04-23 16:06:23,134 [ 1] INFO  Unity: SetPosition:(3851, 2593, 802)
+2022-04-23 16:06:23,135 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(3851,2593,802) DIR:(-99,11,0) SPD:300
+2022-04-23 16:06:23,265 [ 1] INFO  Unity: SetDirection:(-100, -8, 0)
+2022-04-23 16:06:23,267 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(3816,2600,802) DIR:(-100,-8,0) SPD:300
+2022-04-23 16:06:25,238 [ 1] INFO  Unity: SetPosition:(3221, 2549, 802)
+2022-04-23 16:06:25,239 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(3221,2549,802) DIR:(-100,-8,0) SPD:300
+2022-04-23 16:06:26,463 [ 1] INFO  Unity: Stop
+2022-04-23 16:06:26,464 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(2856,2549,802) DIR:(-100,-8,0) SPD:0
+2022-04-23 16:06:26,876 [ 1] INFO  Unity: MoveForward
+2022-04-23 16:06:26,877 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(2856,2549,802) DIR:(-100,-8,0) SPD:300
+2022-04-23 16:06:27,755 [ 1] INFO  Unity: SetPosition:(2594, 2499, 802)
+2022-04-23 16:06:27,757 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(2594,2499,802) DIR:(-100,-8,0) SPD:300
+2022-04-23 16:06:29,767 [ 1] INFO  Unity: SetDirection:(-99, 11, 0)
+2022-04-23 16:06:29,768 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1989,2499,802) DIR:(-99,11,0) SPD:300
+2022-04-23 16:06:29,820 [ 1] INFO  Unity: SetPosition:(1973, 2452, 802)
+2022-04-23 16:06:29,821 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1973,2452,802) DIR:(-99,11,0) SPD:300
+2022-04-23 16:06:29,902 [ 1] INFO  Unity: SetDirection:(-95, 30, 0)
+2022-04-23 16:06:29,903 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1948,2457,802) DIR:(-95,30,0) SPD:300
+2022-04-23 16:06:30,796 [ 1] INFO  Unity: TeleporterObject: Character [1] Enter Teleporter [3:主城传入点1]
+2022-04-23 16:06:31,276 [ 1] INFO  Unity: SetDirection:(-99, 11, 0)
+2022-04-23 16:06:31,277 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1538,2621,802) DIR:(-99,11,0) SPD:300
+2022-04-23 16:06:31,375 [ 1] INFO  Unity: SetDirection:(-100, -6, 0)
+2022-04-23 16:06:31,376 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1508,2627,802) DIR:(-100,-6,0) SPD:300
+2022-04-23 16:06:31,393 [ 1] INFO  Unity: SetPosition:(1523, 2581, 802)
+2022-04-23 16:06:31,394 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1523,2581,802) DIR:(-100,-6,0) SPD:300
+2022-04-23 16:06:31,558 [ 1] INFO  Unity: SetDirection:(-97, -23, 0)
+2022-04-23 16:06:31,560 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1473,2581,802) DIR:(-97,-23,0) SPD:300
+2022-04-23 16:06:31,955 [ 1] INFO  Unity: SetDirection:(-100, -4, 0)
+2022-04-23 16:06:31,955 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1353,2557,802) DIR:(-100,-4,0) SPD:300
+2022-04-23 16:06:32,105 [ 1] INFO  Unity: SetDirection:(-99, 15, 0)
+2022-04-23 16:06:32,106 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(1308,2557,802) DIR:(-99,15,0) SPD:300
+2022-04-23 16:06:33,714 [ 1] INFO  Unity: SetDirection:(-100, -3, 0)
+2022-04-23 16:06:33,715 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(828,2653,802) DIR:(-100,-3,0) SPD:300
+2022-04-23 16:06:34,308 [ 1] INFO  Unity: TeleporterObject: Character [1] Enter Teleporter [1:主城->野外]
+2022-04-23 16:06:34,310 [ 1] INFO  Unity: MapTeleportRequest :teleporterID:1
+2022-04-23 16:06:34,342 [ 1] INFO  Unity: OnMapCharacterLeave:CharID23
+2022-04-23 16:06:34,344 [ 1] INFO  Unity: RemoveCharacter:23
+2022-04-23 16:06:34,345 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:5
+2022-04-23 16:06:34,346 [ 1] INFO  Unity: AddCharacter:2:1 Map:2 Entity:(23:pos:(2845,4039,38),dir:(100,0,0),spd:300
+2022-04-23 16:06:34,356 [ 1] INFO  Unity: AddCharacter:0:恶鬼 Map:2 Entity:(2:pos:(5887,1573,7),dir:(9,100,0),spd:0
+2022-04-23 16:06:34,446 [ 1] INFO  Unity: AddCharacter:0:山丘巨人 Map:2 Entity:(3:pos:(5540,1682,4),dir:(20,98,0),spd:0
+2022-04-23 16:06:34,617 [ 1] INFO  Unity: AddCharacter:0:小恶魔 Map:2 Entity:(4:pos:(4775,2865,14),dir:(-30,95,0),spd:0
+2022-04-23 16:06:34,802 [ 1] INFO  Unity: AddCharacter:0:死神 Map:2 Entity:(5:pos:(5683,4173,0),dir:(28,-96,0),spd:0
+2022-04-23 16:06:35,034 [ 1] INFO  Unity: LoadLevel: Map01
+2022-04-23 16:06:36,529 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:23 POS:(638, 2653, 802) DIR:(-100, -3, 0) SPD:300 
+2022-04-23 16:06:36,818 [ 1] INFO  Unity: MoveForward
+2022-04-23 16:06:36,819 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(2850,4039,38) DIR:(100,0,0) SPD:300
+2022-04-23 16:06:37,069 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-04-23 16:06:37,070 [ 1] INFO  Unity: Stop
+2022-04-23 16:06:37,072 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(2880,4039,38) DIR:(100,0,0) SPD:0
+2022-04-23 16:06:37,073 [ 1] INFO  Unity: TeleporterObject: Character [1] Enter Teleporter [6:野外传入点]
+2022-04-23 16:06:38,188 [ 1] INFO  Unity: MoveForward
+2022-04-23 16:06:38,189 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(2880,4039,38) DIR:(100,0,0) SPD:300
+2022-04-23 16:06:38,688 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-04-23 16:06:38,689 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(3025,4039,38) DIR:(98,-18,0) SPD:300
+2022-04-23 16:06:38,787 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2022-04-23 16:06:38,788 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(3055,4033,38) DIR:(94,-35,0) SPD:300
+2022-04-23 16:06:38,953 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
+2022-04-23 16:06:38,954 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(3105,4013,38) DIR:(86,-51,0) SPD:300
+2022-04-23 16:06:39,994 [ 1] INFO  Unity: SetPosition:(3370, 3858, 2)
+2022-04-23 16:06:39,995 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(3370,3858,2) DIR:(86,-51,0) SPD:300
+2022-04-23 16:06:41,549 [ 1] INFO  Unity: SetPosition:(3771, 3620, 2)
+2022-04-23 16:06:41,550 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(3771,3620,2) DIR:(86,-51,0) SPD:300
+2022-04-23 16:06:41,896 [ 1] INFO  Unity: Set Channel:Local
+2022-04-23 16:06:42,524 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2022-04-23 16:06:42,526 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(4007,3443,2) DIR:(94,-35,0) SPD:300
+2022-04-23 16:06:43,870 [ 1] INFO  Unity: Stop
+2022-04-23 16:06:43,871 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:23 POS:(4412,3281,2) DIR:(94,-35,0) SPD:0
+2022-04-23 16:06:54,485 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-04-23 16:06:54,487 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2022-04-23 16:06:54,491 [ 1] INFO  Unity: Character_2_1 OnDestroy :ID:23 POS:(4412, 3281, 2) DIR:(94, -35, 0) SPD:0 

@@ -33,6 +33,8 @@ public class UIManager : Singleton<UIManager>
         this.UIResources.Add(typeof(UIPopCharMenu), new UIElement() { Resources = "UI/UIPopCharMenu", Cache = false });
 
         this.UIResources.Add(typeof(UIRide), new UIElement() { Resources = "UI/UIRide", Cache = false });
+
+        this.UIResources.Add(typeof(UISyayemConfig), new UIElement() { Resources = "UI/UISystemConfig", Cache = false });
     }
 
 
@@ -43,7 +45,7 @@ public class UIManager : Singleton<UIManager>
 
     public T Show<T>()
     {
-        //SoundManager.Instance.PlaySound("ui_open");
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Opon);
         Type type = typeof(T);
         if (this.UIResources.ContainsKey(type))
         {
