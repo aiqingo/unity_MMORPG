@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\GameObject\GameObjectTool.cs" />
     <Compile Include="Assets\Scripts\GameObject\MainPlayerCamera.cs" />
     <Compile Include="Assets\Scripts\GameObject\MapController.cs" />
+    <Compile Include="Assets\Scripts\GameObject\NavPathRenderer.cs" />
     <Compile Include="Assets\Scripts\GameObject\NPCController.cs" />
     <Compile Include="Assets\Scripts\GameObject\PlayerInputController.cs" />
     <Compile Include="Assets\Scripts\GameObject\RideController.cs" />

@@ -177,13 +177,14 @@ namespace Managers
 
         public string FormatFromPlayer(ChatMessage message)
         {
-            if (message.FromId == User.Instance.CurrentCharacter.Id)
+          
+            if (message.Id == User.Instance.CurrentCharacter.Id)
             {
                 return "<a name=\"\" class=\"player\">[我]</a>";
             }
             else
             {
-                return String.Format("<a name=\"c:{0}:{1}\"class=\"player\">[{1}]</a>",message.FromId,message.FromName);
+                return String.Format("<a name=\"c:{0}:{1}\"class=\"player\">[{1}]</a>", message.FromId, message.FromName);
             }
 
         }

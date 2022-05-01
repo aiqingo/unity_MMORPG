@@ -1351,7 +1351,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114588932101461308}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114423912130463484}
+        m_MethodName: OnClickNav
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114143337146760914
@@ -1761,6 +1772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b55bbd04fff4f4fb55996760b1f351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Root: {fileID: 0}
   title: {fileID: 114113546707218478}
   itemPrefab: {fileID: 1067415873313236, guid: 048b78c5ca93bdb459a576aa7aee5acb, type: 2}
   Tabs: {fileID: 114677600341445702}
@@ -1871,9 +1883,11 @@ MonoBehaviour:
   - {fileID: 114253388523775786}
   - {fileID: 114874557432018460}
   description: {fileID: 114482581741628356}
+  overview: {fileID: 0}
   rewardItems: {fileID: 0}
   rewardMoney: {fileID: 114584668288801414}
   rewardExp: {fileID: 114820762433240446}
+  navButton: {fileID: 114142939319553038}
 --- !u!114 &114482581741628356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2161,7 +2175,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b31ad74123bf96344822120e8573194f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 08f4c88d96a6db74da760c09e33232d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3054,7 +3068,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u653E\u5F03\u4EFB\u52A1"
+  m_Text: "\u524D\u5F80\u9886\u53D6"
 --- !u!114 &114936225128593794
 MonoBehaviour:
   m_ObjectHideFlags: 1
