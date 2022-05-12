@@ -1,76 +1,392 @@
-2022-04-30 17:06:45,885 [ 1] INFO  Unity: LoadingManager start
-2022-04-30 17:06:49,375 [ 1] INFO  Unity: DataManager > DataManager()
-2022-04-30 17:06:52,949 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-04-30 17:06:52,951 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-04-30 17:06:52,952 [ 1] INFO  Unity: DoConnect
-2022-04-30 17:06:52,956 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-04-30 17:06:52,960 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-05-12 08:44:43,111 [ 1] INFO  Unity: LoadingManager start
+2022-05-12 08:44:46,230 [ 1] INFO  Unity: DataManager > DataManager()
+2022-05-12 08:44:49,695 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-05-12 08:44:49,696 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-05-12 08:44:49,698 [ 1] INFO  Unity: DoConnect
+2022-05-12 08:44:49,700 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-05-12 08:44:49,702 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-04-30 17:06:52,965 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-04-30 17:06:53,170 [ 1] INFO  Unity: OnLogin:Success [None]
-2022-04-30 17:06:53,174 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-04-30 17:06:53,762 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-30 17:06:54,687 [ 1] INFO  Unity: Select Char:[1]1[Warrior]
-2022-04-30 17:06:55,416 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2022-04-30 17:06:55,626 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2022-04-30 17:06:55,629 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
-2022-04-30 17:06:55,630 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
-2022-04-30 17:06:55,631 [ 1] INFO  Unity: ItemManager:Init[Id:8003,Count:1]
-2022-04-30 17:06:55,648 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2022-04-30 17:06:55,650 [ 1] INFO  Unity: AddCharacter:1:1 Map:1 Entity:(9:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-04-30 17:06:55,678 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-04-30 17:06:55,681 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Services.MapService.EnterMap (Int32 mapId) [0x0004e] in E:\jsj\unity_MMORPG\Src\Client\Assets\Scripts\Services\MapService.cs:79 
-  at Services.MapService.OnMapCharacterEnter (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse response) [0x000d2] in E:\jsj\unity_MMORPG\Src\Client\Assets\Scripts\Services\MapService.cs:55 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[MapCharacterEnterResponse] (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse msg) [0x00044] in E:\jsj\unity_MMORPG\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-04-30 17:06:55,682 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Services.MapService.EnterMap (Int32 mapId) (at Assets/Scripts/Services/MapService.cs:79)
-Services.MapService.OnMapCharacterEnter (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse response) (at Assets/Scripts/Services/MapService.cs:55)
-Network.MessageDistributer`1[System.Object].RaiseEvent[MapCharacterEnterResponse] (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse msg) (at E:/jsj/unity_MMORPG/Src/Lib/Common/Network/MessageDistributer.cs:105)
+2022-05-12 08:44:49,706 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-05-12 08:44:49,874 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-05-12 08:44:49,876 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-05-12 08:44:50,365 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-12 08:44:50,422 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,459 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,510 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,518 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,519 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,535 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,536 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,552 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,553 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,568 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,570 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,585 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,586 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,601 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,603 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,618 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,619 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,634 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,635 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,651 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,652 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,667 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,669 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,684 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,685 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,701 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,702 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,717 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,718 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,734 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,735 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,751 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,751 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,767 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,769 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,783 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,784 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,801 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,801 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,817 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,818 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,832 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,834 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,850 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,851 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,866 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,867 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,882 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,883 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,900 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,901 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,916 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,917 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,932 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,933 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,949 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,950 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,966 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,967 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,982 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,989 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:50,999 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,000 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,015 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,016 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,033 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,034 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,051 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,053 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,066 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,067 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,082 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,083 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,098 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,099 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,115 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,116 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,132 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,133 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,148 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,150 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,164 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,181 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,183 [ 1] INFO  Unity: Select Char:[2]111[Wizard]
+2022-05-12 08:44:51,189 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,197 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,199 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,214 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,215 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,231 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,232 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,247 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,249 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,264 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,265 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,282 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,283 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,297 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,298 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,314 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,316 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,330 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,332 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,346 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,347 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,363 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,364 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,381 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,382 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,396 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,397 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,413 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,415 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,429 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,430 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,446 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,447 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,463 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,464 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,479 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,480 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,496 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,497 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,512 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,513 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,529 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,530 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,545 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,546 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,561 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,563 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,579 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,579 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,596 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,597 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,612 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,613 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,628 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,629 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,645 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,646 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,662 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,663 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,679 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,680 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,695 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,696 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,711 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,712 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,727 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,728 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,744 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,745 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,761 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,761 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,777 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,778 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,794 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,795 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,810 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,811 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,827 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,828 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,843 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,844 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,860 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,861 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,877 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,879 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
+2022-05-12 08:44:51,881 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,894 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,895 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,910 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:51,922 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-05-12 08:44:51,925 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2022-05-12 08:44:51,926 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2022-05-12 08:44:51,941 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2022-05-12 08:44:51,943 [ 1] INFO  Unity: AddCharacter:2:111 Map:1 Entity:(10:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-05-12 08:44:51,947 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-05-12 08:44:54,630 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:54,672 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:54,673 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:54,673 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:54,674 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:54,674 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:54,675 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:54,676 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2022-05-12 08:44:54,943 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-05-12 08:44:55,036 [ 1] INFO  Unity: Set Channel:Local
+2022-05-12 08:44:56,533 [ 1] INFO  Unity: MoveForward
+2022-05-12 08:44:56,535 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2022-05-12 08:44:56,682 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2022-05-12 08:44:56,683 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5045,4000,820) DIR:(98,-18,0) SPD:300
+2022-05-12 08:44:56,765 [ 1] INFO  Unity: SetPosition:(5021, 3985, 808)
+2022-05-12 08:44:56,766 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5021,3985,808) DIR:(98,-18,0) SPD:300
+2022-05-12 08:44:56,849 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2022-05-12 08:44:56,850 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5046,3980,808) DIR:(93,-36,0) SPD:300
+2022-05-12 08:44:57,132 [ 1] INFO  Unity: SetDirection:(85, -52, 0)
+2022-05-12 08:44:57,133 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5131,3946,808) DIR:(85,-52,0) SPD:300
+2022-05-12 08:44:59,120 [ 1] INFO  Unity: SetPosition:(5556, 3598, 805)
+2022-05-12 08:44:59,121 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5556,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:44:59,303 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:44:59,304 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:44:59,485 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:44:59,487 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:44:59,667 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:44:59,668 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:44:59,849 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:44:59,850 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:00,048 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:00,049 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:00,231 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:00,231 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:00,413 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:00,414 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:00,596 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:00,597 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:00,777 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:00,778 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:00,960 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:00,960 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:01,142 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:01,142 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:01,324 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:01,325 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:01,506 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:01,507 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:01,691 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:01,692 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:01,871 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:01,872 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:02,053 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:02,054 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:02,252 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:02,253 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:02,433 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:02,434 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:02,616 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:02,617 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:02,798 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:02,799 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:02,982 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:02,982 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:03,163 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:03,164 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:03,348 [ 1] INFO  Unity: SetPosition:(5557, 3598, 805)
+2022-05-12 08:45:03,349 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5557,3598,805) DIR:(85,-52,0) SPD:300
+2022-05-12 08:45:03,478 [ 1] INFO  Unity: Stop
+2022-05-12 08:45:03,479 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5589,3574,805) DIR:(85,-52,0) SPD:0
+2022-05-12 08:45:03,493 [ 1] INFO  Unity: MoveBack
+2022-05-12 08:45:03,494 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5589,3574,805) DIR:(85,-52,0) SPD:-300
+2022-05-12 08:45:03,683 [ 1] INFO  Unity: Stop
+2022-05-12 08:45:03,684 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5545,3607,805) DIR:(85,-52,0) SPD:0
+2022-05-12 08:48:41,749 [ 1] INFO  Unity: MoveBack
+2022-05-12 08:48:41,751 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5545,3607,805) DIR:(85,-52,0) SPD:-300
+2022-05-12 08:48:42,211 [ 1] INFO  Unity: SetDirection:(74, -67, 0)
+2022-05-12 08:48:42,212 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5433,3691,805) DIR:(74,-67,0) SPD:-300
+2022-05-12 08:48:42,328 [ 1] INFO  Unity: SetDirection:(61, -80, 0)
+2022-05-12 08:48:42,329 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5405,3712,805) DIR:(61,-80,0) SPD:-300
+2022-05-12 08:48:42,427 [ 1] INFO  Unity: Stop
+2022-05-12 08:48:42,428 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5387,3736,805) DIR:(61,-80,0) SPD:0
+2022-05-12 08:48:42,429 [ 1] INFO  Unity: SetDirection:(43, -90, 0)
+2022-05-12 08:48:42,430 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5387,3736,805) DIR:(43,-90,0) SPD:0
+2022-05-12 08:48:42,511 [ 1] INFO  Unity: SetDirection:(26, -96, 0)
+2022-05-12 08:48:42,511 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5387,3736,805) DIR:(26,-96,0) SPD:0
+2022-05-12 08:48:42,611 [ 1] INFO  Unity: SetDirection:(6, -100, 0)
+2022-05-12 08:48:42,611 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5387,3736,805) DIR:(6,-100,0) SPD:0
+2022-05-12 08:48:42,692 [ 1] INFO  Unity: SetDirection:(-12, -99, 0)
+2022-05-12 08:48:42,694 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5387,3736,805) DIR:(-12,-99,0) SPD:0
+2022-05-12 08:48:42,791 [ 1] INFO  Unity: SetDirection:(-32, -95, 0)
+2022-05-12 08:48:42,792 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5387,3736,805) DIR:(-32,-95,0) SPD:0
+2022-05-12 08:48:42,876 [ 1] INFO  Unity: SetDirection:(-48, -88, 0)
+2022-05-12 08:48:42,876 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5387,3736,805) DIR:(-48,-88,0) SPD:0
+2022-05-12 08:48:42,924 [ 1] INFO  Unity: MoveForward
+2022-05-12 08:48:42,925 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5387,3736,805) DIR:(-48,-88,0) SPD:300
+2022-05-12 08:48:42,957 [ 1] INFO  Unity: SetDirection:(-62, -78, 0)
+2022-05-12 08:48:42,958 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5383,3728,805) DIR:(-62,-78,0) SPD:300
+2022-05-12 08:48:43,040 [ 1] INFO  Unity: SetDirection:(-75, -66, 0)
+2022-05-12 08:48:43,041 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5368,3708,805) DIR:(-75,-66,0) SPD:300
+2022-05-12 08:48:43,140 [ 1] INFO  Unity: SetDirection:(-87, -49, 0)
+2022-05-12 08:48:43,141 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5344,3690,805) DIR:(-87,-49,0) SPD:300
+2022-05-12 08:48:43,223 [ 1] INFO  Unity: SetDirection:(-94, -33, 0)
+2022-05-12 08:48:43,224 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5324,3680,805) DIR:(-94,-33,0) SPD:300
+2022-05-12 08:48:43,321 [ 1] INFO  Unity: SetDirection:(-99, -13, 0)
+2022-05-12 08:48:43,323 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5294,3668,805) DIR:(-99,-13,0) SPD:300
+2022-05-12 08:48:43,404 [ 1] INFO  Unity: SetDirection:(-100, 5, 0)
+2022-05-12 08:48:43,405 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5269,3663,805) DIR:(-100,5,0) SPD:300
+2022-05-12 08:48:43,521 [ 1] INFO  Unity: SetDirection:(-97, 25, 0)
+2022-05-12 08:48:43,522 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5239,3663,805) DIR:(-97,25,0) SPD:300
+2022-05-12 08:48:43,603 [ 1] INFO  Unity: SetDirection:(-91, 42, 0)
+2022-05-12 08:48:43,604 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5214,3668,805) DIR:(-91,42,0) SPD:300
+2022-05-12 08:48:43,690 [ 1] INFO  Unity: SetDirection:(-80, 60, 0)
+2022-05-12 08:48:43,692 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5184,3680,805) DIR:(-80,60,0) SPD:300
+2022-05-12 08:48:43,788 [ 1] INFO  Unity: SetDirection:(-66, 75, 0)
+2022-05-12 08:48:43,789 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5160,3698,805) DIR:(-66,75,0) SPD:300
+2022-05-12 08:48:43,939 [ 1] INFO  Unity: SetDirection:(-51, 86, 0)
+2022-05-12 08:48:43,940 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5136,3730,805) DIR:(-51,86,0) SPD:300
+2022-05-12 08:48:44,650 [ 1] INFO  Unity: Stop
+2022-05-12 08:48:44,651 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5007,3902,805) DIR:(-51,86,0) SPD:0
+2022-05-12 08:48:44,667 [ 1] INFO  Unity: MoveForward
+2022-05-12 08:48:44,667 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5007,3902,805) DIR:(-51,86,0) SPD:300
+2022-05-12 08:48:44,700 [ 1] INFO  Unity: Stop
+2022-05-12 08:48:44,701 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5001,3910,805) DIR:(-51,86,0) SPD:0
+2022-05-12 08:48:45,410 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIQuestInfo.SetQuestInfo (Models.Quest quest) (at Assets/Scripts/UI/QuestSystem/UIQuestInfo.cs:69)
+UIQuestDialog.UpdateQuest () (at Assets/Scripts/UI/QuestSystem/UIQuestDialog.cs:50)
+UIQuestDialog.SetQuest (Models.Quest quest) (at Assets/Scripts/UI/QuestSystem/UIQuestDialog.cs:23)
+Managers.QuestManager.ShowQuestDialog (Models.Quest quest) (at Assets/Scripts/Managers/QuestManager.cs:192)
+Managers.QuestManager.OpenNpcQuest (Int32 npcId) (at Assets/Scripts/Managers/QuestManager.cs:177)
+Managers.NPCManager.DoTaskInteractive (Common.Data.NpcDefine npc) (at Assets/Scripts/Managers/NPCManager.cs:70)
+Managers.NPCManager.Interactive (Common.Data.NpcDefine npc) (at Assets/Scripts/Managers/NPCManager.cs:50)
+NPCController+<DoInteractive>c__Iterator1.MoveNext () (at Assets/Scripts/GameObject/NPCController.cs:93)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at C:/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)
 }</args></log4net.Error>
-2022-04-30 17:06:57,307 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-04-30 17:06:59,370 [ 1] INFO  Unity: Set Channel:Local
-2022-04-30 17:07:09,766 [ 1] INFO  Unity: MoveForward
-2022-04-30 17:07:09,768 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
-2022-04-30 17:07:09,882 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2022-04-30 17:07:09,883 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5035,4000,820) DIR:(98,-18,0) SPD:300
-2022-04-30 17:07:10,139 [ 1] INFO  Unity: SetDirection:(93, -37, 0)
-2022-04-30 17:07:10,140 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5065,3994,820) DIR:(93,-37,0) SPD:300
-2022-04-30 17:07:10,222 [ 1] INFO  Unity: SetDirection:(83, -55, 0)
-2022-04-30 17:07:10,224 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5095,3982,820) DIR:(83,-55,0) SPD:300
-2022-04-30 17:07:10,305 [ 1] INFO  Unity: SetDirection:(72, -69, 0)
-2022-04-30 17:07:10,306 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5115,3967,820) DIR:(72,-69,0) SPD:300
-2022-04-30 17:07:10,433 [ 1] INFO  Unity: SetDirection:(57, -83, 0)
-2022-04-30 17:07:10,434 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5139,3949,820) DIR:(57,-83,0) SPD:300
-2022-04-30 17:07:10,500 [ 1] INFO  Unity: SetDirection:(41, -91, 0)
-2022-04-30 17:07:10,502 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5154,3929,820) DIR:(41,-91,0) SPD:300
-2022-04-30 17:07:10,600 [ 1] INFO  Unity: SetDirection:(21, -98, 0)
-2022-04-30 17:07:10,600 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5166,3899,820) DIR:(21,-98,0) SPD:300
-2022-04-30 17:07:10,715 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
-2022-04-30 17:07:10,716 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5172,3869,820) DIR:(1,-100,0) SPD:300
-2022-04-30 17:07:10,773 [ 1] INFO  Unity: SetDirection:(-17, -99, 0)
-2022-04-30 17:07:10,774 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5172,3844,820) DIR:(-17,-99,0) SPD:300
-2022-04-30 17:07:10,894 [ 1] INFO  Unity: SetDirection:(-35, -94, 0)
-2022-04-30 17:07:10,895 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(5165,3809,820) DIR:(-35,-94,0) SPD:300
-2022-04-30 17:07:11,628 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIManager.Show[UIRide] () (at Assets/Scripts/UI/UIManager.cs:48)
-UIMain.OnClickRide () (at Assets/Scripts/UI/UIMain.cs:76)
-UnityEngine.Events.InvokableCall.Invoke () (at C:/buildslave/unity/build/Runtime/Export/UnityEvent.cs:166)
-UnityEngine.Events.UnityEvent.Invoke () (at C:/buildslave/unity/build/Runtime/Export/UnityEvent_0.cs:58)
-UnityEngine.UI.Button.Press () (at C:/buildslave/unity/build/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
-UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at C:/buildslave/unity/build/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
-UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at C:/buildslave/unity/build/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
-UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at C:/buildslave/unity/build/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-04-30 17:07:12,773 [ 1] INFO  Unity: SetDirection:(-51, -86, 0)
-2022-04-30 17:07:12,774 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4943,3254,820) DIR:(-51,-86,0) SPD:300
-2022-04-30 17:07:12,995 [ 1] INFO  Unity: SetPosition:(4942, 3237, 802)
-2022-04-30 17:07:12,996 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4942,3237,802) DIR:(-51,-86,0) SPD:300
-2022-04-30 17:07:13,172 [ 1] INFO  Unity: Stop
-2022-04-30 17:07:13,175 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:9 POS:(4915,3201,802) DIR:(-51,-86,0) SPD:0
-2022-04-30 17:07:24,635 [ 1] INFO  Unity: Character_1_1 OnDestroy :ID:9 POS:(4915, 3201, 802) DIR:(-51, -86, 0) SPD:0 
-2022-04-30 17:07:24,637 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-04-30 17:07:24,639 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-05-12 08:48:45,484 [ 1] INFO  Unity: MoveForward
+2022-05-12 08:48:45,485 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(5001,3910,805) DIR:(-51,86,0) SPD:300
+2022-05-12 08:48:47,174 [ 1] INFO  Unity: SetDirection:(-65, 76, 0)
+2022-05-12 08:48:47,175 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4698,4314,805) DIR:(-65,76,0) SPD:300
+2022-05-12 08:48:47,406 [ 1] INFO  Unity: SetPosition:(4677, 4324, 810)
+2022-05-12 08:48:47,408 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4677,4324,810) DIR:(-65,76,0) SPD:300
+2022-05-12 08:48:47,672 [ 1] INFO  Unity: SetPosition:(4677, 4374, 808)
+2022-05-12 08:48:47,673 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4677,4374,808) DIR:(-65,76,0) SPD:300
+2022-05-12 08:48:47,739 [ 1] INFO  Unity: SetDirection:(-77, 64, 0)
+2022-05-12 08:48:47,740 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4665,4390,808) DIR:(-77,64,0) SPD:300
+2022-05-12 08:48:47,905 [ 1] INFO  Unity: SetPosition:(4677, 4415, 809)
+2022-05-12 08:48:47,906 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4677,4415,809) DIR:(-77,64,0) SPD:300
+2022-05-12 08:48:48,119 [ 1] INFO  Unity: SetPosition:(4677, 4450, 810)
+2022-05-12 08:48:48,120 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4677,4450,810) DIR:(-77,64,0) SPD:300
+2022-05-12 08:48:48,335 [ 1] INFO  Unity: SetPosition:(4676, 4482, 810)
+2022-05-12 08:48:48,336 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4676,4482,810) DIR:(-77,64,0) SPD:300
+2022-05-12 08:48:48,468 [ 1] INFO  Unity: SetDirection:(-87, 49, 0)
+2022-05-12 08:48:48,468 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4644,4506,810) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:50,108 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:50,108 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:50,306 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:50,307 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:50,505 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:50,506 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:50,704 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:50,705 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:50,920 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:50,921 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:51,118 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:51,119 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:51,317 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:51,318 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:51,515 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:51,517 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:51,715 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:51,715 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:51,914 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:51,915 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:52,113 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:52,114 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:52,311 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:52,312 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:52,510 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:52,511 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:52,708 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:52,709 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:52,924 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:52,926 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:53,123 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:53,124 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:53,321 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:53,322 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:53,521 [ 1] INFO  Unity: SetPosition:(4305, 4691, 812)
+2022-05-12 08:48:53,522 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4305,4691,812) DIR:(-87,49,0) SPD:300
+2022-05-12 08:48:53,603 [ 1] INFO  Unity: Stop
+2022-05-12 08:48:53,604 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4285,4701,812) DIR:(-87,49,0) SPD:0
+2022-05-12 08:48:53,619 [ 1] INFO  Unity: MoveBack
+2022-05-12 08:48:53,620 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4285,4701,812) DIR:(-87,49,0) SPD:-300
+2022-05-12 08:48:53,933 [ 1] INFO  Unity: Stop
+2022-05-12 08:48:53,934 [ 1] INFO  Unity: MapEntityUpdataRequet :ID:10 POS:(4361,4663,812) DIR:(-87,49,0) SPD:0
+2022-05-12 08:52:24,211 [ 1] INFO  Unity: Character_2_111 OnDestroy :ID:10 POS:(4361, 4663, 812) DIR:(-87, 49, 0) SPD:0 
+2022-05-12 08:52:24,215 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-05-12 08:52:24,216 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
